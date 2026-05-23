@@ -1,0 +1,1114 @@
+- generic [ref=e1]:
+  - generic [ref=e3]:
+    - img "close" [ref=e2147] [cursor=pointer]:
+      - img [ref=e2148]
+    - generic [ref=e6]:
+      - banner [ref=e7]:
+        - generic [ref=e9]:
+          - link "编程导航 编程导航" [ref=e12] [cursor=pointer]:
+            - /url: /
+            - img "编程导航" [ref=e13]
+            - generic [ref=e14]: 编程导航
+          - menu [ref=e2150]:
+            - menuitem "主页" [ref=e2151] [cursor=pointer]:
+              - link "主页" [ref=e2153]:
+                - /url: /
+                - generic [ref=e2155]: 主页
+            - menuitem "交流" [ref=e2156] [cursor=pointer]:
+              - link "交流" [ref=e2158]:
+                - /url: /essay
+                - generic [ref=e2160]: 交流
+            - menuitem "学习" [expanded] [ref=e2198] [cursor=pointer]:
+              - link "学习" [active] [ref=e2201]:
+                - /url: /learn/0/77
+                - generic [ref=e2203]: 学习
+            - menuitem "教程 AI 项目" [ref=e2204] [cursor=pointer]:
+              - link "教程 AI 项目" [ref=e2207]:
+                - /url: /course
+                - generic [ref=e2208]:
+                  - generic [ref=e2210]: 教程
+                  - generic [ref=e2211]: AI 项目
+            - listitem:
+              - menuitem:
+                - generic:
+                  - generic:
+                    - link:
+                      - /url: /qa
+                      - generic:
+                        - generic: 问答
+            - listitem:
+              - menuitem:
+                - generic:
+                  - generic:
+                    - link:
+                      - /url: /job/resume
+                      - generic:
+                        - generic: 求职
+            - listitem:
+              - menuitem:
+                - generic:
+                  - generic:
+                    - link:
+                      - /url: /live
+                      - generic:
+                        - generic: 直播
+            - menuitem:
+              - generic:
+                - link:
+                  - /url: /download/app
+                  - generic:
+                    - generic: APP
+            - menuitem:
+              - generic:
+                - link:
+                  - /url: https://ai.codefather.cn
+                  - generic:
+                    - generic:
+                      - generic: AI导航
+                    - generic: 新
+            - menuitem
+            - menuitem "ellipsis" [ref=e2161] [cursor=pointer]:
+              - img "ellipsis" [ref=e2162]:
+                - img [ref=e2163]
+          - generic [ref=e75]:
+            - generic [ref=e78] [cursor=pointer]:
+              - textbox [ref=e79]:
+                - /placeholder: 搜索内容
+              - img [ref=e81]:
+                - img [ref=e82]
+            - generic [ref=e85] [cursor=pointer]:
+              - img "编程导航会员" [ref=e86]
+              - generic [ref=e87]: 会员
+            - link "发 布" [ref=e89] [cursor=pointer]:
+              - /url: /add/passage
+              - button "发 布" [ref=e90]:
+                - generic [ref=e91]: 发 布
+            - generic [ref=e94] [cursor=pointer]:
+              - img [ref=e96]
+              - generic [ref=e97]: 登录/注册
+      - main [ref=e98]:
+        - generic [ref=e2213]:
+          - generic [ref=e2215]:
+            - generic [ref=e2216]:
+              - link "提供零基础编程学习全流程，涵盖路线选择、技术知识、学习方法和考研升学建议。" [ref=e2218] [cursor=pointer]:
+                - /url: /learn/0/77
+                - img "提供零基础编程学习全流程，涵盖路线选择、技术知识、学习方法和考研升学建议。" [ref=e2219]
+              - link "带做数十套企业级项目实战开发经验，手把手带你掌握真实项目技能和独立开发经验。" [ref=e2221] [cursor=pointer]:
+                - /url: /learn/1/79
+                - img "带做数十套企业级项目实战开发经验，手把手带你掌握真实项目技能和独立开发经验。" [ref=e2222]
+              - link "汇总保姆级简历写作、笔试面试经验与数百篇大厂面经，助你成功斩获Offer。" [ref=e2224] [cursor=pointer]:
+                - /url: /learn/2/98
+                - img "汇总保姆级简历写作、笔试面试经验与数百篇大厂面经，助你成功斩获Offer。" [ref=e2225]
+              - link "分享职场规划、快速涨薪跳槽和应对空窗期的建议，助力职业持续发展与提升。" [ref=e2227] [cursor=pointer]:
+                - /url: /learn/3/99
+                - img "分享职场规划、快速涨薪跳槽和应对空窗期的建议，助力职业持续发展与提升。" [ref=e2228]
+            - generic [ref=e2229]:
+              - generic [ref=e2231]:
+                - link "学习路线" [ref=e2233] [cursor=pointer]:
+                  - /url: /learn/0/77
+                  - generic [ref=e2234]: 学习路线
+                - link "方向选择" [ref=e2236] [cursor=pointer]:
+                  - /url: /learn/0/81
+                  - generic [ref=e2237]: 方向选择
+                - link "技术教程" [ref=e2239] [cursor=pointer]:
+                  - /url: /learn/0/84
+                  - generic [ref=e2240]: 技术教程
+                - link "学习方法" [ref=e2242] [cursor=pointer]:
+                  - /url: /learn/0/88
+                  - generic [ref=e2243]: 学习方法
+                - link "学习建议" [ref=e2245] [cursor=pointer]:
+                  - /url: /learn/0/92
+                  - generic [ref=e2246]: 学习建议
+                - link "学习经历" [ref=e2248] [cursor=pointer]:
+                  - /url: /learn/0/94
+                  - generic [ref=e2249]: 学习经历
+                - link "实践经历" [ref=e2251] [cursor=pointer]:
+                  - /url: /learn/0/97
+                  - generic [ref=e2252]: 实践经历
+              - generic [ref=e2253]:
+                - generic [ref=e2255]:
+                  - generic [ref=e2257] [cursor=pointer]: 热门
+                  - generic [ref=e2259] [cursor=pointer]: 编程语言
+                  - generic [ref=e2261] [cursor=pointer]: 后端开发
+                  - generic [ref=e2263] [cursor=pointer]: 前端开发
+                  - generic [ref=e2265] [cursor=pointer]: 人工智能
+                  - generic [ref=e2267] [cursor=pointer]: 计算机基础
+                  - generic [ref=e2269] [cursor=pointer]: 数据库中间件
+                  - generic [ref=e2271] [cursor=pointer]: 移动开发
+                  - generic [ref=e2273] [cursor=pointer]: 云原生和运维
+                  - generic [ref=e2275] [cursor=pointer]: 大数据
+                  - generic [ref=e2277] [cursor=pointer]: 软件测试
+                  - generic [ref=e2279] [cursor=pointer]: 网络安全
+                  - generic [ref=e2281] [cursor=pointer]: 游戏开发
+                  - generic [ref=e2283] [cursor=pointer]: 开发工具
+                  - generic [ref=e2285] [cursor=pointer]: Web3区块链
+                - generic [ref=e2287]:
+                  - link "全部学习路线" [ref=e2289] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/course/1789189862986850306
+                  - generic [ref=e2290]:
+                    - generic [ref=e2291]:
+                      - heading "热门" [level=3] [ref=e2292]
+                      - generic [ref=e2293]:
+                        - link "Java 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Java 学习路线 系统掌握编程基础、操作系统、网络、数据库及框架，夯实全栈能力。" [ref=e2295] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190431398928386
+                          - img "Java 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2296]
+                          - generic [ref=e2297]:
+                            - generic "Java 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2298]: Java 学习路线
+                            - generic "系统掌握编程基础、操作系统、网络、数据库及框架，夯实全栈能力。" [ref=e2299]
+                        - link "Python 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Python 学习路线 系统掌握数据分析、自动化脚本及 Web 开发，衔接 AI 与爬虫实战。" [ref=e2301] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190283176419330
+                          - img "Python 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2302]
+                          - generic [ref=e2303]:
+                            - generic "Python 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2304]: Python 学习路线
+                            - generic "系统掌握数据分析、自动化脚本及 Web 开发，衔接 AI 与爬虫实战。" [ref=e2305]
+                        - link "AI 大模型应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） AI 大模型应用开发学习路线 掌握 Prompt、RAG、微调及 Agent 开发，构建垂直领域 AI 应用。" [ref=e2307] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1912024009574629377
+                          - img "AI 大模型应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2308]
+                          - generic [ref=e2309]:
+                            - generic "AI 大模型应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2310]: AI 大模型应用开发学习路线
+                            - generic "掌握 Prompt、RAG、微调及 Agent 开发，构建垂直领域 AI 应用。" [ref=e2311]
+                        - link "前端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 前端开发学习路线 精通 HTML/CSS/JS 三件套及主流框架，掌握工程化与性能优化。" [ref=e2313] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190394078011393
+                          - img "前端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2314]
+                          - generic [ref=e2315]:
+                            - generic "前端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2316]: 前端开发学习路线
+                            - generic "精通 HTML/CSS/JS 三件套及主流框架，掌握工程化与性能优化。" [ref=e2317]
+                        - link "Go 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Go 语言学习路线 掌握高并发架构设计，实践微服务与云原生开发核心技术栈。" [ref=e2319] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190243125010434
+                          - img "Go 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2320]
+                          - generic [ref=e2321]:
+                            - generic "Go 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2322]: Go 语言学习路线
+                            - generic "掌握高并发架构设计，实践微服务与云原生开发核心技术栈。" [ref=e2323]
+                        - link "C++ 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） C++ 学习路线 系统掌握内存管理、多线程及高性能开发，夯实系统级软件基石。" [ref=e2325] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190321168424961
+                          - img "C++ 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2326]
+                          - generic [ref=e2327]:
+                            - generic "C++ 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2328]: C++ 学习路线
+                            - generic "系统掌握内存管理、多线程及高性能开发，夯实系统级软件基石。" [ref=e2329]
+                        - link "数据结构和算法学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 数据结构和算法学习路线 掌握链表、树、图及排序搜索算法，修炼编程内功，突破大厂笔试。" [ref=e2331] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789191067892948993
+                          - img "数据结构和算法学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2332]
+                          - generic [ref=e2333]:
+                            - generic "数据结构和算法学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2334]: 数据结构和算法学习路线
+                            - generic "掌握链表、树、图及排序搜索算法，修炼编程内功，突破大厂笔试。" [ref=e2335]
+                        - link "Vue.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Vue.js 学习路线 深入组件化开发、状态管理及路由机制，构建现代化单页 Web 应用。" [ref=e2337] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754217060511746
+                          - img "Vue.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2338]
+                          - generic [ref=e2339]:
+                            - generic "Vue.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2340]: Vue.js 学习路线
+                            - generic "深入组件化开发、状态管理及路由机制，构建现代化单页 Web 应用。" [ref=e2341]
+                        - link "小程序开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 小程序开发学习路线 掌握原生语法、云开发及跨端框架，快速构建微信生态轻量级应用。" [ref=e2343] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190355448471554
+                          - img "小程序开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2344]
+                          - generic [ref=e2345]:
+                            - generic "小程序开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2346]: 小程序开发学习路线
+                            - generic "掌握原生语法、云开发及跨端框架，快速构建微信生态轻量级应用。" [ref=e2347]
+                        - link "MySQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） MySQL 数据库学习路线 深入索引优化、事务隔离及锁机制，解决海量数据存储与查询瓶颈。" [ref=e2349] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190581420793858
+                          - img "MySQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2350]
+                          - generic [ref=e2351]:
+                            - generic "MySQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2352]: MySQL 数据库学习路线
+                            - generic "深入索引优化、事务隔离及锁机制，解决海量数据存储与查询瓶颈。" [ref=e2353]
+                        - link "Docker 容器化学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Docker 容器化学习路线 掌握镜像构建、容器编排及网络配置，实现应用标准化交付与部署。" [ref=e2355] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754953097949186
+                          - img "Docker 容器化学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2356]
+                          - generic [ref=e2357]:
+                            - generic "Docker 容器化学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2358]: Docker 容器化学习路线
+                            - generic "掌握镜像构建、容器编排及网络配置，实现应用标准化交付与部署。" [ref=e2359]
+                        - link "Git 和 GitHub 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Git 和 GitHub 学习路线 精通分支管理、代码合并及冲突解决，规范团队协作与版本控制流程。" [ref=e2361] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190804671012866
+                          - img "Git 和 GitHub 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2362]
+                          - generic [ref=e2363]:
+                            - generic "Git 和 GitHub 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2364]: Git 和 GitHub 学习路线
+                            - generic "精通分支管理、代码合并及冲突解决，规范团队协作与版本控制流程。" [ref=e2365]
+                    - generic [ref=e2366]:
+                      - heading "编程语言" [level=3] [ref=e2367]
+                      - generic [ref=e2368]:
+                        - link "Java 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Java 学习路线 系统掌握编程基础、操作系统、网络、数据库及框架，夯实全栈能力。" [ref=e2370] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190431398928386
+                          - img "Java 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2371]
+                          - generic [ref=e2372]:
+                            - generic "Java 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2373]: Java 学习路线
+                            - generic "系统掌握编程基础、操作系统、网络、数据库及框架，夯实全栈能力。" [ref=e2374]
+                        - link "Python 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Python 学习路线 系统掌握数据分析、自动化脚本及 Web 开发，衔接 AI 与爬虫实战。" [ref=e2376] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190283176419330
+                          - img "Python 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2377]
+                          - generic [ref=e2378]:
+                            - generic "Python 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2379]: Python 学习路线
+                            - generic "系统掌握数据分析、自动化脚本及 Web 开发，衔接 AI 与爬虫实战。" [ref=e2380]
+                        - link "JavaScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） JavaScript 学习路线 掌握闭包、原型链、异步编程及 ES6+ 新特性，夯实前端交互核心。" [ref=e2382] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990753900055015426
+                          - img "JavaScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2383]
+                          - generic [ref=e2384]:
+                            - generic "JavaScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2385]: JavaScript 学习路线
+                            - generic "掌握闭包、原型链、异步编程及 ES6+ 新特性，夯实前端交互核心。" [ref=e2386]
+                        - link "TypeScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） TypeScript 学习路线 掌握静态类型系统、泛型及面向对象编程，提升大型项目代码健壮性。" [ref=e2388] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990753941477961730
+                          - img "TypeScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2389]
+                          - generic [ref=e2390]:
+                            - generic "TypeScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2391]: TypeScript 学习路线
+                            - generic "掌握静态类型系统、泛型及面向对象编程，提升大型项目代码健壮性。" [ref=e2392]
+                        - link "Go 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Go 学习路线 掌握高并发架构设计，实践微服务与云原生开发核心技术栈。" [ref=e2394] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190243125010434
+                          - img "Go 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2395]
+                          - generic [ref=e2396]:
+                            - generic "Go 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2397]: Go 学习路线
+                            - generic "掌握高并发架构设计，实践微服务与云原生开发核心技术栈。" [ref=e2398]
+                        - link "C++ 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） C++ 学习路线 系统掌握内存管理、多线程及高性能开发，夯实系统级软件基石。" [ref=e2400] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190321168424961
+                          - img "C++ 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2401]
+                          - generic [ref=e2402]:
+                            - generic "C++ 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2403]: C++ 学习路线
+                            - generic "系统掌握内存管理、多线程及高性能开发，夯实系统级软件基石。" [ref=e2404]
+                        - link "C 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） C 语言学习路线 掌握指针、内存管理及底层编译原理，开启嵌入式与系统编程大门。" [ref=e2406] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990753999116087297
+                          - img "C 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2407]
+                          - generic [ref=e2408]:
+                            - generic "C 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2409]: C 语言学习路线
+                            - generic "掌握指针、内存管理及底层编译原理，开启嵌入式与系统编程大门。" [ref=e2410]
+                        - link "C# 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） C# 语言学习路线 掌握 .NET Core 跨平台开发及 LINQ 特性，构建高性能企业级应用。" [ref=e2412] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754042741043202
+                          - img "C# 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2413]
+                          - generic [ref=e2414]:
+                            - generic "C# 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2415]: C# 语言学习路线
+                            - generic "掌握 .NET Core 跨平台开发及 LINQ 特性，构建高性能企业级应用。" [ref=e2416]
+                        - link "Rust 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Rust 语言学习路线 掌握所有权机制、借用检查及零成本抽象，构建内存安全的高性能软件。" [ref=e2418] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754078468124673
+                          - img "Rust 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2419]
+                          - generic [ref=e2420]:
+                            - generic "Rust 语言学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2421]: Rust 语言学习路线
+                            - generic "掌握所有权机制、借用检查及零成本抽象，构建内存安全的高性能软件。" [ref=e2422]
+                        - link "Kotlin 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Kotlin 学习路线 掌握空安全、协程及函数式编程特性，高效开发 Android 及服务端应用。" [ref=e2424] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754117106053122
+                          - img "Kotlin 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2425]
+                          - generic [ref=e2426]:
+                            - generic "Kotlin 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2427]: Kotlin 学习路线
+                            - generic "掌握空安全、协程及函数式编程特性，高效开发 Android 及服务端应用。" [ref=e2428]
+                        - link "Swift 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Swift 学习路线 掌握安全设计模式、SwiftUI 及内存管理，构建极致体验的 iOS 应用。" [ref=e2430] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754151050555394
+                          - img "Swift 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2431]
+                          - generic [ref=e2432]:
+                            - generic "Swift 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2433]: Swift 学习路线
+                            - generic "掌握安全设计模式、SwiftUI 及内存管理，构建极致体验的 iOS 应用。" [ref=e2434]
+                    - generic [ref=e2435]:
+                      - heading "后端开发" [level=3] [ref=e2436]
+                      - generic [ref=e2437]:
+                        - link "Java 后端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Java 后端开发学习路线 深入多线程、JVM 调优及分布式架构，构建高可用企业级后端系统。" [ref=e2439] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190431398928386
+                          - img "Java 后端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2440]
+                          - generic [ref=e2441]:
+                            - generic "Java 后端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2442]: Java 后端开发学习路线
+                            - generic "深入多线程、JVM 调优及分布式架构，构建高可用企业级后端系统。" [ref=e2443]
+                        - link "Java AI 应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Java AI 应用开发学习路线 结合 Spring AI 与 LangChain4j，在 Java 生态中落地大模型应用。" [ref=e2445] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754488406814721
+                          - img "Java AI 应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2446]
+                          - generic [ref=e2447]:
+                            - generic "Java AI 应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2448]: Java AI 应用开发学习路线
+                            - generic "结合 Spring AI 与 LangChain4j，在 Java 生态中落地大模型应用。" [ref=e2449]
+                        - link "Spring Boot 框架学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Spring Boot 框架学习路线 掌握自动配置、Starter 开发及核心组件，快速构建生产级微服务应用。" [ref=e2451] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754528483389441
+                          - img "Spring Boot 框架学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2452]
+                          - generic [ref=e2453]:
+                            - generic "Spring Boot 框架学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2454]: Spring Boot 框架学习路线
+                            - generic "掌握自动配置、Starter 开发及核心组件，快速构建生产级微服务应用。" [ref=e2455]
+                        - link "Spring Cloud 微服务学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Spring Cloud 微服务学习路线 掌握注册中心、熔断降级及网关配置，构建高可用分布式微服务架构。" [ref=e2457] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754562939596801
+                          - img "Spring Cloud 微服务学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2458]
+                          - generic [ref=e2459]:
+                            - generic "Spring Cloud 微服务学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2460]: Spring Cloud 微服务学习路线
+                            - generic "掌握注册中心、熔断降级及网关配置，构建高可用分布式微服务架构。" [ref=e2461]
+                        - link "MyBatis 框架学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） MyBatis 框架学习路线 掌握动态 SQL、缓存机制及插件开发，实现灵活高效的持久层操作。" [ref=e2463] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754628471402498
+                          - img "MyBatis 框架学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2464]
+                          - generic [ref=e2465]:
+                            - generic "MyBatis 框架学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2466]: MyBatis 框架学习路线
+                            - generic "掌握动态 SQL、缓存机制及插件开发，实现灵活高效的持久层操作。" [ref=e2467]
+                        - link "Netty 网络编程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Netty 网络编程学习路线 深入 NIO 模型、零拷贝及 ByteBuf，构建高性能网络通信服务器。" [ref=e2469] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754668925464578
+                          - img "Netty 网络编程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2470]
+                          - generic [ref=e2471]:
+                            - generic "Netty 网络编程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2472]: Netty 网络编程学习路线
+                            - generic "深入 NIO 模型、零拷贝及 ByteBuf，构建高性能网络通信服务器。" [ref=e2473]
+                        - link "Go 后端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Go 后端开发学习路线 掌握 Gin/Echo 框架、Gorm 及并发模式，构建高性能云原生后端服务。" [ref=e2475] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190243125010434
+                          - img "Go 后端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2476]
+                          - generic [ref=e2477]:
+                            - generic "Go 后端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2478]: Go 后端开发学习路线
+                            - generic "掌握 Gin/Echo 框架、Gorm 及并发模式，构建高性能云原生后端服务。" [ref=e2479]
+                        - link "Python Web 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Python Web 开发学习路线 掌握 Django/FastAPI 框架及 ORM，快速开发数据驱动型 Web 服务。" [ref=e2481] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190283176419330
+                          - img "Python Web 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2482]
+                          - generic [ref=e2483]:
+                            - generic "Python Web 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2484]: Python Web 开发学习路线
+                            - generic "掌握 Django/FastAPI 框架及 ORM，快速开发数据驱动型 Web 服务。" [ref=e2485]
+                        - link "设计模式学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 设计模式学习路线 掌握单例、工厂、策略等 23 种模式，重构代码以提升可维护性与扩展性。" [ref=e2487] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190698894860290
+                          - img "设计模式学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2488]
+                          - generic [ref=e2489]:
+                            - generic "设计模式学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2490]: 设计模式学习路线
+                            - generic "掌握单例、工厂、策略等 23 种模式，重构代码以提升可维护性与扩展性。" [ref=e2491]
+                        - link "后端系统设计学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 后端系统设计学习路线 掌握高并发、高可用及分布式一致性设计，应对海量用户架构挑战。" [ref=e2493] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754702744137730
+                          - img "后端系统设计学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2494]
+                          - generic [ref=e2495]:
+                            - generic "后端系统设计学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2496]: 后端系统设计学习路线
+                            - generic "掌握高并发、高可用及分布式一致性设计，应对海量用户架构挑战。" [ref=e2497]
+                        - link "RPC 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） RPC 学习路线 深入序列化、协议设计及服务治理，实现高性能跨语言远程过程调用。" [ref=e2499] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754731236044801
+                          - img "RPC 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2500]
+                          - generic [ref=e2501]:
+                            - generic "RPC 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2502]: RPC 学习路线
+                            - generic "深入序列化、协议设计及服务治理，实现高性能跨语言远程过程调用。" [ref=e2503]
+                        - link "GraphQL 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） GraphQL 学习路线 掌握 Schema 定义、查询解析及类型系统，构建灵活高效的 API 接口。" [ref=e2505] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754760935911425
+                          - img "GraphQL 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2506]
+                          - generic [ref=e2507]:
+                            - generic "GraphQL 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2508]: GraphQL 学习路线
+                            - generic "掌握 Schema 定义、查询解析及类型系统，构建灵活高效的 API 接口。" [ref=e2509]
+                    - generic [ref=e2510]:
+                      - heading "前端开发" [level=3] [ref=e2511]
+                      - generic [ref=e2512]:
+                        - link "前端学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 前端学习路线 系统掌握三件套及工程化，构建极致用户体验的 Web 界面。" [ref=e2514] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190394078011393
+                          - img "前端学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2515]
+                          - generic [ref=e2516]:
+                            - generic "前端学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2517]: 前端学习路线
+                            - generic "系统掌握三件套及工程化，构建极致用户体验的 Web 界面。" [ref=e2518]
+                        - link "Vue.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Vue.js 学习路线 深入组件化开发、状态管理及路由机制，构建现代化单页 Web 应用。" [ref=e2520] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754217060511746
+                          - img "Vue.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2521]
+                          - generic [ref=e2522]:
+                            - generic "Vue.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2523]: Vue.js 学习路线
+                            - generic "深入组件化开发、状态管理及路由机制，构建现代化单页 Web 应用。" [ref=e2524]
+                        - link "React 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） React 学习路线 掌握 Hooks、虚拟 DOM 及状态管理，构建高性能组件化交互界面。" [ref=e2526] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754184068116481
+                          - img "React 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2527]
+                          - generic [ref=e2528]:
+                            - generic "React 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2529]: React 学习路线
+                            - generic "掌握 Hooks、虚拟 DOM 及状态管理，构建高性能组件化交互界面。" [ref=e2530]
+                        - link "TypeScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） TypeScript 学习路线 掌握静态类型系统、泛型及面向对象编程，提升大型项目代码健壮性。" [ref=e2532] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990753941477961730
+                          - img "TypeScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2533]
+                          - generic [ref=e2534]:
+                            - generic "TypeScript 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2535]: TypeScript 学习路线
+                            - generic "掌握静态类型系统、泛型及面向对象编程，提升大型项目代码健壮性。" [ref=e2536]
+                        - link "小程序学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 小程序学习路线 掌握原生与跨端框架，高效开发微信生态轻应用。" [ref=e2538] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190355448471554
+                          - img "小程序学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2539]
+                          - generic [ref=e2540]:
+                            - generic "小程序学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2541]: 小程序学习路线
+                            - generic "掌握原生与跨端框架，高效开发微信生态轻应用。" [ref=e2542]
+                        - link "Node.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Node.js 学习路线 掌握事件循环、模块系统及异步 I/O，构建高性能服务端及中间件。" [ref=e2544] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754313357537282
+                          - img "Node.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2545]
+                          - generic [ref=e2546]:
+                            - generic "Node.js 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2547]: Node.js 学习路线
+                            - generic "掌握事件循环、模块系统及异步 I/O，构建高性能服务端及中间件。" [ref=e2548]
+                        - link "Next.js 全栈开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Next.js 全栈开发学习路线 掌握 SSR/SSG 渲染、路由及 API 路由，构建 SEO 友好的全栈应用。" [ref=e2550] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754280717463553
+                          - img "Next.js 全栈开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2551]
+                          - generic [ref=e2552]:
+                            - generic "Next.js 全栈开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2553]: Next.js 全栈开发学习路线
+                            - generic "掌握 SSR/SSG 渲染、路由及 API 路由，构建 SEO 友好的全栈应用。" [ref=e2554]
+                        - link "移动端 H5 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 移动端 H5 开发学习路线 掌握响应式布局、Touch 事件及适配方案，开发跨终端移动 Web 页面。" [ref=e2556] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754345183916034
+                          - img "移动端 H5 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2557]
+                          - generic [ref=e2558]:
+                            - generic "移动端 H5 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2559]: 移动端 H5 开发学习路线
+                            - generic "掌握响应式布局、Touch 事件及适配方案，开发跨终端移动 Web 页面。" [ref=e2560]
+                        - link "Electron 桌面应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Electron 桌面应用开发学习路线 结合 Web 技术与主进程通信，开发跨平台高性能桌面客户端软件。" [ref=e2562] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754383264002049
+                          - img "Electron 桌面应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2563]
+                          - generic [ref=e2564]:
+                            - generic "Electron 桌面应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2565]: Electron 桌面应用开发学习路线
+                            - generic "结合 Web 技术与主进程通信，开发跨平台高性能桌面客户端软件。" [ref=e2566]
+                        - link "WebAssembly 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） WebAssembly 学习路线 掌握 WASM 编译目标及内存交互，将高性能原生代码引入 Web 环境。" [ref=e2568] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754412812873730
+                          - img "WebAssembly 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2569]
+                          - generic [ref=e2570]:
+                            - generic "WebAssembly 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2571]: WebAssembly 学习路线
+                            - generic "掌握 WASM 编译目标及内存交互，将高性能原生代码引入 Web 环境。" [ref=e2572]
+                    - generic [ref=e2573]:
+                      - heading "人工智能" [level=3] [ref=e2574]
+                      - generic [ref=e2575]:
+                        - link "AI 大模型应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） AI 大模型应用开发学习路线 掌握 Prompt、RAG、微调及 Agent 开发，构建垂直领域 AI 应用。" [ref=e2577] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1912024009574629377
+                          - img "AI 大模型应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2578]
+                          - generic [ref=e2579]:
+                            - generic "AI 大模型应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2580]: AI 大模型应用开发学习路线
+                            - generic "掌握 Prompt、RAG、微调及 Agent 开发，构建垂直领域 AI 应用。" [ref=e2581]
+                        - link "机器学习学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 机器学习学习路线 掌握统计学、回归分类算法及特征工程，构建数据预测与分析模型。" [ref=e2583] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748464077647873
+                          - img "机器学习学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2584]
+                          - generic [ref=e2585]:
+                            - generic "机器学习学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2586]: 机器学习学习路线
+                            - generic "掌握统计学、回归分类算法及特征工程，构建数据预测与分析模型。" [ref=e2587]
+                        - link "深度学习学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 深度学习学习路线 掌握神经网络、反向传播及 PyTorch/TF，解决图像与序列复杂问题。" [ref=e2589] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748511389396993
+                          - img "深度学习学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2590]
+                          - generic [ref=e2591]:
+                            - generic "深度学习学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2592]: 深度学习学习路线
+                            - generic "掌握神经网络、反向传播及 PyTorch/TF，解决图像与序列复杂问题。" [ref=e2593]
+                        - link "计算机视觉学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 计算机视觉学习路线 掌握 CNN、目标检测及图像分割技术，赋予机器“看懂”世界的能力。" [ref=e2595] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748555425394689
+                          - img "计算机视觉学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2596]
+                          - generic [ref=e2597]:
+                            - generic "计算机视觉学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2598]: 计算机视觉学习路线
+                            - generic "掌握 CNN、目标检测及图像分割技术，赋予机器“看懂”世界的能力。" [ref=e2599]
+                        - link "NLP 自然语言处理学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） NLP 自然语言处理学习路线 掌握 Transformer、词向量及文本生成，实现机器对人类语言的理解。" [ref=e2601] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748600665157634
+                          - img "NLP 自然语言处理学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2602]
+                          - generic [ref=e2603]:
+                            - generic "NLP 自然语言处理学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2604]: NLP 自然语言处理学习路线
+                            - generic "掌握 Transformer、词向量及文本生成，实现机器对人类语言的理解。" [ref=e2605]
+                        - link "AI Agent 应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） AI Agent 应用开发学习路线 掌握规划、记忆、工具使用及多智能体协作，构建自主决策 AI 实体。" [ref=e2607] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748661016997890
+                          - img "AI Agent 应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2608]
+                          - generic [ref=e2609]:
+                            - generic "AI Agent 应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2610]: AI Agent 应用开发学习路线
+                            - generic "掌握规划、记忆、工具使用及多智能体协作，构建自主决策 AI 实体。" [ref=e2611]
+                        - link "Prompt Engineering 提示词工程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Prompt Engineering 提示词工程学习路线 掌握零样本、思维链及结构化提示技巧，激发大模型最佳生成潜能。" [ref=e2613] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748694684676098
+                          - img "Prompt Engineering 提示词工程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2614]
+                          - generic [ref=e2615]:
+                            - generic "Prompt Engineering 提示词工程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2616]: Prompt Engineering 提示词工程学习路线
+                            - generic "掌握零样本、思维链及结构化提示技巧，激发大模型最佳生成潜能。" [ref=e2617]
+                        - link "LangChain 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） LangChain 开发学习路线 掌握链式调用、Memory 及 Agent 开发，构建上下文感知的 AI 应用。" [ref=e2619] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748731967844354
+                          - img "LangChain 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2620]
+                          - generic [ref=e2621]:
+                            - generic "LangChain 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2622]: LangChain 开发学习路线
+                            - generic "掌握链式调用、Memory 及 Agent 开发，构建上下文感知的 AI 应用。" [ref=e2623]
+                        - link "RAG 检索增强生成学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） RAG 检索增强生成学习路线 掌握向量数据库、知识库构建及检索策略，解决大模型幻觉与知识更新。" [ref=e2625] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748766445023233
+                          - img "RAG 检索增强生成学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2626]
+                          - generic [ref=e2627]:
+                            - generic "RAG 检索增强生成学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2628]: RAG 检索增强生成学习路线
+                            - generic "掌握向量数据库、知识库构建及检索策略，解决大模型幻觉与知识更新。" [ref=e2629]
+                        - link "Spring AI 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Spring AI 学习路线 掌握 Spring 生态对接大模型标准接口，简化 Java 智能应用开发流程。" [ref=e2631] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748799395475457
+                          - img "Spring AI 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2632]
+                          - generic [ref=e2633]:
+                            - generic "Spring AI 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2634]: Spring AI 学习路线
+                            - generic "掌握 Spring 生态对接大模型标准接口，简化 Java 智能应用开发流程。" [ref=e2635]
+                        - link "LangChain4j 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） LangChain4j 学习路线 在 Java 环境下实现链式调用与 Agent 开发，无缝集成大模型能力。" [ref=e2637] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748829598658561
+                          - img "LangChain4j 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2638]
+                          - generic [ref=e2639]:
+                            - generic "LangChain4j 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2640]: LangChain4j 学习路线
+                            - generic "在 Java 环境下实现链式调用与 Agent 开发，无缝集成大模型能力。" [ref=e2641]
+                        - link "LangGraph4j 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） LangGraph4j 学习路线 掌握图结构编排与多 Agent 状态机，在 Java 中构建复杂 AI 工作流。" [ref=e2643] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990748861085298690
+                          - img "LangGraph4j 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2644]
+                          - generic [ref=e2645]:
+                            - generic "LangGraph4j 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2646]: LangGraph4j 学习路线
+                            - generic "掌握图结构编排与多 Agent 状态机，在 Java 中构建复杂 AI 工作流。" [ref=e2647]
+                    - generic [ref=e2648]:
+                      - heading "计算机基础" [level=3] [ref=e2649]
+                      - generic [ref=e2650]:
+                        - link "计算机基础学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 计算机基础学习路线 夯实数据表示、指令系统及体系结构，建立扎实的底层技术认知。" [ref=e2652] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789191099081793538
+                          - img "计算机基础学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2653]
+                          - generic [ref=e2654]:
+                            - generic "计算机基础学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2655]: 计算机基础学习路线
+                            - generic "夯实数据表示、指令系统及体系结构，建立扎实的底层技术认知。" [ref=e2656]
+                        - link "数据结构和算法学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 数据结构和算法学习路线 掌握链表、树、图及排序搜索算法，修炼编程内功，突破大厂笔试。" [ref=e2658] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789191067892948993
+                          - img "数据结构和算法学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2659]
+                          - generic [ref=e2660]:
+                            - generic "数据结构和算法学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2661]: 数据结构和算法学习路线
+                            - generic "掌握链表、树、图及排序搜索算法，修炼编程内功，突破大厂笔试。" [ref=e2662]
+                        - link "操作系统学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 操作系统学习路线 深入进程管理、内存调度及文件系统，理解软件运行的底层环境。" [ref=e2664] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190984099143681
+                          - img "操作系统学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2665]
+                          - generic [ref=e2666]:
+                            - generic "操作系统学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2667]: 操作系统学习路线
+                            - generic "深入进程管理、内存调度及文件系统，理解软件运行的底层环境。" [ref=e2668]
+                        - link "计算机网络学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 计算机网络学习路线 掌握 TCP/IP 协议栈、HTTP 及网络安全，理解数据传输核心原理。" [ref=e2670] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789191030769164289
+                          - img "计算机网络学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2671]
+                          - generic [ref=e2672]:
+                            - generic "计算机网络学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2673]: 计算机网络学习路线
+                            - generic "掌握 TCP/IP 协议栈、HTTP 及网络安全，理解数据传输核心原理。" [ref=e2674]
+                        - link "软件工程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 软件工程学习路线 掌握需求分析、设计模式及敏捷开发，提升软件全生命周期管理能力。" [ref=e2676] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190653197918210
+                          - img "软件工程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2677]
+                          - generic [ref=e2678]:
+                            - generic "软件工程学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2679]: 软件工程学习路线
+                            - generic "掌握需求分析、设计模式及敏捷开发，提升软件全生命周期管理能力。" [ref=e2680]
+                        - link "企业项目研发流程 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 企业项目研发流程 熟悉需求评审、开发测试、CodeReview 及上线流程，适应团队协作。" [ref=e2682] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190839475347458
+                          - img "企业项目研发流程 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2683]
+                          - generic [ref=e2684]:
+                            - generic "企业项目研发流程 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2685]: 企业项目研发流程
+                            - generic "熟悉需求评审、开发测试、CodeReview 及上线流程，适应团队协作。" [ref=e2686]
+                    - generic [ref=e2687]:
+                      - heading "数据库中间件" [level=3] [ref=e2688]
+                      - generic [ref=e2689]:
+                        - link "MySQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） MySQL 数据库学习路线 深入索引优化、事务隔离及锁机制，解决海量数据存储与查询瓶颈。" [ref=e2691] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190581420793858
+                          - img "MySQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2692]
+                          - generic [ref=e2693]:
+                            - generic "MySQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2694]: MySQL 数据库学习路线
+                            - generic "深入索引优化、事务隔离及锁机制，解决海量数据存储与查询瓶颈。" [ref=e2695]
+                        - link "PostgreSQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） PostgreSQL 数据库学习路线 掌握 JSON 处理、地理空间数据及高级索引，应用“最先进”开源库。" [ref=e2697] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755118848454657
+                          - img "PostgreSQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2698]
+                          - generic [ref=e2699]:
+                            - generic "PostgreSQL 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2700]: PostgreSQL 数据库学习路线
+                            - generic "掌握 JSON 处理、地理空间数据及高级索引，应用“最先进”开源库。" [ref=e2701]
+                        - link "Redis 缓存学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Redis 缓存学习路线 掌握核心数据结构、持久化及集群哨兵，提升系统读写性能与稳定性。" [ref=e2703] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190541746872321
+                          - img "Redis 缓存学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2704]
+                          - generic [ref=e2705]:
+                            - generic "Redis 缓存学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2706]: Redis 缓存学习路线
+                            - generic "掌握核心数据结构、持久化及集群哨兵，提升系统读写性能与稳定性。" [ref=e2707]
+                        - link "MongoDB 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） MongoDB 数据库学习路线 掌握文档存储、聚合查询及分片集群，应对非结构化海量数据场景。" [ref=e2709] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755151434002433
+                          - img "MongoDB 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2710]
+                          - generic [ref=e2711]:
+                            - generic "MongoDB 数据库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2712]: MongoDB 数据库学习路线
+                            - generic "掌握文档存储、聚合查询及分片集群，应对非结构化海量数据场景。" [ref=e2713]
+                        - link "Elasticsearch 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Elasticsearch 学习路线 掌握倒排索引、全文检索及聚合分析，构建高性能搜索引擎与分析平台。" [ref=e2715] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755182346022913
+                          - img "Elasticsearch 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2716]
+                          - generic [ref=e2717]:
+                            - generic "Elasticsearch 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2718]: Elasticsearch 学习路线
+                            - generic "掌握倒排索引、全文检索及聚合分析，构建高性能搜索引擎与分析平台。" [ref=e2719]
+                        - link "SQL 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） SQL 学习路线 掌握增删改查、连接查询及性能分析，熟练操作关系型数据库数据。" [ref=e2721] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755217309741058
+                          - img "SQL 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2722]
+                          - generic [ref=e2723]:
+                            - generic "SQL 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2724]: SQL 学习路线
+                            - generic "掌握增删改查、连接查询及性能分析，熟练操作关系型数据库数据。" [ref=e2725]
+                        - link "消息队列学习路线（通用） | 26 年最新零基础到精通一条龙（万人收藏⭐️） 消息队列学习路线（通用） 理解解耦、削峰填谷及异步处理模式，掌握分布式消息中间件核心。" [ref=e2727] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755245742927874
+                          - img "消息队列学习路线（通用） | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2728]
+                          - generic [ref=e2729]:
+                            - generic "消息队列学习路线（通用） | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2730]: 消息队列学习路线（通用）
+                            - generic "理解解耦、削峰填谷及异步处理模式，掌握分布式消息中间件核心。" [ref=e2731]
+                        - link "RabbitMQ 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） RabbitMQ 消息队列学习路线 掌握 Exchange 路由、死信队列及可靠性投递，实现灵活消息分发。" [ref=e2733] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755291993518082
+                          - img "RabbitMQ 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2734]
+                          - generic [ref=e2735]:
+                            - generic "RabbitMQ 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2736]: RabbitMQ 消息队列学习路线
+                            - generic "掌握 Exchange 路由、死信队列及可靠性投递，实现灵活消息分发。" [ref=e2737]
+                        - link "Kafka 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Kafka 消息队列学习路线 掌握分区副本、高吞吐读写及流处理，应对海量日志与实时数据管道。" [ref=e2739] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755332183339010
+                          - img "Kafka 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2740]
+                          - generic [ref=e2741]:
+                            - generic "Kafka 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2742]: Kafka 消息队列学习路线
+                            - generic "掌握分区副本、高吞吐读写及流处理，应对海量日志与实时数据管道。" [ref=e2743]
+                        - link "RocketMQ 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） RocketMQ 消息队列学习路线 掌握事务消息、顺序消息及延时队列，满足金融级高可靠消息场景。" [ref=e2745] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755369533616130
+                          - img "RocketMQ 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2746]
+                          - generic [ref=e2747]:
+                            - generic "RocketMQ 消息队列学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2748]: RocketMQ 消息队列学习路线
+                            - generic "掌握事务消息、顺序消息及延时队列，满足金融级高可靠消息场景。" [ref=e2749]
+                        - link "Nginx 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Nginx 学习路线 掌握反向代理、负载均衡及动静分离配置，优化 Web 服务器入口性能。" [ref=e2751] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1850847315113381889
+                          - img "Nginx 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2752]
+                          - generic [ref=e2753]:
+                            - generic "Nginx 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2754]: Nginx 学习路线
+                            - generic "掌握反向代理、负载均衡及动静分离配置，优化 Web 服务器入口性能。" [ref=e2755]
+                    - generic [ref=e2756]:
+                      - heading "移动开发" [level=3] [ref=e2757]
+                      - generic [ref=e2758]:
+                        - link "Flutter 跨平台开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Flutter 跨平台开发学习路线 掌握 Dart 语言、Widget 机制及状态管理，实现一套代码多端运行。" [ref=e2760] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754845061066753
+                          - img "Flutter 跨平台开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2761]
+                          - generic [ref=e2762]:
+                            - generic "Flutter 跨平台开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2763]: Flutter 跨平台开发学习路线
+                            - generic "掌握 Dart 语言、Widget 机制及状态管理，实现一套代码多端运行。" [ref=e2764]
+                        - link "React Native 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） React Native 学习路线 结合 React 语法与原生组件桥接，构建接近原生体验的跨平台应用。" [ref=e2766] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754873792049153
+                          - img "React Native 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2767]
+                          - generic [ref=e2768]:
+                            - generic "React Native 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2769]: React Native 学习路线
+                            - generic "结合 React 语法与原生组件桥接，构建接近原生体验的跨平台应用。" [ref=e2770]
+                        - link "鸿蒙应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 鸿蒙应用开发学习路线 掌握 ArkTS、ArkUI 及分布式能力，构建全场景多设备协同应用。" [ref=e2772] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754919958753281
+                          - img "鸿蒙应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2773]
+                          - generic [ref=e2774]:
+                            - generic "鸿蒙应用开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2775]: 鸿蒙应用开发学习路线
+                            - generic "掌握 ArkTS、ArkUI 及分布式能力，构建全场景多设备协同应用。" [ref=e2776]
+                    - generic [ref=e2777]:
+                      - heading "云原生和运维" [level=3] [ref=e2778]
+                      - generic [ref=e2779]:
+                        - link "Docker 容器化学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Docker 容器化学习路线 掌握镜像构建、容器编排及网络配置，实现应用标准化交付与部署。" [ref=e2781] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754953097949186
+                          - img "Docker 容器化学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2782]
+                          - generic [ref=e2783]:
+                            - generic "Docker 容器化学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2784]: Docker 容器化学习路线
+                            - generic "掌握镜像构建、容器编排及网络配置，实现应用标准化交付与部署。" [ref=e2785]
+                        - link "Kubernetes 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Kubernetes 学习路线 掌握 Pod 生命周期、Service 及 Operator，实现大规模容器集群编排。" [ref=e2787] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990754993086443521
+                          - img "Kubernetes 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2788]
+                          - generic [ref=e2789]:
+                            - generic "Kubernetes 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2790]: Kubernetes 学习路线
+                            - generic "掌握 Pod 生命周期、Service 及 Operator，实现大规模容器集群编排。" [ref=e2791]
+                        - link "云原生开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 云原生开发学习路线 掌握微服务、容器化、ServiceMesh 及 Serverless，构建弹性云上应用。" [ref=e2793] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755030541578242
+                          - img "云原生开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2794]
+                          - generic [ref=e2795]:
+                            - generic "云原生开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2796]: 云原生开发学习路线
+                            - generic "掌握微服务、容器化、ServiceMesh 及 Serverless，构建弹性云上应用。" [ref=e2797]
+                        - link "DevOps 工程师学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） DevOps 工程师学习路线 融合开发与运维，掌握自动化流程与监控告警，提升交付速度与质量。" [ref=e2799] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755061927555073
+                          - img "DevOps 工程师学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2800]
+                          - generic [ref=e2801]:
+                            - generic "DevOps 工程师学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2802]: DevOps 工程师学习路线
+                            - generic "融合开发与运维，掌握自动化流程与监控告警，提升交付速度与质量。" [ref=e2803]
+                        - link "CI/CD 持续集成学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） CI/CD 持续集成学习路线 掌握 Jenkins/GitLab CI 流水线配置，实现代码自动化构建与部署。" [ref=e2805] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755091384152066
+                          - img "CI/CD 持续集成学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2806]
+                          - generic [ref=e2807]:
+                            - generic "CI/CD 持续集成学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2808]: CI/CD 持续集成学习路线
+                            - generic "掌握 Jenkins/GitLab CI 流水线配置，实现代码自动化构建与部署。" [ref=e2809]
+                        - link "Linux 运维学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Linux 运维学习路线 掌握 Shell 脚本、系统监控及故障排查，保障服务器稳定高效运行。" [ref=e2811] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190769740849154
+                          - img "Linux 运维学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2812]
+                          - generic [ref=e2813]:
+                            - generic "Linux 运维学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2814]: Linux 运维学习路线
+                            - generic "掌握 Shell 脚本、系统监控及故障排查，保障服务器稳定高效运行。" [ref=e2815]
+                    - generic [ref=e2816]:
+                      - heading "大数据" [level=3] [ref=e2817]
+                      - generic [ref=e2818]:
+                        - link "大数据开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 大数据开发学习路线 掌握 Hadoop 生态、离线/实时计算框架，处理海量数据存储与分析。" [ref=e2820] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755401435492353
+                          - img "大数据开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2821]
+                          - generic [ref=e2822]:
+                            - generic "大数据开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2823]: 大数据开发学习路线
+                            - generic "掌握 Hadoop 生态、离线/实时计算框架，处理海量数据存储与分析。" [ref=e2824]
+                        - link "数据分析学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 数据分析学习路线 掌握 Pandas/NumPy、SQL 及可视化工具，从数据中挖掘商业价值。" [ref=e2826] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755430476853250
+                          - img "数据分析学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2827]
+                          - generic [ref=e2828]:
+                            - generic "数据分析学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2829]: 数据分析学习路线
+                            - generic "掌握 Pandas/NumPy、SQL 及可视化工具，从数据中挖掘商业价值。" [ref=e2830]
+                        - link "数据科学学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 数据科学学习路线 融合统计学、编程与机器学习，通过数据建模解决复杂业务问题。" [ref=e2832] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755460801671169
+                          - img "数据科学学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2833]
+                          - generic [ref=e2834]:
+                            - generic "数据科学学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2835]: 数据科学学习路线
+                            - generic "融合统计学、编程与机器学习，通过数据建模解决复杂业务问题。" [ref=e2836]
+                        - link "数据仓库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 数据仓库学习路线 掌握数仓分层、维度建模及 ETL 流程，构建企业级数据决策中心。" [ref=e2838] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755494561624066
+                          - img "数据仓库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2839]
+                          - generic [ref=e2840]:
+                            - generic "数据仓库学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2841]: 数据仓库学习路线
+                            - generic "掌握数仓分层、维度建模及 ETL 流程，构建企业级数据决策中心。" [ref=e2842]
+                        - link "BI 商业智能学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） BI 商业智能学习路线 掌握数据建模及 Tableau/PowerBI 报表开发，实现数据可视化决策。" [ref=e2844] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755530087378946
+                          - img "BI 商业智能学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2845]
+                          - generic [ref=e2846]:
+                            - generic "BI 商业智能学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2847]: BI 商业智能学习路线
+                            - generic "掌握数据建模及 Tableau/PowerBI 报表开发，实现数据可视化决策。" [ref=e2848]
+                        - link "Spark 大数据学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Spark 大数据学习路线 掌握 RDD/DataFrame、SQL 及 Streaming，实现快速内存级大数据计算。" [ref=e2850] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755555018321921
+                          - img "Spark 大数据学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2851]
+                          - generic [ref=e2852]:
+                            - generic "Spark 大数据学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2853]: Spark 大数据学习路线
+                            - generic "掌握 RDD/DataFrame、SQL 及 Streaming，实现快速内存级大数据计算。" [ref=e2854]
+                        - link "Flink 实时计算学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Flink 实时计算学习路线 掌握 Stateful Functions、窗口及水印机制，实现低延迟流式数据处理。" [ref=e2856] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755584017739778
+                          - img "Flink 实时计算学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2857]
+                          - generic [ref=e2858]:
+                            - generic "Flink 实时计算学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2859]: Flink 实时计算学习路线
+                            - generic "掌握 Stateful Functions、窗口及水印机制，实现低延迟流式数据处理。" [ref=e2860]
+                    - generic [ref=e2861]:
+                      - heading "软件测试" [level=3] [ref=e2862]
+                      - generic [ref=e2863]:
+                        - link "软件测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 软件测试学习路线 掌握黑盒/白盒测试理论及用例设计，保障软件产品质量与稳定性。" [ref=e2865] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755616108359682
+                          - img "软件测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2866]
+                          - generic [ref=e2867]:
+                            - generic "软件测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2868]: 软件测试学习路线
+                            - generic "掌握黑盒/白盒测试理论及用例设计，保障软件产品质量与稳定性。" [ref=e2869]
+                        - link "测试开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 测试开发学习路线 结合编程与测试技术，开发自动化测试框架与工具，提升测试效率。" [ref=e2871] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755654066810882
+                          - img "测试开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2872]
+                          - generic [ref=e2873]:
+                            - generic "测试开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2874]: 测试开发学习路线
+                            - generic "结合编程与测试技术，开发自动化测试框架与工具，提升测试效率。" [ref=e2875]
+                        - link "自动化测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 自动化测试学习路线 掌握 Selenium/Appium 及接口自动化，构建持续回归测试流水线。" [ref=e2877] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755686727856129
+                          - img "自动化测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2878]
+                          - generic [ref=e2879]:
+                            - generic "自动化测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2880]: 自动化测试学习路线
+                            - generic "掌握 Selenium/Appium 及接口自动化，构建持续回归测试流水线。" [ref=e2881]
+                        - link "性能测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 性能测试学习路线 掌握 JMeter/LoadRunner 及性能监控分析，定位系统瓶颈与优化点。" [ref=e2883] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755713848225793
+                          - img "性能测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2884]
+                          - generic [ref=e2885]:
+                            - generic "性能测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2886]: 性能测试学习路线
+                            - generic "掌握 JMeter/LoadRunner 及性能监控分析，定位系统瓶颈与优化点。" [ref=e2887]
+                        - link "接口测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 接口测试学习路线 掌握 Postman 及协议抓包分析，验证后端 API 功能逻辑与可靠性。" [ref=e2889] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755744693137410
+                          - img "接口测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2890]
+                          - generic [ref=e2891]:
+                            - generic "接口测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2892]: 接口测试学习路线
+                            - generic "掌握 Postman 及协议抓包分析，验证后端 API 功能逻辑与可靠性。" [ref=e2893]
+                    - generic [ref=e2894]:
+                      - heading "网络安全" [level=3] [ref=e2895]
+                      - generic [ref=e2896]:
+                        - link "网络安全学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 网络安全学习路线 系统掌握攻防原理、漏洞挖掘及安全加固，构建全方位网络防御体系。" [ref=e2898] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190126624022530
+                          - img "网络安全学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2899]
+                          - generic [ref=e2900]:
+                            - generic "网络安全学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2901]: 网络安全学习路线
+                            - generic "系统掌握攻防原理、漏洞挖掘及安全加固，构建全方位网络防御体系。" [ref=e2902]
+                        - link "Web 安全学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Web 安全学习路线 掌握 SQL 注入、XSS 等常见漏洞原理及防御，构建安全的 Web 应用。" [ref=e2904] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755780780929025
+                          - img "Web 安全学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2905]
+                          - generic [ref=e2906]:
+                            - generic "Web 安全学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2907]: Web 安全学习路线
+                            - generic "掌握 SQL 注入、XSS 等常见漏洞原理及防御，构建安全的 Web 应用。" [ref=e2908]
+                        - link "渗透测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 渗透测试学习路线 模拟黑客攻击手法，通过漏洞扫描与利用，发现系统安全隐患。" [ref=e2910] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755812850577410
+                          - img "渗透测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2911]
+                          - generic [ref=e2912]:
+                            - generic "渗透测试学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2913]: 渗透测试学习路线
+                            - generic "模拟黑客攻击手法，通过漏洞扫描与利用，发现系统安全隐患。" [ref=e2914]
+                        - link "安全开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 安全开发学习路线 掌握 SDL 流程及代码审计，从源头编写安全代码，预防漏洞产生。" [ref=e2916] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755840507817986
+                          - img "安全开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2917]
+                          - generic [ref=e2918]:
+                            - generic "安全开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2919]: 安全开发学习路线
+                            - generic "掌握 SDL 流程及代码审计，从源头编写安全代码，预防漏洞产生。" [ref=e2920]
+                        - link "密码学学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 密码学学习路线 掌握对称/非对称加密、哈希及数字签名，保障数据机密性与完整性。" [ref=e2922] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755870409011202
+                          - img "密码学学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2923]
+                          - generic [ref=e2924]:
+                            - generic "密码学学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2925]: 密码学学习路线
+                            - generic "掌握对称/非对称加密、哈希及数字签名，保障数据机密性与完整性。" [ref=e2926]
+                    - generic [ref=e2927]:
+                      - heading "游戏开发" [level=3] [ref=e2928]
+                      - generic [ref=e2929]:
+                        - link "游戏服务端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 游戏服务端开发学习路线 掌握高并发网络模型、状态同步及数据库设计，支撑海量玩家在线。" [ref=e2931] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755966940917761
+                          - img "游戏服务端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2932]
+                          - generic [ref=e2933]:
+                            - generic "游戏服务端开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2934]: 游戏服务端开发学习路线
+                            - generic "掌握高并发网络模型、状态同步及数据库设计，支撑海量玩家在线。" [ref=e2935]
+                        - link "Unity 游戏开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Unity 游戏开发学习路线 掌握 C# 脚本、物理引擎及 3D 渲染技术，开发跨平台沉浸式游戏。" [ref=e2937] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755898217246722
+                          - img "Unity 游戏开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2938]
+                          - generic [ref=e2939]:
+                            - generic "Unity 游戏开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2940]: Unity 游戏开发学习路线
+                            - generic "掌握 C# 脚本、物理引擎及 3D 渲染技术，开发跨平台沉浸式游戏。" [ref=e2941]
+                        - link "Unreal Engine 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Unreal Engine 学习路线 掌握 C++/蓝图、Lumen 及 Nanite 技术，打造 3A 级次世代游戏画质。" [ref=e2943] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755936897118210
+                          - img "Unreal Engine 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2944]
+                          - generic [ref=e2945]:
+                            - generic "Unreal Engine 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2946]: Unreal Engine 学习路线
+                            - generic "掌握 C++/蓝图、Lumen 及 Nanite 技术，打造 3A 级次世代游戏画质。" [ref=e2947]
+                    - generic [ref=e2948]:
+                      - heading "开发工具" [level=3] [ref=e2949]
+                      - generic [ref=e2950]:
+                        - link "Git & GitHub 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Git & GitHub 学习路线 精通分支管理、代码合并及冲突解决，规范团队协作与版本控制流程。" [ref=e2952] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1789190804671012866
+                          - img "Git & GitHub 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2953]
+                          - generic [ref=e2954]:
+                            - generic "Git & GitHub 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2955]: Git & GitHub 学习路线
+                            - generic "精通分支管理、代码合并及冲突解决，规范团队协作与版本控制流程。" [ref=e2956]
+                        - link "Linux 服务器学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Linux 服务器学习路线 掌握用户管理、权限控制及网络配置，构建安全稳定的服务器环境。" [ref=e2958] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990755996393320449
+                          - img "Linux 服务器学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2959]
+                          - generic [ref=e2960]:
+                            - generic "Linux 服务器学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2961]: Linux 服务器学习路线
+                            - generic "掌握用户管理、权限控制及网络配置，构建安全稳定的服务器环境。" [ref=e2962]
+                        - link "正则表达式学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 正则表达式学习路线 掌握元字符、量词及断言，高效处理文本匹配、查找与替换任务。" [ref=e2964] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990756025048805377
+                          - img "正则表达式学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2965]
+                          - generic [ref=e2966]:
+                            - generic "正则表达式学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2967]: 正则表达式学习路线
+                            - generic "掌握元字符、量词及断言，高效处理文本匹配、查找与替换任务。" [ref=e2968]
+                        - link "Shell 脚本学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Shell 脚本学习路线 掌握变量、流程控制及文本处理工具，实现 Linux 系统管理自动化。" [ref=e2970] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990756051800076290
+                          - img "Shell 脚本学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2971]
+                          - generic [ref=e2972]:
+                            - generic "Shell 脚本学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2973]: Shell 脚本学习路线
+                            - generic "掌握变量、流程控制及文本处理工具，实现 Linux 系统管理自动化。" [ref=e2974]
+                    - generic [ref=e2975]:
+                      - heading "Web3区块链" [level=3] [ref=e2976]
+                      - generic [ref=e2977]:
+                        - link "Web3 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Web3 开发学习路线 掌握去中心化理念、钱包交互及 DApp 开发，探索下一代价值互联网。" [ref=e2979] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990756186445623297
+                          - img "Web3 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2980]
+                          - generic [ref=e2981]:
+                            - generic "Web3 开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2982]: Web3 开发学习路线
+                            - generic "掌握去中心化理念、钱包交互及 DApp 开发，探索下一代价值互联网。" [ref=e2983]
+                        - link "区块链开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 区块链开发学习路线 深入共识机制、P2P 网络及加密算法，构建底层区块链基础设施。" [ref=e2985] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990756125376557057
+                          - img "区块链开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2986]
+                          - generic [ref=e2987]:
+                            - generic "区块链开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2988]: 区块链开发学习路线
+                            - generic "深入共识机制、P2P 网络及加密算法，构建底层区块链基础设施。" [ref=e2989]
+                        - link "智能合约开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） 智能合约开发学习路线 掌握合约编写、部署及安全审计，实现区块链上的可编程业务逻辑。" [ref=e2991] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990756156976443394
+                          - img "智能合约开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2992]
+                          - generic [ref=e2993]:
+                            - generic "智能合约开发学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2994]: 智能合约开发学习路线
+                            - generic "掌握合约编写、部署及安全审计，实现区块链上的可编程业务逻辑。" [ref=e2995]
+                        - link "Solidity 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️） Solidity 学习路线 掌握 EVM 机制、Gas 优化及合约安全，开发以太坊生态去中心化应用。" [ref=e2997] [cursor=pointer]:
+                          - /url: https://www.codefather.cn/course/1789189862986850306/section/1990756223825260546
+                          - img "Solidity 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e2998]
+                          - generic [ref=e2999]:
+                            - generic "Solidity 学习路线 | 26 年最新零基础到精通一条龙（万人收藏⭐️）" [ref=e3000]: Solidity 学习路线
+                            - generic "掌握 EVM 机制、Gas 优化及合约安全，开发以太坊生态去中心化应用。" [ref=e3001]
+          - generic [ref=e3002]:
+            - generic [ref=e3003]:
+              - generic [ref=e3004]:
+                - generic [ref=e3007]: 编程工具箱
+                - generic [ref=e3012]:
+                  - link "video-camera 做项目" [ref=e3014] [cursor=pointer]:
+                    - /url: /project
+                    - img "video-camera" [ref=e3016]:
+                      - img [ref=e3017]
+                    - generic [ref=e3019]: 做项目
+                  - link "edit 写简历" [ref=e3021] [cursor=pointer]:
+                    - /url: https://www.laoyujianli.com/
+                    - img "edit" [ref=e3023]:
+                      - img [ref=e3024]
+                    - generic [ref=e3026]: 写简历
+                  - link "file-text 面试题" [ref=e3028] [cursor=pointer]:
+                    - /url: https://www.mianshiya.com/
+                    - img "file-text" [ref=e3030]:
+                      - img [ref=e3031]
+                    - generic [ref=e3033]: 面试题
+                  - link "video-camera 去面试" [ref=e3035] [cursor=pointer]:
+                    - /url: https://ai.mianshiya.com/
+                    - img "video-camera" [ref=e3037]:
+                      - img [ref=e3038]
+                    - generic [ref=e3040]: 去面试
+                  - link "tool 找工具" [ref=e3042] [cursor=pointer]:
+                    - /url: /tool
+                    - img "tool" [ref=e3044]:
+                      - img [ref=e3045]
+                    - generic [ref=e3047]: 找工具
+                  - link "bug 晒代码" [ref=e3049] [cursor=pointer]:
+                    - /url: https://codecopy.cn
+                    - img "bug" [ref=e3051]:
+                      - img [ref=e3052]
+                    - generic [ref=e3055]: 晒代码
+                  - link "学 AI" [ref=e3057] [cursor=pointer]:
+                    - /url: https://ai.codefather.cn
+                    - img [ref=e3059]
+                    - generic [ref=e3061]: 学 AI
+                  - generic [ref=e3063] [cursor=pointer]:
+                    - img "file" [ref=e3065]:
+                      - img [ref=e3066]
+                    - generic [ref=e3068]: 领资料
+              - generic [ref=e3070]:
+                - generic [ref=e3072]:
+                  - generic [ref=e3074]: 热门文章
+                  - link "更多>" [ref=e3077] [cursor=pointer]:
+                    - /url: /hot/all_hot
+                - generic [ref=e3079]:
+                  - link "1 三本跳槽涨幅超100%，我做对了什么？ 阅读 4.7k · 点赞 60" [ref=e3080] [cursor=pointer]:
+                    - /url: /post/2054078459172376577
+                    - generic [ref=e3083]:
+                      - generic [ref=e3085]: "1"
+                      - generic [ref=e3086]:
+                        - generic [ref=e3088]: 三本跳槽涨幅超100%，我做对了什么？
+                        - generic [ref=e3090]:
+                          - generic [ref=e3092]: 阅读 4.7k
+                          - generic [ref=e3093]: ·
+                          - generic [ref=e3095]: 点赞 60
+                  - link "2 AI应用开发岗面经 阅读 5.2k · 点赞 35" [ref=e3096] [cursor=pointer]:
+                    - /url: /post/2052702976992104450
+                    - generic [ref=e3099]:
+                      - generic [ref=e3101]: "2"
+                      - generic [ref=e3102]:
+                        - generic [ref=e3104]: AI应用开发岗面经
+                        - generic [ref=e3106]:
+                          - generic [ref=e3108]: 阅读 5.2k
+                          - generic [ref=e3109]: ·
+                          - generic [ref=e3111]: 点赞 35
+                  - link "3 两个月的求职历程大分享（包含部分面经和狗屎运小故事） 阅读 3.5k · 点赞 51" [ref=e3112] [cursor=pointer]:
+                    - /url: /post/2052783803625132033
+                    - generic [ref=e3115]:
+                      - generic [ref=e3117]: "3"
+                      - generic [ref=e3118]:
+                        - generic [ref=e3120]: 两个月的求职历程大分享（包含部分面经和狗屎运小故事）
+                        - generic [ref=e3122]:
+                          - generic [ref=e3124]: 阅读 3.5k
+                          - generic [ref=e3125]: ·
+                          - generic [ref=e3127]: 点赞 51
+                  - link "4 吴恩达新的免费 AI 课来了，YYDS！我已经学上了 阅读 2.2k · 点赞 11" [ref=e3128] [cursor=pointer]:
+                    - /url: /post/2052196278510571522
+                    - generic [ref=e3131]:
+                      - generic [ref=e3133]: "4"
+                      - generic [ref=e3134]:
+                        - generic [ref=e3136]: 吴恩达新的免费 AI 课来了，YYDS！我已经学上了
+                        - generic [ref=e3138]:
+                          - generic [ref=e3140]: 阅读 2.2k
+                          - generic [ref=e3141]: ·
+                          - generic [ref=e3143]: 点赞 11
+                  - link "5 AI 时代，程序员还有必要刷算法吗？ 阅读 2.2k · 点赞 14" [ref=e3144] [cursor=pointer]:
+                    - /url: /post/2052635388631076866
+                    - generic [ref=e3147]:
+                      - generic [ref=e3149]: "5"
+                      - generic [ref=e3150]:
+                        - generic [ref=e3152]: AI 时代，程序员还有必要刷算法吗？
+                        - generic [ref=e3154]:
+                          - generic [ref=e3156]: 阅读 2.2k
+                          - generic [ref=e3157]: ·
+                          - generic [ref=e3159]: 点赞 14
+              - generic [ref=e3161]:
+                - generic [ref=e3163]:
+                  - generic [ref=e3165]: 热门题目榜
+                  - link "更多>" [ref=e3168] [cursor=pointer]:
+                    - /url: https://www.mianshiya.com/hot/question
+                - generic [ref=e3170]:
+                  - link "1 说说 Java 中 HashMap 的原理？ 热度 203.6k" [ref=e3171] [cursor=pointer]:
+                    - /url: https://www.mianshiya.com/question/1834107117591187457
+                    - generic [ref=e3174]:
+                      - generic [ref=e3176]: "1"
+                      - generic [ref=e3177]:
+                        - generic [ref=e3179]: 说说 Java 中 HashMap 的原理？
+                        - generic [ref=e3183]: 热度 203.6k
+                  - link "2 MySQL 索引的最左前缀匹配原则是什么？ 热度 149.2k" [ref=e3184] [cursor=pointer]:
+                    - /url: https://www.mianshiya.com/question/1780933295450648578
+                    - generic [ref=e3187]:
+                      - generic [ref=e3189]: "2"
+                      - generic [ref=e3190]:
+                        - generic [ref=e3192]: MySQL 索引的最左前缀匹配原则是什么？
+                        - generic [ref=e3196]: 热度 149.2k
+                  - link "3 MySQL 的索引类型有哪些？ 热度 147.7k" [ref=e3197] [cursor=pointer]:
+                    - /url: https://www.mianshiya.com/question/1780933295438065665
+                    - generic [ref=e3200]:
+                      - generic [ref=e3202]: "3"
+                      - generic [ref=e3203]:
+                        - generic [ref=e3205]: MySQL 的索引类型有哪些？
+                        - generic [ref=e3209]: 热度 147.7k
+                  - link "4 Java 中的序列化和反序列化是什么？ 热度 144.6k" [ref=e3210] [cursor=pointer]:
+                    - /url: https://www.mianshiya.com/question/1780933294448209922
+                    - generic [ref=e3213]:
+                      - generic [ref=e3215]: "4"
+                      - generic [ref=e3216]:
+                        - generic [ref=e3218]: Java 中的序列化和反序列化是什么？
+                        - generic [ref=e3222]: 热度 144.6k
+                  - link "5 Java 中有哪些集合类？请简单介绍 热度 130.4k" [ref=e3223] [cursor=pointer]:
+                    - /url: https://www.mianshiya.com/question/1780933294699868162
+                    - generic [ref=e3226]:
+                      - generic [ref=e3228]: "5"
+                      - generic [ref=e3229]:
+                        - generic [ref=e3231]: Java 中有哪些集合类？请简单介绍
+                        - generic [ref=e3235]: 热度 130.4k
+              - generic [ref=e3248] [cursor=pointer]:
+                - link [ref=e3251]:
+                  - /url: https://pic.code-nav.cn/post_picture/1608440217629360130/9BinQXeWZcXb1QDd.webp
+                  - img [ref=e3252]
+                - generic [ref=e3253]:
+                  - generic [ref=e3254]: 程序员鱼皮公众号
+                  - generic [ref=e3255]: 扫码关注程序员鱼皮公众号，回复【编程资料】领取热门编程路线！
+            - generic [ref=e3256]:
+              - generic [ref=e3258]:
+                - img "usergroup-add" [ref=e3261]:
+                  - img [ref=e3262]
+                - img "wechat" [ref=e3266]:
+                  - img [ref=e3267]
+                - link "question-circle" [ref=e3269] [cursor=pointer]:
+                  - /url: https://www.codefather.cn/tag/%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%BB%BA%E8%AE%AE&%E5%8F%8D%E9%A6%88?current=1&pageSize=10&sortField=createTime&sortOrder=descend&type=all
+                  - img "question-circle" [ref=e3272]:
+                    - img [ref=e3273]
+                - link "下载 APP" [ref=e3276] [cursor=pointer]:
+                  - /url: /download/app
+                  - img "下载 APP" [ref=e3279]
+              - generic [ref=e3281]:
+                - generic [ref=e3282]:
+                  - link "user 站长：程序员鱼皮" [ref=e3283] [cursor=pointer]:
+                    - /url: https://space.bilibili.com/12890453
+                    - img "user" [ref=e3284]:
+                      - img [ref=e3285]
+                    - text: 站长：程序员鱼皮
+                  - link "file-done 老鱼简历" [ref=e3287] [cursor=pointer]:
+                    - /url: https://www.laoyujianli.com/
+                    - img "file-done" [ref=e3288]:
+                      - img [ref=e3289]
+                    - text: 老鱼简历
+                  - link "message 商务合作" [ref=e3291] [cursor=pointer]:
+                    - /url: https://yuyuanweb.feishu.cn/wiki/AOzgw1mOliX6SskAVEicK6u7nDA
+                    - img "message" [ref=e3292]:
+                      - img [ref=e3293]
+                    - text: 商务合作
+                  - link "file-protect 增值电信业务经营许可证" [ref=e3295] [cursor=pointer]:
+                    - /url: https://yuyuanweb.yuque.com/org-wiki-yuyuanweb-zvq1bg/peng0p/ug1kps2sfulwfyf0
+                    - img "file-protect" [ref=e3296]:
+                      - img [ref=e3297]
+                    - text: 增值电信业务经营许可证
+                - generic [ref=e3299]:
+                  - img "copyright" [ref=e3300]:
+                    - img [ref=e3301]
+                  - text: 2026 编程导航 |
+                  - link "沪ICP备19026706号-6" [ref=e3303] [cursor=pointer]:
+                    - /url: https://beian.miit.gov.cn/
+                  - text: ｜
+                  - img "沪公网安备31010602009588号" [ref=e3304]
+                  - link "沪公网安备31010602009588号" [ref=e3305] [cursor=pointer]:
+                    - /url: https://beian.mps.gov.cn/#/query/webSearch?code=31010602009588
+      - generic [ref=e2099]:
+        - img "usergroup-add" [ref=e2102]:
+          - img [ref=e2103]
+        - img "wechat" [ref=e2107]:
+          - img [ref=e2108]
+        - link "question-circle" [ref=e2110] [cursor=pointer]:
+          - /url: https://www.codefather.cn/tag/%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%BB%BA%E8%AE%AE&%E5%8F%8D%E9%A6%88?current=1&pageSize=10&sortField=createTime&sortOrder=descend&type=all
+          - img "question-circle" [ref=e2113]:
+            - img [ref=e2114]
+        - link "下载 APP" [ref=e2117] [cursor=pointer]:
+          - /url: /download/app
+          - img "下载 APP" [ref=e2120]
+      - contentinfo [ref=e2121]:
+        - generic [ref=e2122]:
+          - generic [ref=e2123]:
+            - link "user 站长：程序员鱼皮" [ref=e2124] [cursor=pointer]:
+              - /url: https://space.bilibili.com/12890453
+              - img "user" [ref=e2125]:
+                - img [ref=e2126]
+              - text: 站长：程序员鱼皮
+            - link "file-done 老鱼简历" [ref=e2128] [cursor=pointer]:
+              - /url: https://www.laoyujianli.com/
+              - img "file-done" [ref=e2129]:
+                - img [ref=e2130]
+              - text: 老鱼简历
+            - link "message 商务合作" [ref=e2132] [cursor=pointer]:
+              - /url: https://yuyuanweb.feishu.cn/wiki/AOzgw1mOliX6SskAVEicK6u7nDA
+              - img "message" [ref=e2133]:
+                - img [ref=e2134]
+              - text: 商务合作
+            - link "file-protect 增值电信业务经营许可证" [ref=e2136] [cursor=pointer]:
+              - /url: https://yuyuanweb.yuque.com/org-wiki-yuyuanweb-zvq1bg/peng0p/ug1kps2sfulwfyf0
+              - img "file-protect" [ref=e2137]:
+                - img [ref=e2138]
+              - text: 增值电信业务经营许可证
+          - generic [ref=e2140]:
+            - img "copyright" [ref=e2141]:
+              - img [ref=e2142]
+            - text: 2026 编程导航 |
+            - link "沪ICP备19026706号-6" [ref=e2144] [cursor=pointer]:
+              - /url: https://beian.miit.gov.cn/
+            - text: ｜
+            - img "沪公网安备31010602009588号" [ref=e2145]
+            - link "沪公网安备31010602009588号" [ref=e2146] [cursor=pointer]:
+              - /url: https://beian.mps.gov.cn/#/query/webSearch?code=31010602009588
+  - alert [ref=e2197]: 学编程学习路线 - 编程导航 | 2026年最新程序员学编程指南
+  - menu [ref=e3307]:
+    - menuitem "编程路线" [ref=e3308] [cursor=pointer]:
+      - link "编程路线" [ref=e3310]:
+        - /url: /learn/0/77
+        - generic [ref=e3312]: 编程路线
+    - menuitem "项目教程" [ref=e3313] [cursor=pointer]:
+      - link "项目教程" [ref=e3315]:
+        - /url: /learn/1/79
+        - generic [ref=e3317]: 项目教程
+    - menuitem "求职冲刺" [ref=e3318] [cursor=pointer]:
+      - link "求职冲刺" [ref=e3320]:
+        - /url: /learn/2/98
+        - generic [ref=e3322]: 求职冲刺
+    - menuitem "职场发展" [ref=e3323] [cursor=pointer]:
+      - link "职场发展" [ref=e3325]:
+        - /url: /learn/3/99
+        - generic [ref=e3327]: 职场发展

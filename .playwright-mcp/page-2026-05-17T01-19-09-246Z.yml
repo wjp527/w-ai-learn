@@ -1,0 +1,1640 @@
+- generic [ref=e6]:
+  - banner [ref=e7]:
+    - generic [ref=e9]:
+      - link "编程导航 编程导航" [ref=e12] [cursor=pointer]:
+        - /url: /
+        - img "编程导航" [ref=e13]
+        - generic [ref=e14]: 编程导航
+      - menu [ref=e16]:
+        - menuitem "主页" [ref=e17] [cursor=pointer]:
+          - link "主页" [ref=e19]:
+            - /url: /
+            - generic [ref=e21]: 主页
+        - menuitem "交流" [ref=e22] [cursor=pointer]:
+          - link "交流" [ref=e24]:
+            - /url: /essay
+            - generic [ref=e26]: 交流
+        - menuitem "学习" [ref=e27] [cursor=pointer]:
+          - link "学习" [ref=e30]:
+            - /url: /learn/0/77
+            - generic [ref=e32]: 学习
+        - menuitem "教程 AI 项目" [ref=e33] [cursor=pointer]:
+          - link "教程 AI 项目" [ref=e36]:
+            - /url: /course
+            - generic [ref=e37]:
+              - generic [ref=e39]: 教程
+              - generic [ref=e40]: AI 项目
+        - menuitem "问答" [ref=e41] [cursor=pointer]:
+          - link "问答" [ref=e44]:
+            - /url: /qa
+            - generic [ref=e46]: 问答
+        - menuitem "求职" [ref=e47] [cursor=pointer]:
+          - link "求职" [ref=e50]:
+            - /url: /job/resume
+            - generic [ref=e52]: 求职
+        - menuitem "直播" [ref=e53] [cursor=pointer]:
+          - link "直播" [ref=e56]:
+            - /url: /live
+            - generic [ref=e58]: 直播
+        - menuitem "APP" [ref=e59] [cursor=pointer]:
+          - link "APP" [ref=e61]:
+            - /url: /download/app
+            - generic [ref=e63]: APP
+        - menuitem "AI导航 新" [ref=e64] [cursor=pointer]:
+          - link "AI导航 新" [ref=e66]:
+            - /url: https://ai.codefather.cn
+            - generic [ref=e67]:
+              - generic [ref=e69]: AI导航
+              - generic [ref=e70]: 新
+        - menuitem [ref=e71] [cursor=pointer]
+        - listitem:
+          - menuitem:
+            - img:
+              - img
+      - generic [ref=e75]:
+        - generic [ref=e78] [cursor=pointer]:
+          - textbox [ref=e79]:
+            - /placeholder: 搜索内容
+          - img [ref=e81]:
+            - img [ref=e82]
+        - generic [ref=e85] [cursor=pointer]:
+          - img "编程导航会员" [ref=e86]
+          - generic [ref=e87]: 会员
+        - link "发 布" [ref=e89] [cursor=pointer]:
+          - /url: /add/passage
+          - button "发 布" [ref=e90]:
+            - generic [ref=e91]: 发 布
+        - generic [ref=e94] [cursor=pointer]:
+          - img [ref=e96]
+          - generic [ref=e97]: 登录/注册
+  - main [ref=e98]:
+    - generic [ref=e101]:
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - generic [ref=e105]:
+            - tablist [ref=e106]:
+              - generic [ref=e108]:
+                - tab "编程教程" [selected] [ref=e110] [cursor=pointer]
+                - tab "学习路线" [ref=e112] [cursor=pointer]
+                - tab "项目教程" [ref=e114] [cursor=pointer]
+                - tab "求职攻略" [ref=e116] [cursor=pointer]
+                - tab "AI 教程" [ref=e118] [cursor=pointer]
+            - generic:
+              - generic:
+                - tabpanel
+          - generic [ref=e120]:
+            - generic [ref=e122]:
+              - generic [ref=e123] [cursor=pointer]:
+                - generic [ref=e124]: 热门教程
+                - generic [ref=e125]: HOT
+              - generic [ref=e127] [cursor=pointer]: Java 开发
+              - generic [ref=e129] [cursor=pointer]: 编程语言
+              - generic [ref=e131] [cursor=pointer]: 前端开发
+              - generic [ref=e133] [cursor=pointer]: 后端开发
+              - generic [ref=e135] [cursor=pointer]: 数据库
+              - generic [ref=e137] [cursor=pointer]: AI 人工智能
+              - generic [ref=e139] [cursor=pointer]: 移动开发
+              - generic [ref=e141] [cursor=pointer]: 开发工具
+              - generic [ref=e143] [cursor=pointer]: 计算机基础
+              - generic [ref=e145] [cursor=pointer]: 软件测试
+              - generic [ref=e147] [cursor=pointer]: 运维部署
+              - generic [ref=e149] [cursor=pointer]: 大数据
+            - generic [ref=e151]:
+              - link "更多优质教程" [ref=e153] [cursor=pointer]:
+                - /url: https://www.codefather.cn/course?sortField=priority&tags%5B%5D=%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - heading "热门教程" [level=3] [ref=e156]
+                  - generic [ref=e157]:
+                    - link "Java 教程 Java 教程 一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e159] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803988290715377665
+                      - img "Java 教程" [ref=e160]
+                      - generic [ref=e161]:
+                        - generic "Java 教程" [ref=e162]
+                        - generic "一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e163]
+                    - link "AI 指南 AI 指南 分享 AI 时代下程序员必须掌握的知识，包括 AI 核心概念、AI 实用工具、AI 编程技巧、AI 编程技术，帮你走在时代前沿" [ref=e165] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1907378983347892226
+                      - img "AI 指南" [ref=e166]
+                      - generic [ref=e167]:
+                        - generic "AI 指南" [ref=e168]
+                        - generic "分享 AI 时代下程序员必须掌握的知识，包括 AI 核心概念、AI 实用工具、AI 编程技巧、AI 编程技术，帮你走在时代前沿" [ref=e169]
+                    - link "Go 教程 Go 教程 简洁、高效的静态类型编程语言，特别适合并发编程和构建高性能服务。" [ref=e171] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952325882982400002
+                      - img "Go 教程" [ref=e172]
+                      - generic [ref=e173]:
+                        - generic "Go 教程" [ref=e174]
+                        - generic "简洁、高效的静态类型编程语言，特别适合并发编程和构建高性能服务。" [ref=e175]
+                    - link "Vue3 教程 Vue3 教程 渐进式 JavaScript 框架，用于构建用户界面，以其易用性、高性能和组合式 API 而闻名。" [ref=e177] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312573633679361
+                      - img "Vue3 教程" [ref=e178]
+                      - generic [ref=e179]:
+                        - generic "Vue3 教程" [ref=e180]
+                        - generic "渐进式 JavaScript 框架，用于构建用户界面，以其易用性、高性能和组合式 API 而闻名。" [ref=e181]
+                    - link "C++ 教程 C++ 教程 支持面向对象、泛型编程，广泛用于游戏开发、系统软件和高性能计算。" [ref=e183] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312569338712065
+                      - img "C++ 教程" [ref=e184]
+                      - generic [ref=e185]:
+                        - generic "C++ 教程" [ref=e186]
+                        - generic "支持面向对象、泛型编程，广泛用于游戏开发、系统软件和高性能计算。" [ref=e187]
+                    - link "Python3 教程 Python3 教程 语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e189] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312577043648513
+                      - img "Python3 教程" [ref=e190]
+                      - generic [ref=e191]:
+                        - generic "Python3 教程" [ref=e192]
+                        - generic "语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e193]
+                    - link "Langchain 教程 Langchain 教程 用于构建和组合大语言模型（LLM）应用的框架，帮助开发者轻松创建 AI 代理、RAG 和聊天机器人。" [ref=e195] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312575470784514
+                      - img "Langchain 教程" [ref=e196]
+                      - generic [ref=e197]:
+                        - generic "Langchain 教程" [ref=e198]
+                        - generic "用于构建和组合大语言模型（LLM）应用的框架，帮助开发者轻松创建 AI 代理、RAG 和聊天机器人。" [ref=e199]
+                    - link "Spring AI 教程 Spring AI 教程 Spring 官方推出的 AI 开发模块，旨在简化 Java 应用程序中 AI 功能（如调用 LLM）的集成。" [ref=e201] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312570341150722
+                      - img "Spring AI 教程" [ref=e202]
+                      - generic [ref=e203]:
+                        - generic "Spring AI 教程" [ref=e204]
+                        - generic "Spring 官方推出的 AI 开发模块，旨在简化 Java 应用程序中 AI 功能（如调用 LLM）的集成。" [ref=e205]
+                    - link "RocketMQ 教程 RocketMQ 教程 一款阿里巴巴开源的、低延迟、高可靠的分布式消息队列，广泛用于异步通信和系统解耦。" [ref=e207] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793910027205795841
+                      - img "RocketMQ 教程" [ref=e208]
+                      - generic [ref=e209]:
+                        - generic "RocketMQ 教程" [ref=e210]
+                        - generic "一款阿里巴巴开源的、低延迟、高可靠的分布式消息队列，广泛用于异步通信和系统解耦。" [ref=e211]
+                - generic [ref=e212]:
+                  - heading "Java 开发" [level=3] [ref=e213]
+                  - generic [ref=e214]:
+                    - link "Java 教程 Java 教程 一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e216] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803988290715377665
+                      - img "Java 教程" [ref=e217]
+                      - generic [ref=e218]:
+                        - generic "Java 教程" [ref=e219]
+                        - generic "一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e220]
+                    - link "设计模式教程 设计模式教程 在软件设计中针对特定问题提炼出的、可复用的、经过验证的解决方案，如单例模式、工厂模式。" [ref=e222] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1930517607799193602
+                      - img "设计模式教程" [ref=e223]
+                      - generic [ref=e224]:
+                        - generic "设计模式教程" [ref=e225]
+                        - generic "在软件设计中针对特定问题提炼出的、可复用的、经过验证的解决方案，如单例模式、工厂模式。" [ref=e226]
+                    - link "SpringBoot 教程 SpringBoot 教程 基于 Spring 框架的快速开发脚手架，通过\"约定优于配置\"简化了 Java Web 应用的搭建和部署。" [ref=e228] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1848197151728242690
+                      - img "SpringBoot 教程" [ref=e229]
+                      - generic [ref=e230]:
+                        - generic "SpringBoot 教程" [ref=e231]
+                        - generic "基于 Spring 框架的快速开发脚手架，通过\"约定优于配置\"简化了 Java Web 应用的搭建和部署。" [ref=e232]
+                    - link "Spring 源码教程 Spring 源码教程 开源的 Java 应用框架，提供了控制反转（IoC）和面向切面（AOP）等功能，用于构建企业级应用。" [ref=e234] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1848188422475649025
+                      - img "Spring 源码教程" [ref=e235]
+                      - generic [ref=e236]:
+                        - generic "Spring 源码教程" [ref=e237]
+                        - generic "开源的 Java 应用框架，提供了控制反转（IoC）和面向切面（AOP）等功能，用于构建企业级应用。" [ref=e238]
+                    - link "JVM 教程 JVM 教程 允许 Java 程序\"一次编写，到处运行\"的抽象计算机，负责内存管理和字节码执行。" [ref=e240] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1846802250652950529
+                      - img "JVM 教程" [ref=e241]
+                      - generic [ref=e242]:
+                        - generic "JVM 教程" [ref=e243]
+                        - generic "允许 Java 程序\"一次编写，到处运行\"的抽象计算机，负责内存管理和字节码执行。" [ref=e244]
+                    - link "并发编程 并发编程 多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e246] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1845024280720543746
+                      - img "并发编程" [ref=e247]
+                      - generic [ref=e248]:
+                        - generic "并发编程" [ref=e249]
+                        - generic "多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e250]
+                    - link "并发编程高级教程 并发编程高级教程 并发编程进阶，多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e252] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1845008167655804929
+                      - img "并发编程高级教程" [ref=e253]
+                      - generic [ref=e254]:
+                        - generic "并发编程高级教程" [ref=e255]
+                        - generic "并发编程进阶，多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e256]
+                    - link "设计模式电商实战教程 设计模式电商实战教程 电商业务实战，包括支付、订单、积分、发票、商品等模块。" [ref=e258] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1846822119077502977
+                      - img "设计模式电商实战教程" [ref=e259]
+                      - generic [ref=e260]:
+                        - generic "设计模式电商实战教程" [ref=e261]
+                        - generic "电商业务实战，包括支付、订单、积分、发票、商品等模块。" [ref=e262]
+                - generic [ref=e263]:
+                  - heading "编程语言" [level=3] [ref=e264]
+                  - generic [ref=e265]:
+                    - link "Java 教程 Java 教程 一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e267] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803988290715377665
+                      - img "Java 教程" [ref=e268]
+                      - generic [ref=e269]:
+                        - generic "Java 教程" [ref=e270]
+                        - generic "一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e271]
+                    - link "Go 教程 Go 教程 简洁、高效的静态类型编程语言，特别适合并发编程和构建高性能服务。" [ref=e273] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952325882982400002
+                      - img "Go 教程" [ref=e274]
+                      - generic [ref=e275]:
+                        - generic "Go 教程" [ref=e276]
+                        - generic "简洁、高效的静态类型编程语言，特别适合并发编程和构建高性能服务。" [ref=e277]
+                    - link "Vue3 教程 Vue3 教程 渐进式 JavaScript 框架，用于构建用户界面，以其易用性、高性能和组合式 API 而闻名。" [ref=e279] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312573633679361
+                      - img "Vue3 教程" [ref=e280]
+                      - generic [ref=e281]:
+                        - generic "Vue3 教程" [ref=e282]
+                        - generic "渐进式 JavaScript 框架，用于构建用户界面，以其易用性、高性能和组合式 API 而闻名。" [ref=e283]
+                    - link "JavaScript 教程 JavaScript 教程 轻量级的脚本语言，是 Web 前端开发的核心技术，用于实现网页的动态交互效果。" [ref=e285] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312573176500226
+                      - img "JavaScript 教程" [ref=e286]
+                      - generic [ref=e287]:
+                        - generic "JavaScript 教程" [ref=e288]
+                        - generic "轻量级的脚本语言，是 Web 前端开发的核心技术，用于实现网页的动态交互效果。" [ref=e289]
+                    - link "HTML 教程 HTML 教程 超文本标记语言，用于定义网页结构和内容的基础语言，是所有网页的骨架。" [ref=e291] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952325884861448194
+                      - img "HTML 教程" [ref=e292]
+                      - generic [ref=e293]:
+                        - generic "HTML 教程" [ref=e294]
+                        - generic "超文本标记语言，用于定义网页结构和内容的基础语言，是所有网页的骨架。" [ref=e295]
+                    - link "Node.js 教程 Node.js 教程 基于 Chrome V8 引擎的 JavaScript 运行时环境，使 JavaScript 能够用于服务器端（后端）开发。" [ref=e297] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312574795501570
+                      - img "Node.js 教程" [ref=e298]
+                      - generic [ref=e299]:
+                        - generic "Node.js 教程" [ref=e300]
+                        - generic "基于 Chrome V8 引擎的 JavaScript 运行时环境，使 JavaScript 能够用于服务器端（后端）开发。" [ref=e301]
+                    - link "Python3 教程 Python3 教程 语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e303] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312577043648513
+                      - img "Python3 教程" [ref=e304]
+                      - generic [ref=e305]:
+                        - generic "Python3 教程" [ref=e306]
+                        - generic "语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e307]
+                    - link "从 0 到 1 学 Python 从 0 到 1 学 Python 语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e309] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793909466083418113
+                      - img "从 0 到 1 学 Python" [ref=e310]
+                      - generic [ref=e311]:
+                        - generic "从 0 到 1 学 Python" [ref=e312]
+                        - generic "语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e313]
+                    - link "十分钟速通 Python 十分钟速通 Python 十分钟，让你能读懂 AI 世界的语言" [ref=e315] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1983812860140072962
+                      - img "十分钟速通 Python" [ref=e316]
+                      - generic [ref=e317]:
+                        - generic "十分钟速通 Python" [ref=e318]
+                        - generic "十分钟，让你能读懂 AI 世界的语言" [ref=e319]
+                    - link "C++ 教程 C++ 教程 支持面向对象、泛型编程，广泛用于游戏开发、系统软件和高性能计算。" [ref=e321] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312569338712065
+                      - img "C++ 教程" [ref=e322]
+                      - generic [ref=e323]:
+                        - generic "C++ 教程" [ref=e324]
+                        - generic "支持面向对象、泛型编程，广泛用于游戏开发、系统软件和高性能计算。" [ref=e325]
+                    - link "C 语言教程 C 语言教程 高效、底层的通用编程语言，是许多现代操作系统和编程语言的基础，常用于系统编程。" [ref=e327] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312576452251649
+                      - img "C 语言教程" [ref=e328]
+                      - generic [ref=e329]:
+                        - generic "C 语言教程" [ref=e330]
+                        - generic "高效、底层的通用编程语言，是许多现代操作系统和编程语言的基础，常用于系统编程。" [ref=e331]
+                    - link "C 语言宝典 C 语言宝典 高效、底层的通用编程语言，是许多现代操作系统和编程语言的基础，常用于系统编程。" [ref=e333] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793909019507482625
+                      - img "C 语言宝典" [ref=e334]
+                      - generic [ref=e335]:
+                        - generic "C 语言宝典" [ref=e336]
+                        - generic "高效、底层的通用编程语言，是许多现代操作系统和编程语言的基础，常用于系统编程。" [ref=e337]
+                    - link "小程序教程 小程序教程 在微信、支付宝内运行的应用形态，开发成本低、体验流畅。" [ref=e339] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803989859418628097
+                      - img "小程序教程" [ref=e340]
+                      - generic [ref=e341]:
+                        - generic "小程序教程" [ref=e342]
+                        - generic "在微信、支付宝内运行的应用形态，开发成本低、体验流畅。" [ref=e343]
+                    - link "Rust 教程 Rust 教程 注重性能和内存安全的系统编程语言，通过其所有权系统解决了 C/C++ 中的许多常见 Bug。" [ref=e345] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1810188587095556098
+                      - img "Rust 教程" [ref=e346]
+                      - generic [ref=e347]:
+                        - generic "Rust 教程" [ref=e348]
+                        - generic "注重性能和内存安全的系统编程语言，通过其所有权系统解决了 C/C++ 中的许多常见 Bug。" [ref=e349]
+                    - link "PHP 教程 PHP 教程 开源脚本语言，特别适用于 Web 开发，可以嵌入到 HTML 中使用。" [ref=e351] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1804010008267841537
+                      - img "PHP 教程" [ref=e352]
+                      - generic [ref=e353]:
+                        - generic "PHP 教程" [ref=e354]
+                        - generic "开源脚本语言，特别适用于 Web 开发，可以嵌入到 HTML 中使用。" [ref=e355]
+                - generic [ref=e356]:
+                  - heading "前端开发" [level=3] [ref=e357]
+                  - generic [ref=e358]:
+                    - link "Vue3 教程 Vue3 教程 渐进式 JavaScript 框架，用于构建用户界面，以其易用性、高性能和组合式 API 而闻名。" [ref=e360] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312573633679361
+                      - img "Vue3 教程" [ref=e361]
+                      - generic [ref=e362]:
+                        - generic "Vue3 教程" [ref=e363]
+                        - generic "渐进式 JavaScript 框架，用于构建用户界面，以其易用性、高性能和组合式 API 而闻名。" [ref=e364]
+                    - link "HTML 教程 HTML 教程 超文本标记语言，用于定义网页结构和内容的基础语言，是所有网页的骨架。" [ref=e366] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952325884861448194
+                      - img "HTML 教程" [ref=e367]
+                      - generic [ref=e368]:
+                        - generic "HTML 教程" [ref=e369]
+                        - generic "超文本标记语言，用于定义网页结构和内容的基础语言，是所有网页的骨架。" [ref=e370]
+                    - link "JavaScript 教程 JavaScript 教程 轻量级的脚本语言，是 Web 前端开发的核心技术，用于实现网页的动态交互效果。" [ref=e372] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312573176500226
+                      - img "JavaScript 教程" [ref=e373]
+                      - generic [ref=e374]:
+                        - generic "JavaScript 教程" [ref=e375]
+                        - generic "轻量级的脚本语言，是 Web 前端开发的核心技术，用于实现网页的动态交互效果。" [ref=e376]
+                    - link "Node.js 教程 Node.js 教程 基于 Chrome V8 引擎的 JavaScript 运行时环境，使 JavaScript 能够用于服务器端（后端）开发。" [ref=e378] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312574795501570
+                      - img "Node.js 教程" [ref=e379]
+                      - generic [ref=e380]:
+                        - generic "Node.js 教程" [ref=e381]
+                        - generic "基于 Chrome V8 引擎的 JavaScript 运行时环境，使 JavaScript 能够用于服务器端（后端）开发。" [ref=e382]
+                    - link "CSS 教程 CSS 教程 层叠样式表，用于定义 HTML 元素的外观和布局（如颜色、字体、间距），负责网页的美化。" [ref=e384] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1813529812813037569
+                      - img "CSS 教程" [ref=e385]
+                      - generic [ref=e386]:
+                        - generic "CSS 教程" [ref=e387]
+                        - generic "层叠样式表，用于定义 HTML 元素的外观和布局（如颜色、字体、间距），负责网页的美化。" [ref=e388]
+                    - link "CSS3 教程 CSS3 教程 层叠样式表，用于定义 HTML 元素的外观和布局（如颜色、字体、间距），负责网页的美化。" [ref=e390] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1813532418838970370
+                      - img "CSS3 教程" [ref=e391]
+                      - generic [ref=e392]:
+                        - generic "CSS3 教程" [ref=e393]
+                        - generic "层叠样式表，用于定义 HTML 元素的外观和布局（如颜色、字体、间距），负责网页的美化。" [ref=e394]
+                    - link "小程序教程 小程序教程 在微信、支付宝内运行的应用形态，开发成本低、体验流畅。" [ref=e396] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803989859418628097
+                      - img "小程序教程" [ref=e397]
+                      - generic [ref=e398]:
+                        - generic "小程序教程" [ref=e399]
+                        - generic "在微信、支付宝内运行的应用形态，开发成本低、体验流畅。" [ref=e400]
+                    - link "Less 教程 Less 教程 CSS 预处理器，它扩展了 CSS 语言，增加了变量、混合、函数等特性，使 CSS 更易维护。" [ref=e402] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1813538829291569153
+                      - img "Less 教程" [ref=e403]
+                      - generic [ref=e404]:
+                        - generic "Less 教程" [ref=e405]
+                        - generic "CSS 预处理器，它扩展了 CSS 语言，增加了变量、混合、函数等特性，使 CSS 更易维护。" [ref=e406]
+                - generic [ref=e407]:
+                  - heading "后端开发" [level=3] [ref=e408]
+                  - generic [ref=e409]:
+                    - link "Java 教程 Java 教程 一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e411] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803988290715377665
+                      - img "Java 教程" [ref=e412]
+                      - generic [ref=e413]:
+                        - generic "Java 教程" [ref=e414]
+                        - generic "一种功能强大、跨平台的面向对象编程语言，广泛用于企业级后端开发、安卓应用和大数据。" [ref=e415]
+                    - link "Go 教程 Go 教程 简洁、高效的静态类型编程语言，特别适合并发编程和构建高性能服务。" [ref=e417] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952325882982400002
+                      - img "Go 教程" [ref=e418]
+                      - generic [ref=e419]:
+                        - generic "Go 教程" [ref=e420]
+                        - generic "简洁、高效的静态类型编程语言，特别适合并发编程和构建高性能服务。" [ref=e421]
+                    - link "Python3 教程 Python3 教程 语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e423] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312577043648513
+                      - img "Python3 教程" [ref=e424]
+                      - generic [ref=e425]:
+                        - generic "Python3 教程" [ref=e426]
+                        - generic "语法简洁、易于学习的解释型编程语言，广泛应用于 Web 开发、数据科学、人工智能和自动化脚本。" [ref=e427]
+                    - link "Node.js 教程 Node.js 教程 基于 Chrome V8 引擎的 JavaScript 运行时环境，使 JavaScript 能够用于服务器端（后端）开发。" [ref=e429] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312574795501570
+                      - img "Node.js 教程" [ref=e430]
+                      - generic [ref=e431]:
+                        - generic "Node.js 教程" [ref=e432]
+                        - generic "基于 Chrome V8 引擎的 JavaScript 运行时环境，使 JavaScript 能够用于服务器端（后端）开发。" [ref=e433]
+                    - link "SQL 教程 SQL 教程 结构化查询语言，一种用于管理和操作关系型数据库（如 MySQL）的标准语言，用于增删改查数据。" [ref=e435] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312567451275265
+                      - img "SQL 教程" [ref=e436]
+                      - generic [ref=e437]:
+                        - generic "SQL 教程" [ref=e438]
+                        - generic "结构化查询语言，一种用于管理和操作关系型数据库（如 MySQL）的标准语言，用于增删改查数据。" [ref=e439]
+                    - link "设计模式教程 设计模式教程 在软件设计中针对特定问题提炼出的、可复用的、经过验证的解决方案，如单例模式、工厂模式。" [ref=e441] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1930517607799193602
+                      - img "设计模式教程" [ref=e442]
+                      - generic [ref=e443]:
+                        - generic "设计模式教程" [ref=e444]
+                        - generic "在软件设计中针对特定问题提炼出的、可复用的、经过验证的解决方案，如单例模式、工厂模式。" [ref=e445]
+                    - link "设计模式电商实战教程 设计模式电商实战教程 电商业务实战，包括支付、订单、积分、发票、商品等模块。" [ref=e447] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1846822119077502977
+                      - img "设计模式电商实战教程" [ref=e448]
+                      - generic [ref=e449]:
+                        - generic "设计模式电商实战教程" [ref=e450]
+                        - generic "电商业务实战，包括支付、订单、积分、发票、商品等模块。" [ref=e451]
+                    - link "SpringBoot 教程 SpringBoot 教程 基于 Spring 框架的快速开发脚手架，通过\"约定优于配置\"简化了 Java Web 应用的搭建和部署。" [ref=e453] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1848197151728242690
+                      - img "SpringBoot 教程" [ref=e454]
+                      - generic [ref=e455]:
+                        - generic "SpringBoot 教程" [ref=e456]
+                        - generic "基于 Spring 框架的快速开发脚手架，通过\"约定优于配置\"简化了 Java Web 应用的搭建和部署。" [ref=e457]
+                    - link "Spring 源码教程 Spring 源码教程 开源的 Java 应用框架，提供了控制反转（IoC）和面向切面（AOP）等功能，用于构建企业级应用。" [ref=e459] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1848188422475649025
+                      - img "Spring 源码教程" [ref=e460]
+                      - generic [ref=e461]:
+                        - generic "Spring 源码教程" [ref=e462]
+                        - generic "开源的 Java 应用框架，提供了控制反转（IoC）和面向切面（AOP）等功能，用于构建企业级应用。" [ref=e463]
+                    - link "MySQL Innodb 存储引擎教程 MySQL Innodb 存储引擎教程 详解 Innodb 特性、日志、表空间、索引、调优、事务和原理。" [ref=e465] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1846813512543739905
+                      - img "MySQL Innodb 存储引擎教程" [ref=e466]
+                      - generic [ref=e467]:
+                        - generic "MySQL Innodb 存储引擎教程" [ref=e468]
+                        - generic "详解 Innodb 特性、日志、表空间、索引、调优、事务和原理。" [ref=e469]
+                    - link "RocketMQ 教程 RocketMQ 教程 一款阿里巴巴开源的、低延迟、高可靠的分布式消息队列，广泛用于异步通信和系统解耦。" [ref=e471] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793910027205795841
+                      - img "RocketMQ 教程" [ref=e472]
+                      - generic [ref=e473]:
+                        - generic "RocketMQ 教程" [ref=e474]
+                        - generic "一款阿里巴巴开源的、低延迟、高可靠的分布式消息队列，广泛用于异步通信和系统解耦。" [ref=e475]
+                    - link "Kafka 教程 Kafka 教程 高吞吐量、分布式的发布-订阅消息系统，广泛用于大数据实时流处理和日志收集。" [ref=e477] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1848201615214284801
+                      - img "Kafka 教程" [ref=e478]
+                      - generic [ref=e479]:
+                        - generic "Kafka 教程" [ref=e480]
+                        - generic "高吞吐量、分布式的发布-订阅消息系统，广泛用于大数据实时流处理和日志收集。" [ref=e481]
+                    - link "RabbitMQ 教程 RabbitMQ 教程 实现了 AMQP（高级消息队列协议）的消息代理软件，功能丰富，常用于系统解耦和异步通信。" [ref=e483] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1848200191847862274
+                      - img "RabbitMQ 教程" [ref=e484]
+                      - generic [ref=e485]:
+                        - generic "RabbitMQ 教程" [ref=e486]
+                        - generic "实现了 AMQP（高级消息队列协议）的消息代理软件，功能丰富，常用于系统解耦和异步通信。" [ref=e487]
+                    - link "Nginx 教程 Nginx 教程 高性能的 Web 服务器和反向代理服务器，常用于处理静态文件、负载均衡和 API 网关。" [ref=e489] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312576070569986
+                      - img "Nginx 教程" [ref=e490]
+                      - generic [ref=e491]:
+                        - generic "Nginx 教程" [ref=e492]
+                        - generic "高性能的 Web 服务器和反向代理服务器，常用于处理静态文件、负载均衡和 API 网关。" [ref=e493]
+                    - link "JVM 教程 JVM 教程 允许 Java 程序\"一次编写，到处运行\"的抽象计算机，负责内存管理和字节码执行。" [ref=e495] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1846802250652950529
+                      - img "JVM 教程" [ref=e496]
+                      - generic [ref=e497]:
+                        - generic "JVM 教程" [ref=e498]
+                        - generic "允许 Java 程序\"一次编写，到处运行\"的抽象计算机，负责内存管理和字节码执行。" [ref=e499]
+                    - link "并发编程 并发编程 多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e501] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1845024280720543746
+                      - img "并发编程" [ref=e502]
+                      - generic [ref=e503]:
+                        - generic "并发编程" [ref=e504]
+                        - generic "多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e505]
+                    - link "并发编程高级教程 并发编程高级教程 并发编程进阶，多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e507] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1845008167655804929
+                      - img "并发编程高级教程" [ref=e508]
+                      - generic [ref=e509]:
+                        - generic "并发编程高级教程" [ref=e510]
+                        - generic "并发编程进阶，多个计算任务能在同一时段内（并行或并发）执行，以提高效率。" [ref=e511]
+                    - link "PHP 教程 PHP 教程 开源脚本语言，特别适用于 Web 开发，可以嵌入到 HTML 中使用。" [ref=e513] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1804010008267841537
+                      - img "PHP 教程" [ref=e514]
+                      - generic [ref=e515]:
+                        - generic "PHP 教程" [ref=e516]
+                        - generic "开源脚本语言，特别适用于 Web 开发，可以嵌入到 HTML 中使用。" [ref=e517]
+                - generic [ref=e518]:
+                  - heading "数据库" [level=3] [ref=e519]
+                  - generic [ref=e520]:
+                    - link "SQL 教程 SQL 教程 结构化查询语言，一种用于管理和操作关系型数据库（如 MySQL）的标准语言，用于增删改查数据。" [ref=e522] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312567451275265
+                      - img "SQL 教程" [ref=e523]
+                      - generic [ref=e524]:
+                        - generic "SQL 教程" [ref=e525]
+                        - generic "结构化查询语言，一种用于管理和操作关系型数据库（如 MySQL）的标准语言，用于增删改查数据。" [ref=e526]
+                    - link "MySQL Innodb 存储引擎教程 MySQL Innodb 存储引擎教程 详解 Innodb 特性、日志、表空间、索引、调优、事务和原理。" [ref=e528] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1846813512543739905
+                      - img "MySQL Innodb 存储引擎教程" [ref=e529]
+                      - generic [ref=e530]:
+                        - generic "MySQL Innodb 存储引擎教程" [ref=e531]
+                        - generic "详解 Innodb 特性、日志、表空间、索引、调优、事务和原理。" [ref=e532]
+                - generic [ref=e533]:
+                  - heading "AI 人工智能" [level=3] [ref=e534]
+                  - generic [ref=e535]:
+                    - link "AI 指南 AI 指南 分享 AI 时代下程序员必须掌握的知识，包括 AI 核心概念、AI 实用工具、AI 编程技巧、AI 编程技术，帮你走在时代前沿" [ref=e537] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1907378983347892226
+                      - img "AI 指南" [ref=e538]
+                      - generic [ref=e539]:
+                        - generic "AI 指南" [ref=e540]
+                        - generic "分享 AI 时代下程序员必须掌握的知识，包括 AI 核心概念、AI 实用工具、AI 编程技巧、AI 编程技术，帮你走在时代前沿" [ref=e541]
+                    - link "Langchain 教程 Langchain 教程 用于构建和组合大语言模型（LLM）应用的框架，帮助开发者轻松创建 AI 代理、RAG 和聊天机器人。" [ref=e543] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312575470784514
+                      - img "Langchain 教程" [ref=e544]
+                      - generic [ref=e545]:
+                        - generic "Langchain 教程" [ref=e546]
+                        - generic "用于构建和组合大语言模型（LLM）应用的框架，帮助开发者轻松创建 AI 代理、RAG 和聊天机器人。" [ref=e547]
+                    - link "Spring AI 教程 Spring AI 教程 Spring 官方推出的 AI 开发模块，旨在简化 Java 应用程序中 AI 功能（如调用 LLM）的集成。" [ref=e549] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312570341150722
+                      - img "Spring AI 教程" [ref=e550]
+                      - generic [ref=e551]:
+                        - generic "Spring AI 教程" [ref=e552]
+                        - generic "Spring 官方推出的 AI 开发模块，旨在简化 Java 应用程序中 AI 功能（如调用 LLM）的集成。" [ref=e553]
+                    - link "ChatGPT 教程 ChatGPT 教程 由 OpenAI 开发的基于大语言模型（LLM）的先进聊天机器人，能够进行流畅对话并生成高质量文本。" [ref=e555] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793909210297982978
+                      - img "ChatGPT 教程" [ref=e556]
+                      - generic [ref=e557]:
+                        - generic "ChatGPT 教程" [ref=e558]
+                        - generic "由 OpenAI 开发的基于大语言模型（LLM）的先进聊天机器人，能够进行流畅对话并生成高质量文本。" [ref=e559]
+                    - link "AI 算法模型教程 AI 算法模型教程 AI 算法模型实战案例" [ref=e561] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793909301087887362
+                      - img "AI 算法模型教程" [ref=e562]
+                      - generic [ref=e563]:
+                        - generic "AI 算法模型教程" [ref=e564]
+                        - generic "AI 算法模型实战案例" [ref=e565]
+                - generic [ref=e566]:
+                  - heading "移动开发" [level=3] [ref=e567]
+                  - generic [ref=e568]:
+                    - link "小程序教程 小程序教程 在微信、支付宝内运行的应用形态，开发成本低、体验流畅。" [ref=e570] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803989859418628097
+                      - img "小程序教程" [ref=e571]
+                      - generic [ref=e572]:
+                        - generic "小程序教程" [ref=e573]
+                        - generic "在微信、支付宝内运行的应用形态，开发成本低、体验流畅。" [ref=e574]
+                    - link "鸿蒙 OS 教程 鸿蒙 OS 教程 华为开发的面向万物互联时代的分布式操作系统，旨在为不同设备提供统一、无缝的交互体验。" [ref=e576] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1803997747977510913
+                      - img "鸿蒙 OS 教程" [ref=e577]
+                      - generic [ref=e578]:
+                        - generic "鸿蒙 OS 教程" [ref=e579]
+                        - generic "华为开发的面向万物互联时代的分布式操作系统，旨在为不同设备提供统一、无缝的交互体验。" [ref=e580]
+                - generic [ref=e581]:
+                  - heading "开发工具" [level=3] [ref=e582]
+                  - generic [ref=e583]:
+                    - link "Git 教程 Git 教程 主流分布式版本控制系统，用于追踪代码变更、管理项目历史和支持团队协作开发。" [ref=e585] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952325885599645697
+                      - img "Git 教程" [ref=e586]
+                      - generic [ref=e587]:
+                        - generic "Git 教程" [ref=e588]
+                        - generic "主流分布式版本控制系统，用于追踪代码变更、管理项目历史和支持团队协作开发。" [ref=e589]
+                    - link "程序员 Bug 修复手册 程序员 Bug 修复手册 程序员经典 Bug 和排查方案汇总。" [ref=e591] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1782294507593015298
+                      - img "程序员 Bug 修复手册" [ref=e592]
+                      - generic [ref=e593]:
+                        - generic "程序员 Bug 修复手册" [ref=e594]
+                        - generic "程序员经典 Bug 和排查方案汇总。" [ref=e595]
+                    - link "Sass 教程 Sass 教程 CSS 预处理器，有助于减少 CSS 的重复。" [ref=e597] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1813539625966059522
+                      - img "Sass 教程" [ref=e598]
+                      - generic [ref=e599]:
+                        - generic "Sass 教程" [ref=e600]
+                        - generic "CSS 预处理器，有助于减少 CSS 的重复。" [ref=e601]
+                    - link "Less 教程 Less 教程 CSS 预处理器，它扩展了 CSS 语言，增加了变量、混合、函数等特性，使 CSS 更易维护。" [ref=e603] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1813538829291569153
+                      - img "Less 教程" [ref=e604]
+                      - generic [ref=e605]:
+                        - generic "Less 教程" [ref=e606]
+                        - generic "CSS 预处理器，它扩展了 CSS 语言，增加了变量、混合、函数等特性，使 CSS 更易维护。" [ref=e607]
+                - generic [ref=e608]:
+                  - heading "计算机基础" [level=3] [ref=e609]
+                  - link "设计模式教程 设计模式教程 在软件设计中针对特定问题提炼出的、可复用的、经过验证的解决方案，如单例模式、工厂模式。" [ref=e612] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/course/1930517607799193602
+                    - img "设计模式教程" [ref=e613]
+                    - generic [ref=e614]:
+                      - generic "设计模式教程" [ref=e615]
+                      - generic "在软件设计中针对特定问题提炼出的、可复用的、经过验证的解决方案，如单例模式、工厂模式。" [ref=e616]
+                - generic [ref=e617]:
+                  - heading "软件测试" [level=3] [ref=e618]
+                  - link "软件测试常见问题合集 软件测试常见问题合集 软件测试企业开发常见问题集锦" [ref=e621] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/course/1793909811358523393
+                    - img "软件测试常见问题合集" [ref=e622]
+                    - generic [ref=e623]:
+                      - generic "软件测试常见问题合集" [ref=e624]
+                      - generic "软件测试企业开发常见问题集锦" [ref=e625]
+                - generic [ref=e626]:
+                  - heading "运维部署" [level=3] [ref=e627]
+                  - generic [ref=e628]:
+                    - link "Nginx 教程 Nginx 教程 高性能的 Web 服务器和反向代理服务器，常用于处理静态文件、负载均衡和 API 网关。" [ref=e630] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312576070569986
+                      - img "Nginx 教程" [ref=e631]
+                      - generic [ref=e632]:
+                        - generic "Nginx 教程" [ref=e633]
+                        - generic "高性能的 Web 服务器和反向代理服务器，常用于处理静态文件、负载均衡和 API 网关。" [ref=e634]
+                    - link "Linux 教程 Linux 教程 开源的、类 Unix 操作系统内核，广泛用于服务器、嵌入式设备和云计算环境。" [ref=e636] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1952312568596320257
+                      - img "Linux 教程" [ref=e637]
+                      - generic [ref=e638]:
+                        - generic "Linux 教程" [ref=e639]
+                        - generic "开源的、类 Unix 操作系统内核，广泛用于服务器、嵌入式设备和云计算环境。" [ref=e640]
+                    - link "Linux 源码趣读 Linux 源码趣读 保姆级 Linux 源码详解。" [ref=e642] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1869574493425500161
+                      - img "Linux 源码趣读" [ref=e643]
+                      - generic [ref=e644]:
+                        - generic "Linux 源码趣读" [ref=e645]
+                        - generic "保姆级 Linux 源码详解。" [ref=e646]
+                    - link "CICD 教程 CICD 教程 自动化软件开发流程，通过自动构建、测试和部署代码，来提高交付速度和质量。" [ref=e648] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793910103252721665
+                      - img "CICD 教程" [ref=e649]
+                      - generic [ref=e650]:
+                        - generic "CICD 教程" [ref=e651]
+                        - generic "自动化软件开发流程，通过自动构建、测试和部署代码，来提高交付速度和质量。" [ref=e652]
+                - generic [ref=e653]:
+                  - heading "大数据" [level=3] [ref=e654]
+                  - generic [ref=e655]:
+                    - link "RocketMQ 教程 RocketMQ 教程 一款阿里巴巴开源的、低延迟、高可靠的分布式消息队列，广泛用于异步通信和系统解耦。" [ref=e657] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1793910027205795841
+                      - img "RocketMQ 教程" [ref=e658]
+                      - generic [ref=e659]:
+                        - generic "RocketMQ 教程" [ref=e660]
+                        - generic "一款阿里巴巴开源的、低延迟、高可靠的分布式消息队列，广泛用于异步通信和系统解耦。" [ref=e661]
+                    - link "Kafka 教程 Kafka 教程 高吞吐量、分布式的发布-订阅消息系统，广泛用于大数据实时流处理和日志收集。" [ref=e663] [cursor=pointer]:
+                      - /url: https://www.codefather.cn/course/1848201615214284801
+                      - img "Kafka 教程" [ref=e664]
+                      - generic [ref=e665]:
+                        - generic "Kafka 教程" [ref=e666]
+                        - generic "高吞吐量、分布式的发布-订阅消息系统，广泛用于大数据实时流处理和日志收集。" [ref=e667]
+                - link "更多优质教程" [ref=e669] [cursor=pointer]:
+                  - /url: https://www.codefather.cn/course?sortField=priority&tags%5B%5D=%E7%BC%96%E7%A8%8B%E5%9F%BA%E7%A1%80
+        - generic [ref=e670]:
+          - generic [ref=e672]:
+            - tablist [ref=e673]:
+              - generic [ref=e675]:
+                - tab "关注" [ref=e677] [cursor=pointer]
+                - tab "推荐" [selected] [ref=e679] [cursor=pointer]
+                - tab "精选" [ref=e681] [cursor=pointer]
+                - tab "热门" [ref=e683] [cursor=pointer]
+                - tab "问答" [ref=e685] [cursor=pointer]
+                - tab "求职" [ref=e687] [cursor=pointer]
+                - tab "面经" [ref=e689] [cursor=pointer]
+                - tab "职场" [ref=e691] [cursor=pointer]
+                - tab "项目" [ref=e693] [cursor=pointer]
+            - generic:
+              - generic:
+                - tabpanel
+          - generic [ref=e694]:
+            - list [ref=e700]:
+              - listitem [ref=e701]:
+                - generic [ref=e704]:
+                  - generic [ref=e705]:
+                    - link "立志做两年半的逆袭生" [ref=e707] [cursor=pointer]:
+                      - /url: /user/1857352215471931393
+                      - img "立志做两年半的逆袭生" [ref=e709]
+                    - generic [ref=e711]:
+                      - generic [ref=e712]:
+                        - link "立志做两年半的逆袭生" [ref=e713] [cursor=pointer]:
+                          - /url: /user/1857352215471931393
+                          - generic [ref=e714]: 立志做两年半的逆袭生
+                        - link "等级" [ref=e715] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e716]
+                        - link "vip" [ref=e717] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e718]
+                      - generic [ref=e719]:
+                        - generic [ref=e720]: 今天 00:49
+                        - generic [ref=e721]: ·
+                        - generic [ref=e722]: Java后端
+                  - link "Day 55 ✅ 今天做了：完成了除运筹学外的各科水课作业；学习了2个Java视频 ⏰ 明天计划：复习统计学以应对考试；根据加入的小组内的情况，制定短、长期学习计划；按新计划继续学Java 📚 今日感悟： 今天被运筹学搞内耗了，做了几个小时都没做出来，豆包也是净瞎扯，放弃了，等晚些时间再看有没有时..." [ref=e723] [cursor=pointer]:
+                    - /url: /essay/2055692001088655361
+                    - generic [ref=e726]: Day 55 ✅ 今天做了：完成了除运筹学外的各科水课作业；学习了2个Java视频 ⏰ 明天计划：复习统计学以应对考试；根据加入的小组内的情况，制定短、长期学习计划；按新计划继续学Java 📚 今日感悟： 今天被运筹学搞内耗了，做了几个小时都没做出来，豆包也是净瞎扯，放弃了，等晚些时间再看有没有时...
+                  - text: 查看全文
+                  - generic [ref=e727] [cursor=pointer]:
+                    - generic [ref=e728]:
+                      - img "message" [ref=e729]:
+                        - img [ref=e730]
+                      - generic [ref=e732]: 加油鸭：
+                    - generic [ref=e733]: 坚持打卡超棒！运筹学先放一放，Java小组起步顺利更值得开心～抱大腿不如一起成长，稳住节奏！
+                  - link "学习打卡" [ref=e737] [cursor=pointer]:
+                    - /url: /tag/学习打卡
+                  - generic [ref=e739]:
+                    - generic [ref=e741] [cursor=pointer]:
+                      - img "like" [ref=e743]:
+                        - img [ref=e744]
+                      - generic [ref=e746]: "1"
+                    - generic [ref=e748] [cursor=pointer]:
+                      - img "message" [ref=e750]:
+                        - img [ref=e751]
+                      - generic [ref=e753]: "1"
+                    - generic [ref=e755] [cursor=pointer]:
+                      - img "star" [ref=e757]:
+                        - img [ref=e758]
+                      - generic [ref=e760]: "1"
+                    - generic [ref=e762]:
+                      - img "export" [ref=e764]:
+                        - img [ref=e765]
+                      - generic [ref=e767]: 分享
+                    - button "ellipsis" [ref=e770] [cursor=pointer]:
+                      - img "ellipsis" [ref=e772]:
+                        - img [ref=e773]
+              - listitem [ref=e775]:
+                - generic [ref=e778]:
+                  - generic [ref=e779]:
+                    - link "进击的野人" [ref=e781] [cursor=pointer]:
+                      - /url: /user/2029541670814498817
+                      - img "进击的野人" [ref=e783]
+                    - generic [ref=e785]:
+                      - generic [ref=e786]:
+                        - link "进击的野人" [ref=e787] [cursor=pointer]:
+                          - /url: /user/2029541670814498817
+                          - generic [ref=e788]: 进击的野人
+                        - link "等级" [ref=e789] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e790]
+                        - link "vip" [ref=e791] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e792]
+                      - generic [ref=e793]:
+                        - generic [ref=e794]: 今天 00:17
+                        - generic [ref=e795]: ·
+                        - generic [ref=e796]: 全栈开发
+                  - link "Day 25 ~ Day 26 ✅ 今天做了：期末复习，优化用户中心项目，学习怎么部署项目 ⏰ 明天计划：跟今天一样 📚 今日感悟：期末考试也是直接2天速通好吧🦾💪" [ref=e797] [cursor=pointer]:
+                    - /url: /essay/2055684032699584514
+                    - generic [ref=e800]: Day 25 ~ Day 26 ✅ 今天做了：期末复习，优化用户中心项目，学习怎么部署项目 ⏰ 明天计划：跟今天一样 📚 今日感悟：期末考试也是直接2天速通好吧🦾💪
+                  - link "学习打卡" [ref=e804] [cursor=pointer]:
+                    - /url: /tag/学习打卡
+                  - generic [ref=e806]:
+                    - generic [ref=e808] [cursor=pointer]:
+                      - img "like" [ref=e810]:
+                        - img [ref=e811]
+                      - generic [ref=e813]: "0"
+                    - generic [ref=e815] [cursor=pointer]:
+                      - img "message" [ref=e817]:
+                        - img [ref=e818]
+                      - generic [ref=e820]: "0"
+                    - generic [ref=e822] [cursor=pointer]:
+                      - img "star" [ref=e824]:
+                        - img [ref=e825]
+                      - generic [ref=e827]: "0"
+                    - generic [ref=e829]:
+                      - img "export" [ref=e831]:
+                        - img [ref=e832]
+                      - generic [ref=e834]: 分享
+                    - button "ellipsis" [ref=e837] [cursor=pointer]:
+                      - img "ellipsis" [ref=e839]:
+                        - img [ref=e840]
+              - listitem [ref=e842]:
+                - generic [ref=e845]:
+                  - generic [ref=e846]:
+                    - link "墨白吖" [ref=e848] [cursor=pointer]:
+                      - /url: /user/1630830171030368257
+                      - img "墨白吖" [ref=e850]
+                    - generic [ref=e852]:
+                      - generic [ref=e853]:
+                        - link "墨白吖" [ref=e854] [cursor=pointer]:
+                          - /url: /user/1630830171030368257
+                          - generic [ref=e855]: 墨白吖
+                        - link "等级" [ref=e856] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e857]
+                        - link "vip" [ref=e858] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e859]
+                      - generic [ref=e860]:
+                        - generic [ref=e861]: 今天 00:00
+                        - generic [ref=e862]: ·
+                        - generic [ref=e863]: 若不如意，一步一步努力，终会如意
+                  - link "今日总结 今天做了什么？ 今天学习了springboot项目，学到了ssmp整合，前后端调用，异常信息，这个比较基础难过😔 git在idea中冲突怎么办..." [ref=e864] [cursor=pointer]:
+                    - /url: /essay/2055679864194748418
+                    - generic [ref=e867]: 今日总结 今天做了什么？ 今天学习了springboot项目，学到了ssmp整合，前后端调用，异常信息，这个比较基础难过😔 git在idea中冲突怎么办...
+                  - text: 查看全文
+                  - generic [ref=e868] [cursor=pointer]:
+                    - generic [ref=e869]:
+                      - img "message" [ref=e870]:
+                        - img [ref=e871]
+                      - generic [ref=e873]: 加油鸭：
+                    - generic [ref=e874]: 学SSMP和异常处理超实用！加班虽累，但你主动沉淀经验的样子闪闪发光～
+                  - link "学习打卡" [ref=e878] [cursor=pointer]:
+                    - /url: /tag/学习打卡
+                  - generic [ref=e880]:
+                    - generic [ref=e882] [cursor=pointer]:
+                      - img "like" [ref=e884]:
+                        - img [ref=e885]
+                      - generic [ref=e887]: "2"
+                    - generic [ref=e889] [cursor=pointer]:
+                      - img "message" [ref=e891]:
+                        - img [ref=e892]
+                      - generic [ref=e894]: "1"
+                    - generic [ref=e896] [cursor=pointer]:
+                      - img "star" [ref=e898]:
+                        - img [ref=e899]
+                      - generic [ref=e901]: "1"
+                    - generic [ref=e903]:
+                      - img "export" [ref=e905]:
+                        - img [ref=e906]
+                      - generic [ref=e908]: 分享
+                    - button "ellipsis" [ref=e911] [cursor=pointer]:
+                      - img "ellipsis" [ref=e913]:
+                        - img [ref=e914]
+              - listitem [ref=e916]:
+                - generic [ref=e919]:
+                  - generic [ref=e920]:
+                    - link "剑晓逐风尘" [ref=e922] [cursor=pointer]:
+                      - /url: /user/1997887246195302401
+                      - img "剑晓逐风尘" [ref=e924]
+                    - generic [ref=e926]:
+                      - generic [ref=e927]:
+                        - link "剑晓逐风尘" [ref=e928] [cursor=pointer]:
+                          - /url: /user/1997887246195302401
+                          - generic [ref=e929]: 剑晓逐风尘
+                        - link "等级" [ref=e930] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e931]
+                      - generic [ref=e932]:
+                        - generic [ref=e933]: 昨天 23:58
+                        - generic [ref=e934]: ·
+                        - generic [ref=e935]: 数据挖掘
+                  - link "网站搜索能不能改成AI搜索？感觉这种模糊搜索有点鸡肋。鱼皮的能力相当可靠，我觉得已经关注四年了。（doge）" [ref=e936] [cursor=pointer]:
+                    - /url: /essay/2055679189419315202
+                    - generic [ref=e939]: 网站搜索能不能改成AI搜索？感觉这种模糊搜索有点鸡肋。鱼皮的能力相当可靠，我觉得已经关注四年了。（doge）
+                  - link "AI" [ref=e943] [cursor=pointer]:
+                    - /url: /tag/AI
+                  - generic [ref=e945]:
+                    - generic [ref=e947] [cursor=pointer]:
+                      - img "like" [ref=e949]:
+                        - img [ref=e950]
+                      - generic [ref=e952]: "1"
+                    - generic [ref=e954] [cursor=pointer]:
+                      - img "message" [ref=e956]:
+                        - img [ref=e957]
+                      - generic [ref=e959]: "0"
+                    - generic [ref=e961] [cursor=pointer]:
+                      - img "star" [ref=e963]:
+                        - img [ref=e964]
+                      - generic [ref=e966]: "0"
+                    - generic [ref=e968]:
+                      - img "export" [ref=e970]:
+                        - img [ref=e971]
+                      - generic [ref=e973]: 分享
+                    - button "ellipsis" [ref=e976] [cursor=pointer]:
+                      - img "ellipsis" [ref=e978]:
+                        - img [ref=e979]
+              - listitem [ref=e981]:
+                - generic [ref=e984]:
+                  - generic [ref=e985]:
+                    - link "qpeter" [ref=e987] [cursor=pointer]:
+                      - /url: /user/1935581931163131906
+                      - img "qpeter" [ref=e989]
+                    - generic [ref=e991]:
+                      - generic [ref=e992]:
+                        - link "qpeter" [ref=e993] [cursor=pointer]:
+                          - /url: /user/1935581931163131906
+                          - generic [ref=e994]: qpeter
+                        - link "等级" [ref=e995] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e996]
+                        - link "vip" [ref=e997] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e998]
+                      - generic [ref=e999]:
+                        - generic [ref=e1000]: 昨天 23:54
+                        - generic [ref=e1001]: ·
+                        - generic [ref=e1002]: Java后端
+                  - link "✅ 今天做了 1. 刷了三小时八股 2. 看了一个面试直播回放 3. 思考八股体系问题 ⏰ 明天计划：..." [ref=e1003] [cursor=pointer]:
+                    - /url: /essay/2055678238952280065
+                    - generic [ref=e1006]: ✅ 今天做了 1. 刷了三小时八股 2. 看了一个面试直播回放 3. 思考八股体系问题 ⏰ 明天计划：...
+                  - text: 查看全文
+                  - generic [ref=e1007] [cursor=pointer]:
+                    - generic [ref=e1008]:
+                      - img "message" [ref=e1009]:
+                        - img [ref=e1010]
+                      - generic [ref=e1012]: 加油鸭：
+                    - generic [ref=e1013]: 太棒了！主动串联知识、追问底层原理，这种深度思考正是体系化学习的关键，坚持下去，知识网会越来越清晰！
+                  - link "学习打卡" [ref=e1017] [cursor=pointer]:
+                    - /url: /tag/学习打卡
+                  - generic [ref=e1019]:
+                    - generic [ref=e1021] [cursor=pointer]:
+                      - img "like" [ref=e1023]:
+                        - img [ref=e1024]
+                      - generic [ref=e1026]: "3"
+                    - generic [ref=e1028] [cursor=pointer]:
+                      - img "message" [ref=e1030]:
+                        - img [ref=e1031]
+                      - generic [ref=e1033]: "1"
+                    - generic [ref=e1035] [cursor=pointer]:
+                      - img "star" [ref=e1037]:
+                        - img [ref=e1038]
+                      - generic [ref=e1040]: "1"
+                    - generic [ref=e1042]:
+                      - img "export" [ref=e1044]:
+                        - img [ref=e1045]
+                      - generic [ref=e1047]: 分享
+                    - button "ellipsis" [ref=e1050] [cursor=pointer]:
+                      - img "ellipsis" [ref=e1052]:
+                        - img [ref=e1053]
+              - listitem [ref=e1055]:
+                - generic [ref=e1058]:
+                  - generic [ref=e1059]:
+                    - link "大悟" [ref=e1061] [cursor=pointer]:
+                      - /url: /user/2007819331559256066
+                      - img "大悟" [ref=e1063]
+                    - generic [ref=e1065]:
+                      - generic [ref=e1066]:
+                        - link "大悟" [ref=e1067] [cursor=pointer]:
+                          - /url: /user/2007819331559256066
+                          - generic [ref=e1068]: 大悟
+                        - link "等级" [ref=e1069] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e1070]
+                        - link "vip" [ref=e1071] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e1072]
+                      - generic [ref=e1073]:
+                        - generic [ref=e1074]: 昨天 23:12
+                        - generic [ref=e1075]: ·
+                        - generic [ref=e1076]: Java后端
+                  - link "Day 1 ✅ 今天做了：今天完善了一下项目，也算是解决后患了吧，今天也是发现自己有很多地方还是不理解，时间紧任务重，后面的内容也要加紧完成了。 ⏰ 明天计划： 📚 今日感悟：" [ref=e1077] [cursor=pointer]:
+                    - /url: /essay/2055667747160870914
+                    - generic [ref=e1080]: Day 1 ✅ 今天做了：今天完善了一下项目，也算是解决后患了吧，今天也是发现自己有很多地方还是不理解，时间紧任务重，后面的内容也要加紧完成了。 ⏰ 明天计划： 📚 今日感悟：
+                  - link "训练营打卡" [ref=e1084] [cursor=pointer]:
+                    - /url: /tag/训练营打卡
+                  - generic [ref=e1086]:
+                    - generic [ref=e1088] [cursor=pointer]:
+                      - img "like" [ref=e1090]:
+                        - img [ref=e1091]
+                      - generic [ref=e1093]: "0"
+                    - generic [ref=e1095] [cursor=pointer]:
+                      - img "message" [ref=e1097]:
+                        - img [ref=e1098]
+                      - generic [ref=e1100]: "0"
+                    - generic [ref=e1102] [cursor=pointer]:
+                      - img "star" [ref=e1104]:
+                        - img [ref=e1105]
+                      - generic [ref=e1107]: "0"
+                    - generic [ref=e1109]:
+                      - img "export" [ref=e1111]:
+                        - img [ref=e1112]
+                      - generic [ref=e1114]: 分享
+                    - button "ellipsis" [ref=e1117] [cursor=pointer]:
+                      - img "ellipsis" [ref=e1119]:
+                        - img [ref=e1120]
+              - listitem [ref=e1122]:
+                - generic [ref=e1125]:
+                  - generic [ref=e1126]:
+                    - link "安然的尾巴" [ref=e1128] [cursor=pointer]:
+                      - /url: /user/1674251538920378369
+                      - img "安然的尾巴" [ref=e1130]
+                    - generic [ref=e1132]:
+                      - generic [ref=e1133]:
+                        - link "安然的尾巴" [ref=e1134] [cursor=pointer]:
+                          - /url: /user/1674251538920378369
+                          - generic [ref=e1135]: 安然的尾巴
+                        - link "等级" [ref=e1136] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e1137]
+                        - link "vip" [ref=e1138] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e1139]
+                      - generic [ref=e1141]: 昨天 23:12
+                  - link "Day 1 ✅ 今天做了：优先把提示词工程的文章看了，因为可以直接用于辅助当前工作，挤出更多时间来学习 ⏰ 明天计划：实操提示词工程 📚 今日感悟：提示词工程本质上就是如何设计项目，需要把脑子的思路给整理成提示词" [ref=e1142] [cursor=pointer]:
+                    - /url: /essay/2055667602197336065
+                    - generic [ref=e1145]: Day 1 ✅ 今天做了：优先把提示词工程的文章看了，因为可以直接用于辅助当前工作，挤出更多时间来学习 ⏰ 明天计划：实操提示词工程 📚 今日感悟：提示词工程本质上就是如何设计项目，需要把脑子的思路给整理成提示词
+                  - generic [ref=e1146] [cursor=pointer]:
+                    - generic [ref=e1147]:
+                      - img "message" [ref=e1148]:
+                        - img [ref=e1149]
+                      - generic [ref=e1151]: 加油鸭：
+                    - generic [ref=e1152]: 把提示词当项目设计，这个视角太棒了！坚持实操，进步肉眼可见～
+                  - link "训练营打卡" [ref=e1156] [cursor=pointer]:
+                    - /url: /tag/训练营打卡
+                  - generic [ref=e1158]:
+                    - generic [ref=e1160] [cursor=pointer]:
+                      - img "like" [ref=e1162]:
+                        - img [ref=e1163]
+                      - generic [ref=e1165]: "1"
+                    - generic [ref=e1167] [cursor=pointer]:
+                      - img "message" [ref=e1169]:
+                        - img [ref=e1170]
+                      - generic [ref=e1172]: "1"
+                    - generic [ref=e1174] [cursor=pointer]:
+                      - img "star" [ref=e1176]:
+                        - img [ref=e1177]
+                      - generic [ref=e1179]: "1"
+                    - generic [ref=e1181]:
+                      - img "export" [ref=e1183]:
+                        - img [ref=e1184]
+                      - generic [ref=e1186]: 分享
+                    - button "ellipsis" [ref=e1189] [cursor=pointer]:
+                      - img "ellipsis" [ref=e1191]:
+                        - img [ref=e1192]
+              - listitem [ref=e1194]:
+                - generic [ref=e1197]:
+                  - generic [ref=e1198]:
+                    - link "X" [ref=e1200] [cursor=pointer]:
+                      - /url: /user/1877283446951194625
+                      - img "X" [ref=e1202]
+                    - generic [ref=e1204]:
+                      - generic [ref=e1205]:
+                        - link "X" [ref=e1206] [cursor=pointer]:
+                          - /url: /user/1877283446951194625
+                          - generic [ref=e1207]: X
+                        - link "等级" [ref=e1208] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e1209]
+                        - link "vip" [ref=e1210] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e1211]
+                      - generic [ref=e1212]:
+                        - generic [ref=e1213]: 昨天 22:58
+                        - generic [ref=e1214]: ·
+                        - generic [ref=e1215]: Java后端
+                  - link "Day 60 ✅ 今天做了： 1. 背单词√ 2. 复习-MySQL：√ 1. 元数据..." [ref=e1216] [cursor=pointer]:
+                    - /url: /essay/2055664291633188865
+                    - generic [ref=e1219]: Day 60 ✅ 今天做了： 1. 背单词√ 2. 复习-MySQL：√ 1. 元数据...
+                  - text: 查看全文
+                  - generic [ref=e1220] [cursor=pointer]:
+                    - generic [ref=e1221]:
+                      - img "message" [ref=e1222]:
+                        - img [ref=e1223]
+                      - generic [ref=e1225]: 加油鸭：
+                    - generic [ref=e1226]: 坚持61天太棒了！MySQL和Git复习扎实，单词记忆也在稳步提升，为你持续进步点赞！
+                  - link "学习打卡" [ref=e1230] [cursor=pointer]:
+                    - /url: /tag/学习打卡
+                  - generic [ref=e1232]:
+                    - generic [ref=e1234] [cursor=pointer]:
+                      - img "like" [ref=e1236]:
+                        - img [ref=e1237]
+                      - generic [ref=e1239]: "1"
+                    - generic [ref=e1241] [cursor=pointer]:
+                      - img "message" [ref=e1243]:
+                        - img [ref=e1244]
+                      - generic [ref=e1246]: "1"
+                    - generic [ref=e1248] [cursor=pointer]:
+                      - img "star" [ref=e1250]:
+                        - img [ref=e1251]
+                      - generic [ref=e1253]: "1"
+                    - generic [ref=e1255]:
+                      - img "export" [ref=e1257]:
+                        - img [ref=e1258]
+                      - generic [ref=e1260]: 分享
+                    - button "ellipsis" [ref=e1263] [cursor=pointer]:
+                      - img "ellipsis" [ref=e1265]:
+                        - img [ref=e1266]
+              - listitem [ref=e1268]:
+                - generic [ref=e1271]:
+                  - generic [ref=e1272]:
+                    - link "吃遍全国汉堡" [ref=e1274] [cursor=pointer]:
+                      - /url: /user/1608639807578177538
+                      - img "吃遍全国汉堡" [ref=e1276]
+                    - generic [ref=e1278]:
+                      - generic [ref=e1279]:
+                        - link "吃遍全国汉堡" [ref=e1280] [cursor=pointer]:
+                          - /url: /user/1608639807578177538
+                          - generic [ref=e1281]: 吃遍全国汉堡
+                        - link "等级" [ref=e1282] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e1283]
+                        - link "vip" [ref=e1284] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e1285]
+                      - generic [ref=e1286]:
+                        - generic [ref=e1287]: 昨天 22:51
+                        - generic [ref=e1288]: ·
+                        - generic [ref=e1289]: 后端
+                  - link "Claude 还是太强了，总能给我一些意想不到的惊喜，我原本只想自己做个 RSS app 部署到 nas 上，没想到 Claude 会把它和我开发的 Notus 联动起来，产品思维很强啊，卧槽了" [ref=e1290] [cursor=pointer]:
+                    - /url: /essay/2055662524711325698
+                    - generic [ref=e1293]: Claude 还是太强了，总能给我一些意想不到的惊喜，我原本只想自己做个 RSS app 部署到 nas 上，没想到 Claude 会把它和我开发的 Notus 联动起来，产品思维很强啊，卧槽了
+                  - generic [ref=e1301]:
+                    - generic [ref=e1303] [cursor=pointer]:
+                      - img "like" [ref=e1305]:
+                        - img [ref=e1306]
+                      - generic [ref=e1308]: "1"
+                    - generic [ref=e1310] [cursor=pointer]:
+                      - img "message" [ref=e1312]:
+                        - img [ref=e1313]
+                      - generic [ref=e1315]: "0"
+                    - generic [ref=e1317] [cursor=pointer]:
+                      - img "star" [ref=e1319]:
+                        - img [ref=e1320]
+                      - generic [ref=e1322]: "0"
+                    - generic [ref=e1324]:
+                      - img "export" [ref=e1326]:
+                        - img [ref=e1327]
+                      - generic [ref=e1329]: 分享
+                    - button "ellipsis" [ref=e1332] [cursor=pointer]:
+                      - img "ellipsis" [ref=e1334]:
+                        - img [ref=e1335]
+              - listitem [ref=e1337]:
+                - generic [ref=e1340]:
+                  - generic [ref=e1341]:
+                    - link "王成" [ref=e1343] [cursor=pointer]:
+                      - /url: /user/2031542910926807041
+                      - img "王成" [ref=e1345]
+                    - generic [ref=e1347]:
+                      - generic [ref=e1348]:
+                        - link "王成" [ref=e1349] [cursor=pointer]:
+                          - /url: /user/2031542910926807041
+                          - generic [ref=e1350]: 王成
+                        - link "等级" [ref=e1351] [cursor=pointer]:
+                          - /url: /post/1620297481155788801
+                          - img "等级" [ref=e1352]
+                        - link "vip" [ref=e1353] [cursor=pointer]:
+                          - /url: /vip
+                          - img "vip" [ref=e1354]
+                      - generic [ref=e1355]:
+                        - generic [ref=e1356]: 昨天 22:50
+                        - generic [ref=e1357]: ·
+                        - generic [ref=e1358]: 前端开发
+                  - link "day37 今天把习题做完了，然后租房系统自己不看视频敲了一遍，加深代码理解，明天把习题讲解看完，加深理解以及纠错" [ref=e1359] [cursor=pointer]:
+                    - /url: /essay/2055662264073080834
+                    - generic [ref=e1362]: day37 今天把习题做完了，然后租房系统自己不看视频敲了一遍，加深代码理解，明天把习题讲解看完，加深理解以及纠错
+                  - generic [ref=e1364]:
+                    - generic [ref=e1366] [cursor=pointer]:
+                      - img "like" [ref=e1368]:
+                        - img [ref=e1369]
+                      - generic [ref=e1371]: "0"
+                    - generic [ref=e1373] [cursor=pointer]:
+                      - img "message" [ref=e1375]:
+                        - img [ref=e1376]
+                      - generic [ref=e1378]: "0"
+                    - generic [ref=e1380] [cursor=pointer]:
+                      - img "star" [ref=e1382]:
+                        - img [ref=e1383]
+                      - generic [ref=e1385]: "0"
+                    - generic [ref=e1387]:
+                      - img "export" [ref=e1389]:
+                        - img [ref=e1390]
+                      - generic [ref=e1392]: 分享
+                    - button "ellipsis" [ref=e1395] [cursor=pointer]:
+                      - img "ellipsis" [ref=e1397]:
+                        - img [ref=e1398]
+            - list [ref=e1400]:
+              - listitem "上一页" [ref=e1401]:
+                - button "left" [disabled] [ref=e1402]:
+                  - img "left" [ref=e1403]:
+                    - img [ref=e1404]
+              - listitem "1" [ref=e1406] [cursor=pointer]:
+                - link "1" [ref=e1407]:
+                  - /url: "?current=1"
+              - listitem "2" [ref=e1408] [cursor=pointer]:
+                - link "2" [ref=e1409]:
+                  - /url: "?current=2"
+              - listitem "3" [ref=e1410] [cursor=pointer]:
+                - link "3" [ref=e1411]:
+                  - /url: "?current=3"
+              - listitem "4" [ref=e1412] [cursor=pointer]:
+                - link "4" [ref=e1413]:
+                  - /url: "?current=4"
+              - listitem "5" [ref=e1414] [cursor=pointer]:
+                - link "5" [ref=e1415]:
+                  - /url: "?current=5"
+              - listitem "向后 5 页" [ref=e1416] [cursor=pointer]:
+                - generic [ref=e1418]:
+                  - img "double-right" [ref=e1419]:
+                    - img [ref=e1420]
+                  - generic [ref=e1422]: •••
+              - listitem "1000" [ref=e1423] [cursor=pointer]:
+                - link "1000" [ref=e1424]:
+                  - /url: "?current=1000"
+              - listitem "下一页" [ref=e1425] [cursor=pointer]:
+                - button "right" [ref=e1426]:
+                  - img "right" [ref=e1427]:
+                    - img [ref=e1428]
+      - generic [ref=e1430]:
+        - generic [ref=e1431]:
+          - generic [ref=e1436]:
+            - generic [ref=e1437]:
+              - link "project 学编程" [ref=e1439] [cursor=pointer]:
+                - /url: /learn?category=77&type=0
+                - img "project" [ref=e1441]:
+                  - img [ref=e1442]
+                - generic [ref=e1444]: 学编程
+              - link "video-camera 做项目" [ref=e1446] [cursor=pointer]:
+                - /url: /course
+                - img "video-camera" [ref=e1448]:
+                  - img [ref=e1449]
+                - generic [ref=e1451]: 做项目
+              - link "edit 写简历" [ref=e1453] [cursor=pointer]:
+                - /url: https://www.laoyujianli.com/
+                - img "edit" [ref=e1455]:
+                  - img [ref=e1456]
+                - generic [ref=e1458]: 写简历
+              - link "file-text 面试题" [ref=e1460] [cursor=pointer]:
+                - /url: https://www.mianshiya.com/
+                - img "file-text" [ref=e1462]:
+                  - img [ref=e1463]
+                - generic [ref=e1465]: 面试题
+              - link "找工具" [ref=e1467] [cursor=pointer]:
+                - /url: /tool
+                - img [ref=e1469]
+                - generic [ref=e1471]: 找工具
+              - link "去面试" [ref=e1473] [cursor=pointer]:
+                - /url: https://ai.mianshiya.com/
+                - img [ref=e1475]
+                - generic [ref=e1478]: 去面试
+              - link "学 AI" [ref=e1480] [cursor=pointer]:
+                - /url: https://ai.codefather.cn
+                - img [ref=e1482]
+                - generic [ref=e1484]: 学 AI
+              - generic [ref=e1486] [cursor=pointer]:
+                - img [ref=e1488]
+                - generic [ref=e1490]: 领资料
+            - generic [ref=e1491]:
+              - generic [ref=e1492]:
+                - generic [ref=e1493]: 学编程
+                - generic [ref=e1494]:
+                  - link "方向选择" [ref=e1495] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/learn?category=81&type=0
+                  - link "学习路线" [ref=e1496] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/course/1789189862986850306
+                  - link "学习方法" [ref=e1497] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/learn?category=88&type=0
+              - generic [ref=e1498]:
+                - generic [ref=e1499]: 做项目
+                - generic [ref=e1500]:
+                  - link "项目教程" [ref=e1501] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/post/1797431968853835777#heading-1
+                  - link "项目建议" [ref=e1502] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/post/1797431216467001345
+                  - link "开发经验" [ref=e1503] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/learn?category=80&type=1
+              - generic [ref=e1504]:
+                - generic [ref=e1505]: 找工作
+                - generic [ref=e1506]:
+                  - link "求职经验" [ref=e1507] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/learn?category=93&type=2
+                  - link "面试视频" [ref=e1508] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/mockInterview
+                  - link "模拟面试" [ref=e1509] [cursor=pointer]:
+                    - /url: https://ai.mianshiya.com
+              - generic [ref=e1510]:
+                - generic [ref=e1511]: 通职场
+                - generic [ref=e1512]:
+                  - link "职场建议" [ref=e1513] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/learn?category=78&type=3
+                  - link "职业发展" [ref=e1514] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/learn?category=83&type=3
+                  - link "职场经历" [ref=e1515] [cursor=pointer]:
+                    - /url: https://www.codefather.cn/learn?category=85&type=3
+          - generic [ref=e1517]:
+            - generic [ref=e1519]:
+              - generic [ref=e1521]: 热门文章
+              - link "更多>" [ref=e1524] [cursor=pointer]:
+                - /url: /hot/all_hot
+            - generic [ref=e1526]:
+              - link "1 三本跳槽涨幅超100%，我做对了什么？ 阅读 4.7k · 点赞 60" [ref=e1527] [cursor=pointer]:
+                - /url: /post/2054078459172376577
+                - generic [ref=e1530]:
+                  - generic [ref=e1532]: "1"
+                  - generic [ref=e1533]:
+                    - generic [ref=e1535]: 三本跳槽涨幅超100%，我做对了什么？
+                    - generic [ref=e1537]:
+                      - generic [ref=e1539]: 阅读 4.7k
+                      - generic [ref=e1540]: ·
+                      - generic [ref=e1542]: 点赞 60
+              - link "2 AI应用开发岗面经 阅读 5.2k · 点赞 35" [ref=e1543] [cursor=pointer]:
+                - /url: /post/2052702976992104450
+                - generic [ref=e1546]:
+                  - generic [ref=e1548]: "2"
+                  - generic [ref=e1549]:
+                    - generic [ref=e1551]: AI应用开发岗面经
+                    - generic [ref=e1553]:
+                      - generic [ref=e1555]: 阅读 5.2k
+                      - generic [ref=e1556]: ·
+                      - generic [ref=e1558]: 点赞 35
+              - link "3 两个月的求职历程大分享（包含部分面经和狗屎运小故事） 阅读 3.5k · 点赞 51" [ref=e1559] [cursor=pointer]:
+                - /url: /post/2052783803625132033
+                - generic [ref=e1562]:
+                  - generic [ref=e1564]: "3"
+                  - generic [ref=e1565]:
+                    - generic [ref=e1567]: 两个月的求职历程大分享（包含部分面经和狗屎运小故事）
+                    - generic [ref=e1569]:
+                      - generic [ref=e1571]: 阅读 3.5k
+                      - generic [ref=e1572]: ·
+                      - generic [ref=e1574]: 点赞 51
+              - link "4 吴恩达新的免费 AI 课来了，YYDS！我已经学上了 阅读 2.2k · 点赞 11" [ref=e1575] [cursor=pointer]:
+                - /url: /post/2052196278510571522
+                - generic [ref=e1578]:
+                  - generic [ref=e1580]: "4"
+                  - generic [ref=e1581]:
+                    - generic [ref=e1583]: 吴恩达新的免费 AI 课来了，YYDS！我已经学上了
+                    - generic [ref=e1585]:
+                      - generic [ref=e1587]: 阅读 2.2k
+                      - generic [ref=e1588]: ·
+                      - generic [ref=e1590]: 点赞 11
+              - link "5 AI 时代，程序员还有必要刷算法吗？ 阅读 2.2k · 点赞 14" [ref=e1591] [cursor=pointer]:
+                - /url: /post/2052635388631076866
+                - generic [ref=e1594]:
+                  - generic [ref=e1596]: "5"
+                  - generic [ref=e1597]:
+                    - generic [ref=e1599]: AI 时代，程序员还有必要刷算法吗？
+                    - generic [ref=e1601]:
+                      - generic [ref=e1603]: 阅读 2.2k
+                      - generic [ref=e1604]: ·
+                      - generic [ref=e1606]: 点赞 14
+          - generic [ref=e1608]:
+            - generic [ref=e1610]:
+              - generic [ref=e1612]: 热门问答
+              - link "更多>" [ref=e1615] [cursor=pointer]:
+                - /url: /hot/qa
+            - generic [ref=e1617]:
+              - link "1 大三学生小学期实习-如果单位拒盖章能否自办实习证明规避风险 回答 9 · 关注 408" [ref=e1618] [cursor=pointer]:
+                - /url: /qa/2052228413934030850
+                - generic [ref=e1621]:
+                  - generic [ref=e1623]: "1"
+                  - generic [ref=e1624]:
+                    - generic [ref=e1626]: 大三学生小学期实习-如果单位拒盖章能否自办实习证明规避风险
+                    - generic [ref=e1628]:
+                      - generic [ref=e1630]: 回答 9
+                      - generic [ref=e1631]: ·
+                      - generic [ref=e1633]: 关注 408
+              - link "2 开发者-Claude Code高频使用场景下的Token节省策略咨询 回答 2 · 关注 530" [ref=e1634] [cursor=pointer]:
+                - /url: /qa/2051247127203434498
+                - generic [ref=e1637]:
+                  - generic [ref=e1639]: "2"
+                  - generic [ref=e1640]:
+                    - generic [ref=e1642]: 开发者-Claude Code高频使用场景下的Token节省策略咨询
+                    - generic [ref=e1644]:
+                      - generic [ref=e1646]: 回答 2
+                      - generic [ref=e1647]: ·
+                      - generic [ref=e1649]: 关注 530
+              - link "3 3 年经验，初创公司太舒适，三年成长，想跳槽该如何学习？ 回答 10 · 关注 234" [ref=e1650] [cursor=pointer]:
+                - /url: /qa/2048624042306551810
+                - generic [ref=e1653]:
+                  - generic [ref=e1655]: "3"
+                  - generic [ref=e1656]:
+                    - generic [ref=e1658]: 3 年经验，初创公司太舒适，三年成长，想跳槽该如何学习？
+                    - generic [ref=e1660]:
+                      - generic [ref=e1662]: 回答 10
+                      - generic [ref=e1663]: ·
+                      - generic [ref=e1665]: 关注 234
+              - link "4 山大大一电信专业，转码很焦虑。。 回答 4 · 关注 384" [ref=e1666] [cursor=pointer]:
+                - /url: /qa/2050909645169512449
+                - generic [ref=e1669]:
+                  - generic [ref=e1671]: "4"
+                  - generic [ref=e1672]:
+                    - generic [ref=e1674]: 山大大一电信专业，转码很焦虑。。
+                    - generic [ref=e1676]:
+                      - generic [ref=e1678]: 回答 4
+                      - generic [ref=e1679]: ·
+                      - generic [ref=e1681]: 关注 384
+              - link "5 双非硕，该做什么项目？ 回答 4 · 关注 314" [ref=e1682] [cursor=pointer]:
+                - /url: /qa/2050414542189514753
+                - generic [ref=e1685]:
+                  - generic [ref=e1687]: "5"
+                  - generic [ref=e1688]:
+                    - generic [ref=e1690]: 双非硕，该做什么项目？
+                    - generic [ref=e1692]:
+                      - generic [ref=e1694]: 回答 4
+                      - generic [ref=e1695]: ·
+                      - generic [ref=e1697]: 关注 314
+          - generic [ref=e1699]:
+            - generic [ref=e1701]:
+              - generic [ref=e1703]: 热门题目榜
+              - link "更多>" [ref=e1706] [cursor=pointer]:
+                - /url: https://www.mianshiya.com/hot/question
+            - generic [ref=e1708]:
+              - link "1 说说 Java 中 HashMap 的原理？ 热度 203.6k" [ref=e1709] [cursor=pointer]:
+                - /url: https://www.mianshiya.com/question/1834107117591187457
+                - generic [ref=e1712]:
+                  - generic [ref=e1714]: "1"
+                  - generic [ref=e1715]:
+                    - generic [ref=e1717]: 说说 Java 中 HashMap 的原理？
+                    - generic [ref=e1721]: 热度 203.6k
+              - link "2 MySQL 索引的最左前缀匹配原则是什么？ 热度 149.2k" [ref=e1722] [cursor=pointer]:
+                - /url: https://www.mianshiya.com/question/1780933295450648578
+                - generic [ref=e1725]:
+                  - generic [ref=e1727]: "2"
+                  - generic [ref=e1728]:
+                    - generic [ref=e1730]: MySQL 索引的最左前缀匹配原则是什么？
+                    - generic [ref=e1734]: 热度 149.2k
+              - link "3 MySQL 的索引类型有哪些？ 热度 147.7k" [ref=e1735] [cursor=pointer]:
+                - /url: https://www.mianshiya.com/question/1780933295438065665
+                - generic [ref=e1738]:
+                  - generic [ref=e1740]: "3"
+                  - generic [ref=e1741]:
+                    - generic [ref=e1743]: MySQL 的索引类型有哪些？
+                    - generic [ref=e1747]: 热度 147.7k
+              - link "4 Java 中的序列化和反序列化是什么？ 热度 144.6k" [ref=e1748] [cursor=pointer]:
+                - /url: https://www.mianshiya.com/question/1780933294448209922
+                - generic [ref=e1751]:
+                  - generic [ref=e1753]: "4"
+                  - generic [ref=e1754]:
+                    - generic [ref=e1756]: Java 中的序列化和反序列化是什么？
+                    - generic [ref=e1760]: 热度 144.6k
+              - link "5 Java 中有哪些集合类？请简单介绍 热度 130.4k" [ref=e1761] [cursor=pointer]:
+                - /url: https://www.mianshiya.com/question/1780933294699868162
+                - generic [ref=e1764]:
+                  - generic [ref=e1766]: "5"
+                  - generic [ref=e1767]:
+                    - generic [ref=e1769]: Java 中有哪些集合类？请简单介绍
+                    - generic [ref=e1773]: 热度 130.4k
+          - generic [ref=e1774]:
+            - generic [ref=e1776]:
+              - heading "学习排行榜" [level=5] [ref=e1778]
+              - link "月榜" [ref=e1780] [cursor=pointer]:
+                - /url: /hot/month_checkin
+            - generic [ref=e1781]:
+              - generic [ref=e1783]:
+                - generic [ref=e1785]: "1"
+                - generic [ref=e1787]:
+                  - link "立志做两年半的逆袭生" [ref=e1789] [cursor=pointer]:
+                    - /url: /user/1857352215471931393
+                    - img "立志做两年半的逆袭生" [ref=e1791]
+                  - link "立志做两年半的逆袭生" [ref=e1793] [cursor=pointer]:
+                    - /url: /user/1857352215471931393
+                - generic [ref=e1794]: 17天
+              - generic [ref=e1796]:
+                - generic [ref=e1798]: "2"
+                - generic [ref=e1800]:
+                  - link "迷途之子" [ref=e1802] [cursor=pointer]:
+                    - /url: /user/1971209526082289665
+                    - img "迷途之子" [ref=e1804]
+                  - link "迷途之子" [ref=e1806] [cursor=pointer]:
+                    - /url: /user/1971209526082289665
+                - generic [ref=e1807]: 13天
+              - generic [ref=e1809]:
+                - generic [ref=e1811]: "3"
+                - generic [ref=e1813]:
+                  - link "Alioth" [ref=e1815] [cursor=pointer]:
+                    - /url: /user/1887426910768390145
+                    - img "Alioth" [ref=e1817]
+                  - link "Alioth" [ref=e1819] [cursor=pointer]:
+                    - /url: /user/1887426910768390145
+                - generic [ref=e1820]: 12天
+              - generic [ref=e1822]:
+                - generic [ref=e1824]: "4"
+                - generic [ref=e1826]:
+                  - link "X" [ref=e1828] [cursor=pointer]:
+                    - /url: /user/1877283446951194625
+                    - img "X" [ref=e1830]
+                  - link "X" [ref=e1832] [cursor=pointer]:
+                    - /url: /user/1877283446951194625
+                - generic [ref=e1833]: 12天
+              - generic [ref=e1835]:
+                - generic [ref=e1837]: "5"
+                - generic [ref=e1839]:
+                  - link "qpeter" [ref=e1841] [cursor=pointer]:
+                    - /url: /user/1935581931163131906
+                    - img "qpeter" [ref=e1843]
+                  - link "qpeter" [ref=e1845] [cursor=pointer]:
+                    - /url: /user/1935581931163131906
+                - generic [ref=e1846]: 11天
+              - generic [ref=e1848]:
+                - generic [ref=e1850]: "6"
+                - generic [ref=e1852]:
+                  - link "丘陵" [ref=e1854] [cursor=pointer]:
+                    - /url: /user/1839282799054090242
+                    - img "丘陵" [ref=e1856]
+                  - link "丘陵" [ref=e1858] [cursor=pointer]:
+                    - /url: /user/1839282799054090242
+                - generic [ref=e1859]: 10天
+              - generic [ref=e1861]:
+                - generic [ref=e1863]: "7"
+                - generic [ref=e1865]:
+                  - link "王成" [ref=e1867] [cursor=pointer]:
+                    - /url: /user/2031542910926807041
+                    - img "王成" [ref=e1869]
+                  - link "王成" [ref=e1871] [cursor=pointer]:
+                    - /url: /user/2031542910926807041
+                - generic [ref=e1872]: 9天
+              - generic [ref=e1874]:
+                - generic [ref=e1876]: "8"
+                - generic [ref=e1878]:
+                  - link "进击的野人" [ref=e1880] [cursor=pointer]:
+                    - /url: /user/2029541670814498817
+                    - img "进击的野人" [ref=e1882]
+                  - link "进击的野人" [ref=e1884] [cursor=pointer]:
+                    - /url: /user/2029541670814498817
+                - generic [ref=e1885]: 7天
+              - generic [ref=e1887]:
+                - generic [ref=e1889]: "9"
+                - generic [ref=e1891]:
+                  - link "凌空零" [ref=e1893] [cursor=pointer]:
+                    - /url: /user/1944399401621819393
+                    - img "凌空零" [ref=e1895]
+                  - link "凌空零" [ref=e1897] [cursor=pointer]:
+                    - /url: /user/1944399401621819393
+                - generic [ref=e1898]: 5天
+              - generic [ref=e1900]:
+                - generic [ref=e1902]: "10"
+                - generic [ref=e1904]:
+                  - link "群星闪耀" [ref=e1906] [cursor=pointer]:
+                    - /url: /user/1831697546635964417
+                    - img "群星闪耀" [ref=e1908]
+                  - link "群星闪耀" [ref=e1910] [cursor=pointer]:
+                    - /url: /user/1831697546635964417
+                - generic [ref=e1911]: 5天
+          - generic [ref=e1915]:
+            - generic [ref=e1917]:
+              - generic [ref=e1919]: 热门话题
+              - link "更多>" [ref=e1922] [cursor=pointer]:
+                - /url: /hot/tag
+            - generic [ref=e1924]:
+              - link "1 学习打卡 fire 12260" [ref=e1925] [cursor=pointer]:
+                - /url: /tag/学习打卡
+                - generic [ref=e1927]:
+                  - generic [ref=e1928]:
+                    - generic [ref=e1930]: "1"
+                    - generic [ref=e1933]: 学习打卡
+                  - generic [ref=e1934]:
+                    - img "fire" [ref=e1936]:
+                      - img [ref=e1937]
+                    - generic [ref=e1939]: "12260"
+              - link "2 训练营打卡 fire 6830" [ref=e1940] [cursor=pointer]:
+                - /url: /tag/训练营打卡
+                - generic [ref=e1942]:
+                  - generic [ref=e1943]:
+                    - generic [ref=e1945]: "2"
+                    - generic [ref=e1948]: 训练营打卡
+                  - generic [ref=e1949]:
+                    - img "fire" [ref=e1951]:
+                      - img [ref=e1952]
+                    - generic [ref=e1954]: "6830"
+              - link "3 求职 fire 4710" [ref=e1955] [cursor=pointer]:
+                - /url: /tag/求职
+                - generic [ref=e1957]:
+                  - generic [ref=e1958]:
+                    - generic [ref=e1960]: "3"
+                    - generic [ref=e1963]: 求职
+                  - generic [ref=e1964]:
+                    - img "fire" [ref=e1966]:
+                      - img [ref=e1967]
+                    - generic [ref=e1969]: "4710"
+              - link "4 AI fire 1900" [ref=e1970] [cursor=pointer]:
+                - /url: /tag/AI
+                - generic [ref=e1972]:
+                  - generic [ref=e1973]:
+                    - generic [ref=e1975]: "4"
+                    - generic [ref=e1978]: AI
+                  - generic [ref=e1979]:
+                    - img "fire" [ref=e1981]:
+                      - img [ref=e1982]
+                    - generic [ref=e1984]: "1900"
+              - link "5 交流 fire 1410" [ref=e1985] [cursor=pointer]:
+                - /url: /tag/交流
+                - generic [ref=e1987]:
+                  - generic [ref=e1988]:
+                    - generic [ref=e1990]: "5"
+                    - generic [ref=e1993]: 交流
+                  - generic [ref=e1994]:
+                    - img "fire" [ref=e1996]:
+                      - img [ref=e1997]
+                    - generic [ref=e1999]: "1410"
+              - link "6 面经 fire 1200" [ref=e2000] [cursor=pointer]:
+                - /url: /tag/面经
+                - generic [ref=e2002]:
+                  - generic [ref=e2003]:
+                    - generic [ref=e2005]: "6"
+                    - generic [ref=e2008]: 面经
+                  - generic [ref=e2009]:
+                    - img "fire" [ref=e2011]:
+                      - img [ref=e2012]
+                    - generic [ref=e2014]: "1200"
+              - link "7 简历 fire 920" [ref=e2015] [cursor=pointer]:
+                - /url: /tag/简历
+                - generic [ref=e2017]:
+                  - generic [ref=e2018]:
+                    - generic [ref=e2020]: "7"
+                    - generic [ref=e2023]: 简历
+                  - generic [ref=e2024]:
+                    - img "fire" [ref=e2026]:
+                      - img [ref=e2027]
+                    - generic [ref=e2029]: "920"
+              - link "8 Java fire 880" [ref=e2030] [cursor=pointer]:
+                - /url: /tag/Java
+                - generic [ref=e2032]:
+                  - generic [ref=e2033]:
+                    - generic [ref=e2035]: "8"
+                    - generic [ref=e2038]: Java
+                  - generic [ref=e2039]:
+                    - img "fire" [ref=e2041]:
+                      - img [ref=e2042]
+                    - generic [ref=e2044]: "880"
+              - link "9 面试题 fire 490" [ref=e2045] [cursor=pointer]:
+                - /url: /tag/面试题
+                - generic [ref=e2047]:
+                  - generic [ref=e2048]:
+                    - generic [ref=e2050]: "9"
+                    - generic [ref=e2053]: 面试题
+                  - generic [ref=e2054]:
+                    - img "fire" [ref=e2056]:
+                      - img [ref=e2057]
+                    - generic [ref=e2059]: "490"
+              - link "10 职场 fire 480" [ref=e2060] [cursor=pointer]:
+                - /url: /tag/职场
+                - generic [ref=e2062]:
+                  - generic [ref=e2063]:
+                    - generic [ref=e2065]: "10"
+                    - generic [ref=e2068]: 职场
+                  - generic [ref=e2069]:
+                    - img "fire" [ref=e2071]:
+                      - img [ref=e2072]
+                    - generic [ref=e2074]: "480"
+        - generic [ref=e2076]:
+          - img "usergroup-add" [ref=e2079]:
+            - img [ref=e2080]
+          - img "wechat" [ref=e2084]:
+            - img [ref=e2085]
+          - link "question-circle" [ref=e2087] [cursor=pointer]:
+            - /url: https://www.codefather.cn/tag/%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%BB%BA%E8%AE%AE&%E5%8F%8D%E9%A6%88?current=1&pageSize=10&sortField=createTime&sortOrder=descend&type=all
+            - img "question-circle" [ref=e2090]:
+              - img [ref=e2091]
+          - link "下载 APP" [ref=e2094] [cursor=pointer]:
+            - /url: /download/app
+            - img "下载 APP" [ref=e2097]
+  - generic [ref=e2099]:
+    - img "usergroup-add" [ref=e2102]:
+      - img [ref=e2103]
+    - img "wechat" [ref=e2107]:
+      - img [ref=e2108]
+    - link "question-circle" [ref=e2110] [cursor=pointer]:
+      - /url: https://www.codefather.cn/tag/%E7%BC%96%E7%A8%8B%E5%AF%BC%E8%88%AA%E5%BB%BA%E8%AE%AE&%E5%8F%8D%E9%A6%88?current=1&pageSize=10&sortField=createTime&sortOrder=descend&type=all
+      - img "question-circle" [ref=e2113]:
+        - img [ref=e2114]
+    - link "下载 APP" [ref=e2117] [cursor=pointer]:
+      - /url: /download/app
+      - img "下载 APP" [ref=e2120]
+  - contentinfo [ref=e2121]:
+    - generic [ref=e2122]:
+      - generic [ref=e2123]:
+        - link "user 站长：程序员鱼皮" [ref=e2124] [cursor=pointer]:
+          - /url: https://space.bilibili.com/12890453
+          - img "user" [ref=e2125]:
+            - img [ref=e2126]
+          - text: 站长：程序员鱼皮
+        - link "file-done 老鱼简历" [ref=e2128] [cursor=pointer]:
+          - /url: https://www.laoyujianli.com/
+          - img "file-done" [ref=e2129]:
+            - img [ref=e2130]
+          - text: 老鱼简历
+        - link "message 商务合作" [ref=e2132] [cursor=pointer]:
+          - /url: https://yuyuanweb.feishu.cn/wiki/AOzgw1mOliX6SskAVEicK6u7nDA
+          - img "message" [ref=e2133]:
+            - img [ref=e2134]
+          - text: 商务合作
+        - link "file-protect 增值电信业务经营许可证" [ref=e2136] [cursor=pointer]:
+          - /url: https://yuyuanweb.yuque.com/org-wiki-yuyuanweb-zvq1bg/peng0p/ug1kps2sfulwfyf0
+          - img "file-protect" [ref=e2137]:
+            - img [ref=e2138]
+          - text: 增值电信业务经营许可证
+      - generic [ref=e2140]:
+        - img "copyright" [ref=e2141]:
+          - img [ref=e2142]
+        - text: 2026 编程导航 |
+        - link "沪ICP备19026706号-6" [ref=e2144] [cursor=pointer]:
+          - /url: https://beian.miit.gov.cn/
+        - text: ｜
+        - img "沪公网安备31010602009588号" [ref=e2145]
+        - link "沪公网安备31010602009588号" [ref=e2146] [cursor=pointer]:
+          - /url: https://beian.mps.gov.cn/#/query/webSearch?code=31010602009588

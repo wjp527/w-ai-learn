@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI闯关学习 · V1核心闭环原型</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: 'var(--c-paper)',
+            ink: 'var(--c-ink)',
+            aorange: 'var(--c-orange)',
+            hoody: 'var(--c-hoody)',
+            board: 'var(--c-board)',
+            chalk: 'var(--c-chalk)',
+            wrong: 'var(--c-wrong)',
+            tofu: 'var(--c-tofu)',
+            facepink: 'var(--c-pink)',
+            desk: 'var(--c-desk)',
+          },
+          fontFamily: {
+            comic: ['var(--font-display)'],
+            chalk: ['var(--font-chalk)'],
+            body: ['var(--font-body)'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+  :root {
+    --c-paper: #FFF6E0;
+    --c-paper-deep: #F5E6C8;
+    --c-ink: #141414;
+    --c-orange: #FF5C1A;
+    --c-hoody: #FFCE00;
+    --c-board: #1F4D3A;
+    --c-board-light: #2A6B52;
+    --c-chalk: #F4FFF8;
+    --c-wrong: #E8252F;
+    --c-tofu: #5C3A1E;
+    --c-pink: #FF7A9E;
+    --c-desk: #9B6B42;
+    --c-shadow: #141414;
+    --font-display: 'ZCOOL KuaiLe', cursive;
+    --font-chalk: 'Ma Shan Zheng', cursive;
+    --font-body: 'ZCOOL QingKe HuangYou', sans-serif;
+    --stroke: 2.5px;
+    --radius-comic: 18px 22px 16px 20px;
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--c-ink);
+    min-height: 100vh;
+    background-color: #C9B89A;
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.06'/%3E%3C/svg%3E"),
+      radial-gradient(ellipse 120% 80% at 50% -20%, #E8DCC8 0%, transparent 50%),
+      repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(20,20,20,.03) 31px, rgba(20,20,20,.03) 32px),
+      repeating-linear-gradient(90deg, transparent, transparent 31px, rgba(20,20,20,.02) 31px, rgba(20,20,20,.02) 32px);
+  }
+
+  /* ── Showcase header ── */
+  .showcase-header {
+    position: relative;
+    overflow: hidden;
+    border-bottom: var(--stroke) solid var(--c-ink);
+    background: var(--c-paper);
+    box-shadow: 0 8px 0 var(--c-shadow);
+  }
+  .showcase-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from 0deg at 50% 50%, transparent 0deg 8deg, rgba(255,92,26,.04) 8deg 16deg);
+    pointer-events: none;
+  }
+  .title-deco {
+    display: inline-block;
+    transform: rotate(-2deg);
+    background: var(--c-hoody);
+    border: var(--stroke) solid var(--c-ink);
+    padding: 0.15em 0.5em;
+    box-shadow: 4px 4px 0 var(--c-ink);
+  }
+  .nav-pill {
+    border: 2px solid var(--c-ink);
+    background: white;
+    transition: transform 0.2s var(--ease-bounce), background 0.2s;
+  }
+  .nav-pill:hover { transform: translateY(-2px) rotate(-1deg); background: var(--c-hoody); }
+
+  /* ── Phone frame ── */
+  .phone-shell {
+    width: 375px;
+    max-width: 100%;
+    height: 812px;
+    border-radius: 46px;
+    border: 3px solid var(--c-ink);
+    box-shadow:
+      0 0 0 2px #fff inset,
+      0 20px 50px rgba(20,20,20,.25),
+      0 8px 0 var(--c-shadow);
+    overflow: hidden;
+    background: var(--c-paper);
+    position: relative;
+    transition: transform 0.4s var(--ease-bounce);
+  }
+  .phone-shell:hover { transform: translateY(-6px) rotate(0.5deg); }
+  .phone-notch {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 126px;
+    height: 30px;
+    background: var(--c-ink);
+    border-radius: 0 0 20px 20px;
+    z-index: 40;
+  }
+  .phone-home-bar {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: var(--c-ink);
+    border-radius: 99px;
+    opacity: 0.2;
+    z-index: 40;
+  }
+  .phone-screen {
+    height: 100%;
+    padding-top: 38px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+  }
+  .paper-texture {
+    background-color: var(--c-paper);
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  }
+
+  /* ── Comic primitives ── */
+  .comic-border {
+    border: var(--stroke) solid var(--c-ink);
+    border-radius: var(--radius-comic);
+  }
+  .comic-panel {
+    border: var(--stroke) solid var(--c-ink);
+    border-radius: 20px 8px 18px 10px;
+    background: #fff;
+    box-shadow: 3px 3px 0 var(--c-ink);
+  }
+  .comic-btn {
+    border: var(--stroke) solid var(--c-ink);
+    border-radius: 14px 18px 16px 12px;
+    box-shadow: 0 5px 0 var(--c-shadow);
+    transition: transform 0.12s var(--ease-bounce), box-shadow 0.12s;
+    cursor: pointer;
+    font-family: var(--font-display);
+  }
+  .comic-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 7px 0 var(--c-shadow); }
+  .comic-btn:active:not(:disabled) { transform: translateY(4px); box-shadow: 0 1px 0 var(--c-shadow); }
+  .comic-btn:disabled { cursor: not-allowed; opacity: 0.55; }
+
+  .bubble {
+    position: relative;
+    border: var(--stroke) solid var(--c-ink);
+    border-radius: 20px 20px 20px 6px;
+    background: #fff;
+    box-shadow: 2px 2px 0 var(--c-ink);
+  }
+  .bubble::after {
+    content: '';
+    position: absolute;
+    left: 18px;
+    bottom: -11px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-left: var(--stroke) solid var(--c-ink);
+    border-bottom: var(--stroke) solid var(--c-ink);
+    transform: rotate(-45deg);
+  }
+
+  .lined-paper {
+    background-image: linear-gradient(transparent 26px, rgba(20,20,20,.08) 27px);
+    background-size: 100% 27px;
+    line-height: 27px;
+  }
+  .margin-line {
+    border-left: 2px dashed rgba(232, 37, 47, 0.35);
+    padding-left: 12px;
+  }
+
+  .chalk-bar {
+    background: var(--c-board);
+    border: 2px solid var(--c-ink);
+    border-radius: 99px;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.2);
+  }
+  .chalk-fill {
+    height: 100%;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--c-hoody), var(--c-orange), var(--c-hoody));
+    background-size: 200% 100%;
+    animation: chalk-shimmer 2s ease infinite;
+  }
+  @keyframes chalk-shimmer {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .blackboard {
+    background:
+      radial-gradient(ellipse at 30% 20%, rgba(255,255,255,.06) 0%, transparent 50%),
+      linear-gradient(165deg, var(--c-board-light) 0%, var(--c-board) 40%, #163528 100%);
+    position: relative;
+  }
+  .blackboard::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='12' r='1' fill='white' opacity='0.08'/%3E%3Ccircle cx='40' cy='35' r='1.5' fill='white' opacity='0.06'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .stamp {
+    transform: rotate(-14deg);
+    border: 3px double var(--c-wrong);
+    color: var(--c-wrong);
+    font-family: var(--font-display);
+    padding: 2px 10px;
+    border-radius: 6px;
+    opacity: 0.9;
+    letter-spacing: 0.05em;
+  }
+
+  .tape {
+    position: absolute;
+    width: 52px;
+    height: 18px;
+    background: rgba(255, 206, 0, 0.55);
+    border: 1px solid rgba(20,20,20,.15);
+    transform: rotate(-4deg);
+    top: -8px;
+    left: 50%;
+    margin-left: -26px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+  }
+
+  .screen-label {
+    font-family: var(--font-body);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-align: center;
+    margin-bottom: 14px;
+    padding: 8px 14px;
+    background: var(--c-hoody);
+    border: var(--stroke) solid var(--c-ink);
+    border-radius: 10px 14px 8px 12px;
+    box-shadow: 3px 3px 0 var(--c-ink);
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .prototype-grid {
+    display: grid;
+    gap: 40px 28px;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) { .prototype-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1280px) { .prototype-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .proto-card {
+    opacity: 0;
+    transform: translateY(28px) rotate(-1deg);
+    animation: card-enter 0.7s var(--ease-bounce) forwards;
+  }
+  .proto-card:nth-child(1) { animation-delay: 0.05s; }
+  .proto-card:nth-child(2) { animation-delay: 0.1s; }
+  .proto-card:nth-child(3) { animation-delay: 0.15s; }
+  .proto-card:nth-child(4) { animation-delay: 0.2s; }
+  .proto-card:nth-child(5) { animation-delay: 0.25s; }
+  .proto-card:nth-child(6) { animation-delay: 0.3s; }
+  .proto-card:nth-child(7) { animation-delay: 0.35s; }
+  .proto-card:nth-child(8) { animation-delay: 0.4s; }
+
+  @keyframes card-enter {
+    to { opacity: 1; transform: translateY(0) rotate(0); }
+  }
+
+  @keyframes float-idle {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  .float-idle { animation: float-idle 3s ease-in-out infinite; }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0) translateX(0); }
+    20% { transform: rotate(-3deg) translateX(-2px); }
+    40% { transform: rotate(3deg) translateX(2px); }
+    60% { transform: rotate(-2deg); }
+  }
+  .wiggle { animation: wiggle 0.35s ease-in-out infinite; }
+
+  @keyframes pop-in {
+    0% { transform: scale(0.6); opacity: 0; }
+    70% { transform: scale(1.08); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .pop-in { animation: pop-in 0.55s var(--ease-bounce); }
+
+  @keyframes spin-dash {
+    to { stroke-dashoffset: -276; }
+  }
+
+  @keyframes confetti-fall {
+    0% { transform: translateY(-10px) rotate(0); opacity: 1; }
+    100% { transform: translateY(60px) rotate(180deg); opacity: 0; }
+  }
+  .confetti span {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 1.5px solid var(--c-ink);
+    animation: confetti-fall 1.2s ease-out infinite;
+  }
+  .confetti span:nth-child(1) { left: 20%; background: var(--c-hoody); animation-delay: 0s; }
+  .confetti span:nth-child(2) { left: 45%; background: var(--c-orange); animation-delay: 0.15s; border-radius: 50%; }
+  .confetti span:nth-child(3) { left: 70%; background: var(--c-board); animation-delay: 0.3s; }
+  .confetti span:nth-child(4) { left: 85%; background: var(--c-wrong); animation-delay: 0.1s; transform: rotate(45deg); }
+
+  .speed-lines {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.12;
+    background: repeating-conic-gradient(from 0deg at 50% 30%, transparent 0deg 4deg, var(--c-ink) 4deg 5deg);
+  }
+
+  .halftone {
+    background-image: radial-gradient(circle, var(--c-ink) 1px, transparent 1px);
+    background-size: 6px 6px;
+    opacity: 0.06;
+  }
+
+  .option-selected {
+    background: rgba(255, 206, 0, 0.35) !important;
+    box-shadow: inset 0 0 0 2px var(--c-orange), 3px 3px 0 var(--c-ink);
+  }
+
+  .manga-gutter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    padding: 6px;
+    background: var(--c-ink);
+    border-radius: 12px;
+  }
+  .manga-gutter > * {
+    background: #fff;
+    border-radius: 6px;
+    padding: 12px;
+  }
+
+  .share-ghost {
+    border: 2px dashed rgba(20,20,20,.25);
+    background: repeating-linear-gradient(-45deg, transparent, transparent 6px, rgba(20,20,20,.03) 6px, rgba(20,20,20,.03) 12px);
+    color: rgba(20,20,20,.35);
+    cursor: not-allowed;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .proto-card, .float-idle, .wiggle, .chalk-fill, .confetti span { animation: none !important; }
+    .proto-card { opacity: 1; transform: none; }
+  }
+  </style>
+</head>
+<body class="pb-20">
+
+  <!-- ═══ Showcase Header ═══ -->
+  <header class="showcase-header max-w-7xl mx-auto mb-12 mt-0 px-6 py-12 text-center relative">
+    <p class="font-chalk text-2xl text-aorange mb-2 tracking-widest">怕踢中学 · 知识闯关分校</p>
+    <h1 class="font-comic text-4xl md:text-5xl text-ink mb-3 leading-tight">
+      <span class="title-deco">AI 闯关学习</span>
+      <span class="block mt-2 text-2xl md:text-3xl text-board">V1 核心闭环原型</span>
+    </h1>
+    <p class="font-body text-sm text-ink/65 max-w-lg mx-auto leading-relaxed">
+      校园漫画搞笑美学 · 原创 Q 版角色 · 375×812 真机框 · 宽屏三列平铺
+    </p>
+    <nav class="flex flex-wrap justify-center gap-2 mt-8 text-xs font-body" aria-label="页面导航">
+      <span class="nav-pill px-3 py-1.5 rounded-full">①欢迎</span>
+      <span class="nav-pill px-3 py-1.5 rounded-full">②输入</span>
+      <span class="nav-pill px-3 py-1.5 rounded-full">③生成</span>
+      <span class="nav-pill px-3 py-1.5 rounded-full">④⑤⑥⑦答题</span>
+      <span class="nav-pill px-3 py-1.5 rounded-full">⑧报告</span>
+    </nav>
+  </header>
+
+  <main class="max-w-[1440px] mx-auto px-4 prototype-grid">
+
+    <!-- ═══ ① 欢迎闪屏 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">① 欢迎 / 开始闪屏</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen blackboard overflow-hidden">
+          <div class="halftone absolute inset-0 z-0"></div>
+          <!-- 窗户光斑 -->
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-white/10 to-transparent rounded-full blur-2xl"></div>
+          <div class="absolute bottom-0 left-0 right-0 h-36 bg-desk border-t-[3px] border-ink z-0"></div>
+          <!-- 黑板标题牌 -->
+          <div class="absolute top-14 left-4 right-4 z-10">
+            <div class="comic-border bg-chalk/5 backdrop-blur-sm py-4 text-center relative">
+              <div class="tape"></div>
+              <p class="font-chalk text-3xl text-chalk leading-snug drop-shadow-sm">怕踢中学</p>
+              <p class="font-comic text-chalk/90 text-lg mt-1">知识闯关分校</p>
+            </div>
+          </div>
+
+          <div class="relative z-20 flex flex-col items-center flex-1 px-6 pt-36">
+            <svg class="w-40 h-44 float-idle pop-in" viewBox="0 0 140 160" fill="none" aria-label="小衰神助手">
+              <ellipse cx="70" cy="150" rx="32" ry="7" fill="#141414" opacity=".12"/>
+              <path d="M42 108 L42 142 L98 142 L98 108" fill="#FFCE00" stroke="#141414" stroke-width="2.5" stroke-linejoin="round"/>
+              <rect x="36" y="62" width="68" height="50" rx="10" fill="#FFCE00" stroke="#141414" stroke-width="2.5"/>
+              <path d="M50 62 L90 62 L86 52 L54 52 Z" fill="#FFCE00" stroke="#141414" stroke-width="2"/>
+              <circle cx="70" cy="42" r="32" fill="#FFD4A8" stroke="#141414" stroke-width="2.5"/>
+              <path d="M36 32 Q70 6 104 32 Q96 54 70 50 Q44 54 36 32" fill="#FF5C1A" stroke="#141414" stroke-width="2"/>
+              <ellipse cx="54" cy="40" rx="5" ry="6" fill="#141414"/>
+              <ellipse cx="86" cy="40" rx="5" ry="6" fill="#141414"/>
+              <circle cx="56" cy="38" r="1.5" fill="white"/>
+              <circle cx="88" cy="38" r="1.5" fill="white"/>
+              <path d="M58 52 Q70 62 82 52" stroke="#141414" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              <ellipse cx="70" cy="56" rx="4" ry="2.5" fill="#FFD4A8"/>
+              <!-- 臭豆腐徽章 -->
+              <rect x="88" y="70" width="28" height="20" rx="4" fill="#5C3A1E" stroke="#141414" stroke-width="2"/>
+              <text x="102" y="84" text-anchor="middle" fill="#FFCE00" font-size="8" font-family="sans-serif">臭</text>
+            </svg>
+
+            <div class="bubble px-5 py-3 mt-3 mb-auto text-center max-w-[270px]">
+              <p class="font-comic text-xl text-ink">我是小衰神助手</p>
+              <p class="font-body text-xs text-ink/60 mt-1.5 leading-relaxed">贴笔记、闯关卡、告别 0 分恐惧（大概）</p>
+            </div>
+
+            <div class="w-full pb-6 space-y-3">
+              <button type="button" class="comic-btn w-full py-4 bg-hoody text-xl text-ink">
+                开始闯！
+              </button>
+              <p class="font-body text-center text-[10px] text-chalk/70 tracking-wide">匿名学习 · 不登录 · V1</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══ ② 输入页 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">② 输入页 · 粘贴知识 + 题量</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen paper-texture">
+          <header class="mx-4 mt-2 px-4 py-2.5 blackboard comic-border flex items-center justify-between relative z-10">
+            <span class="text-chalk text-sm opacity-80">☰</span>
+            <span class="font-comic text-chalk text-lg tracking-wide">知识闯关</span>
+            <span class="font-body text-[9px] text-chalk bg-ink/25 px-2 py-0.5 rounded-md border border-chalk/20">怕踢分校</span>
+          </header>
+
+          <div class="flex-1 overflow-y-auto px-4 py-3 space-y-3">
+            <div class="flex gap-2.5 items-start">
+              <svg class="w-11 h-11 shrink-0 drop-shadow-sm" viewBox="0 0 44 44" aria-hidden="true">
+                <circle cx="22" cy="22" r="19" fill="#FFD4A8" stroke="#141414" stroke-width="2"/>
+                <path d="M6 15 Q22 3 38 15" fill="#FF5C1A" stroke="#141414" stroke-width="1.5"/>
+                <circle cx="16" cy="20" r="2" fill="#141414"/><circle cx="28" cy="20" r="2" fill="#141414"/>
+              </svg>
+              <div class="bubble flex-1 px-3 py-2.5 font-body text-sm leading-relaxed">
+                把笔记贴上来，本衰帮你出题！
+                <span class="text-tofu text-xs block mt-0.5">（臭豆腐味优先）</span>
+              </div>
+            </div>
+
+            <div class="comic-panel overflow-hidden relative">
+              <div class="tape" style="left: 24px; margin-left: 0;"></div>
+              <div class="px-3 py-2 bg-hoody/50 border-b-2 border-ink flex justify-between font-body text-[10px]">
+                <span>📝 作业纸模式</span>
+                <span class="text-ink/55 tabular-nums">128 / 2000 字</span>
+              </div>
+              <div class="p-3 lined-paper margin-line font-body text-sm text-ink/75 min-h-[130px]">
+                赤壁之战发生于208年，曹操率军南下…孙刘联军以火攻大破曹军于赤壁，奠定了三国鼎立的基础…
+              </div>
+            </div>
+
+            <div class="comic-panel p-4">
+              <div class="flex justify-between items-baseline mb-3">
+                <span class="font-comic text-base">出题数量</span>
+                <span class="font-body text-[10px] text-ink/45">5 ~ 10 题</span>
+              </div>
+              <div class="flex items-center justify-center gap-5">
+                <button type="button" class="w-11 h-11 comic-border rounded-full bg-paper font-comic text-xl comic-btn flex items-center justify-center" aria-label="减少">−</button>
+                <div class="relative">
+                  <span class="font-comic text-5xl text-aorange tabular-nums">8</span>
+                  <span class="absolute -top-1 -right-4 font-body text-[9px] text-board bg-hoody/60 px-1 rounded border border-ink/20">默认</span>
+                </div>
+                <button type="button" class="w-11 h-11 comic-border rounded-full bg-paper font-comic text-xl comic-btn flex items-center justify-center" aria-label="增加">+</button>
+              </div>
+            </div>
+          </div>
+
+          <footer class="px-4 pb-6 pt-1">
+            <button type="button" class="comic-btn w-full py-3.5 bg-aorange text-chalk text-lg shadow-[0_5px_0_#9B3010]">
+              让 AI 出题！ ▶
+            </button>
+            <p class="font-body text-center text-[10px] text-ink/40 mt-2">单次匿名会话 · 不保存历史</p>
+          </footer>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══ ③ 生成中 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">③ AI 生成中 · 步骤进度</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen paper-texture flex flex-col items-center justify-center px-6">
+          <div class="relative mb-8">
+            <svg class="w-32 h-32" viewBox="0 0 100 100" aria-hidden="true">
+              <circle cx="50" cy="50" r="42" fill="none" stroke="var(--c-paper-deep)" stroke-width="5"/>
+              <circle cx="50" cy="50" r="42" fill="none" stroke="var(--c-orange)" stroke-width="5"
+                stroke-dasharray="120 264" stroke-linecap="round"
+                style="transform-origin:50% 50%; animation: spin-dash 1.5s linear infinite"/>
+            </svg>
+            <div class="absolute inset-0 flex items-center justify-center">
+              <svg class="w-[72px] h-[72px] wiggle" viewBox="0 0 64 76">
+                <circle cx="32" cy="24" r="20" fill="#FFD4A8" stroke="#141414" stroke-width="2"/>
+                <path d="M14 20 Q32 2 50 20" fill="#FF5C1A" stroke="#141414" stroke-width="1.5"/>
+                <rect x="20" y="42" width="24" height="26" rx="5" fill="#FFCE00" stroke="#141414" stroke-width="2"/>
+                <text x="32" y="60" text-anchor="middle" font-size="11" fill="#141414" font-family="var(--font-display)">Zzz</text>
+              </svg>
+            </div>
+          </div>
+
+          <h2 class="font-comic text-2xl text-ink mb-1">学霸模式启动中…</h2>
+          <p class="font-body text-xs text-ink/50 mb-8">阿…啊不，正在抽知识点</p>
+
+          <ol class="w-full space-y-3 font-body text-sm list-none">
+            <li class="flex items-center gap-3">
+              <span class="step-dot done">✓</span>
+              <span class="text-ink/70">清洗原文</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="step-dot active pulse">●</span>
+              <span class="font-comic text-base text-ink">提取知识点…</span>
+            </li>
+            <li class="flex items-center gap-3 opacity-35">
+              <span class="step-dot"></span>
+              <span>生成 8 道题</span>
+            </li>
+            <li class="flex items-center gap-3 opacity-35">
+              <span class="step-dot"></span>
+              <span>结构校验</span>
+            </li>
+          </ol>
+
+          <p class="mt-10 font-body text-xs text-ink/40">预计还需 12 秒</p>
+          <button type="button" class="mt-3 font-body text-xs text-wrong underline underline-offset-2">返回重新输入</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══ ④ 答题-作答 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">④ 答题页 · 作答中（单选）</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen paper-texture">
+          <div class="px-4 pt-2 pb-2">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-comic text-lg">第 3 题</span>
+              <span class="font-body text-[10px] bg-board text-chalk px-2.5 py-1 rounded-lg comic-border">单选</span>
+            </div>
+            <div class="chalk-bar h-3.5"><div class="chalk-fill" style="width:37.5%"></div></div>
+            <p class="font-body text-[10px] text-right text-ink/40 mt-1 tabular-nums">3 / 8</p>
+          </div>
+
+          <div class="flex-1 overflow-y-auto px-4 space-y-3">
+            <div class="comic-panel p-4 relative">
+              <span class="absolute -left-1 top-3 font-comic text-[10px] text-ink/25 -rotate-90 origin-center">QUEST</span>
+              <p class="font-body text-base leading-relaxed pl-2">赤壁之战发生于哪一年？</p>
+            </div>
+
+            <div class="space-y-2.5" role="list">
+              <button type="button" class="w-full text-left px-4 py-3.5 comic-panel font-body text-sm option-selected flex items-center gap-2">
+                <span class="opt-letter bg-hoody">A</span> 208 年
+              </button>
+              <button type="button" class="w-full text-left px-4 py-3.5 comic-panel font-body text-sm flex items-center gap-2 hover:bg-hoody/15 transition-colors">
+                <span class="opt-letter">B</span> 220 年
+              </button>
+              <button type="button" class="w-full text-left px-4 py-3.5 comic-panel font-body text-sm flex items-center gap-2">
+                <span class="opt-letter">C</span> 200 年
+              </button>
+              <button type="button" class="w-full text-left px-4 py-3.5 comic-panel font-body text-sm flex items-center gap-2">
+                <span class="opt-letter">D</span> 189 年
+              </button>
+            </div>
+          </div>
+
+          <footer class="px-4 pb-6 pt-2">
+            <button type="button" class="comic-btn w-full py-3.5 bg-hoody text-lg text-ink" disabled>提交答案</button>
+          </footer>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══ ⑤ 答对 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">⑤ 答题页 · 答对反馈</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen paper-texture relative">
+          <div class="confetti absolute inset-x-0 top-20 h-20 z-30 pointer-events-none" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+
+          <div class="px-4 pt-2 pb-2">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-comic text-lg">第 3 题</span>
+              <span class="font-comic text-board text-base pop-in">✓ 牛啊！</span>
+            </div>
+            <div class="chalk-bar h-3.5"><div class="chalk-fill" style="width:37.5%"></div></div>
+          </div>
+
+          <div class="flex-1 overflow-y-auto px-4 space-y-3">
+            <div class="comic-panel p-4"><p class="font-body text-base">赤壁之战发生于哪一年？</p></div>
+
+            <div class="comic-panel p-4 border-[3px] border-board bg-board/10 flex items-center gap-2">
+              <span class="opt-letter bg-board text-chalk">A</span>
+              <span class="font-body">208 年 ✓</span>
+            </div>
+
+            <p class="font-comic text-center text-2xl text-board pop-in py-1">🎉 答对了！+1 衰力值</p>
+
+            <div class="flex gap-2 items-start">
+              <svg class="w-10 h-10 shrink-0" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="17" fill="#FFD4A8" stroke="#141414" stroke-width="2"/></svg>
+              <div class="bubble flex-1 px-3 py-2.5 font-body text-xs leading-relaxed">
+                <p class="font-comic text-board text-sm mb-1">AI 讲解</p>
+                依据原文：「赤壁之战发生于208年」——这次没翻车，继续保持！
+              </div>
+            </div>
+          </div>
+
+          <footer class="px-4 pb-6 pt-2">
+            <button type="button" class="comic-btn w-full py-3.5 bg-board text-chalk text-lg">下一关 →</button>
+          </footer>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══ ⑥ 答错 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">⑥ 答题页 · 答错反馈</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen paper-texture relative overflow-hidden">
+          <div class="speed-lines" aria-hidden="true"></div>
+
+          <div class="px-4 pt-2 pb-2 relative z-10">
+            <div class="flex justify-between items-center">
+              <span class="font-comic text-lg">第 3 题</span>
+              <span class="stamp text-base">又翻车了</span>
+            </div>
+            <div class="chalk-bar h-3.5 mt-2"><div class="chalk-fill" style="width:37.5%"></div></div>
+          </div>
+
+          <div class="flex-1 overflow-y-auto px-4 space-y-3 relative z-10">
+            <div class="comic-panel p-4"><p class="font-body text-base">赤壁之战发生于哪一年？</p></div>
+
+            <div class="comic-panel p-4 border-[3px] border-wrong bg-wrong/15 wiggle flex items-center gap-2">
+              <span class="opt-letter bg-wrong text-chalk">B</span>
+              <span class="font-body">220 年 ✗ <span class="text-xs opacity-70">你选的</span></span>
+            </div>
+            <div class="comic-panel p-4 border-[3px] border-board bg-board/5 flex items-center gap-2">
+              <span class="opt-letter bg-board text-chalk">A</span>
+              <span class="font-body">208 年 <strong class="text-board text-xs">正确答案</strong></span>
+            </div>
+
+            <div class="flex gap-2 items-start">
+              <div class="w-10 h-10 rounded-full comic-border bg-hoody flex items-center justify-center text-lg shrink-0" aria-hidden="true">😅</div>
+              <div class="bubble flex-1 px-3 py-2.5 font-body text-xs">
+                <p class="font-comic text-wrong text-sm mb-1">AI 讲解</p>
+                原文写的是 208 年。选 220 年？曹操听了都想退群…
+              </div>
+            </div>
+          </div>
+
+          <footer class="px-4 pb-6 pt-2 relative z-10">
+            <button type="button" class="comic-btn w-full py-3.5 bg-aorange text-chalk text-lg">下一关 → 别怂</button>
+          </footer>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══ ⑦ 判断题 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">⑦ 答题页 · 判断题</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen paper-texture">
+          <div class="px-4 pt-2 pb-2">
+            <div class="flex justify-between items-center mb-2">
+              <span class="font-comic text-lg">第 6 题</span>
+              <span class="font-body text-[10px] bg-facepink px-2.5 py-1 rounded-lg comic-border">判断</span>
+            </div>
+            <div class="chalk-bar h-3.5"><div class="chalk-fill" style="width:75%"></div></div>
+            <p class="font-body text-[10px] text-right text-ink/40 mt-1">6 / 8</p>
+          </div>
+
+          <div class="flex-1 flex flex-col px-4">
+            <div class="comic-panel p-5 mt-1 mb-5">
+              <p class="font-body text-base text-center leading-relaxed">
+                赤壁之战后，三国鼎立的局面初步形成。
+              </p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <button type="button" class="comic-btn aspect-[4/5] rounded-2xl bg-board flex flex-col items-center justify-center gap-1 hover:scale-[1.02] transition-transform">
+                <span class="font-comic text-6xl text-chalk leading-none">✓</span>
+                <span class="font-body text-chalk text-sm">对</span>
+              </button>
+              <button type="button" class="comic-btn aspect-[4/5] rounded-2xl bg-paper flex flex-col items-center justify-center gap-1">
+                <span class="font-comic text-6xl text-wrong leading-none">✗</span>
+                <span class="font-body text-ink/50 text-sm">错</span>
+              </button>
+            </div>
+
+            <p class="font-body text-center text-[10px] text-ink/40 mt-auto pb-4">点一下，别犹豫（犹豫会 0 分）</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ═══ ⑧ 报告页 ═══ -->
+    <article class="proto-card w-full flex flex-col items-center">
+      <div class="screen-label">⑧ 学习报告 · 复盘</div>
+      <div class="phone-shell">
+        <div class="phone-notch" aria-hidden="true"></div>
+        <div class="phone-home-bar" aria-hidden="true"></div>
+        <div class="phone-screen paper-texture">
+          <header class="px-4 pt-3 pb-2 text-center relative">
+            <div class="tape" style="top: 4px;"></div>
+            <h2 class="font-comic text-3xl text-ink mt-2">本轮成绩单</h2>
+            <p class="font-chalk text-lg text-ink/45 mt-0.5">怕踢中学教务处（盖章无效）</p>
+          </header>
+
+          <div class="flex-1 overflow-y-auto px-4 space-y-3 pb-2">
+            <div class="manga-gutter">
+              <div class="text-center relative">
+                <p class="font-body text-[10px] text-ink/45">正确率</p>
+                <p class="font-comic text-5xl text-board leading-none mt-1">75%</p>
+                <span class="stamp absolute -right-1 top-0 text-[10px] scale-75">及格万岁</span>
+              </div>
+              <div class="text-center">
+                <p class="font-body text-[10px] text-ink/45">答对 / 总题</p>
+                <p class="font-comic text-5xl text-aorange leading-none mt-1">6<span class="text-xl text-ink/35">/8</span></p>
+              </div>
+            </div>
+
+            <div class="comic-panel p-3">
+              <p class="font-comic text-sm text-wrong mb-2">⚠ 薄弱知识点</p>
+              <div class="flex flex-wrap gap-1.5">
+                <span class="font-body text-xs px-2.5 py-1 bg-wrong/10 comic-border rounded-full">三国时间节点</span>
+                <span class="font-body text-xs px-2.5 py-1 bg-wrong/10 comic-border rounded-full">战役因果关系</span>
+              </div>
+            </div>
+
+            <div class="comic-panel p-3">
+              <p class="font-comic text-sm mb-2">错题清单（2 道）</p>
+              <div class="space-y-2 font-body text-xs">
+                <div class="p-2.5 bg-paper rounded-lg comic-border border-dashed">
+                  <span class="text-wrong font-comic">Q3</span> 赤壁之战年份 — 你选了 B
+                </div>
+                <div class="p-2.5 bg-paper rounded-lg comic-border border-dashed">
+                  <span class="text-wrong font-comic">Q7</span> 火攻主导人物 — 你选了 C
+                </div>
+              </div>
+            </div>
+
+            <div class="bubble px-4 py-3 mx-0 font-body text-xs leading-relaxed">
+              <p class="font-comic text-sm mb-1">AI 总结</p>
+              三国部分掌握还行，时间线再捋一遍能少考几个 0 分。本次学习 4 分 32 秒，比睡一节课强。
+            </div>
+          </div>
+
+          <footer class="px-4 pb-6 pt-2 space-y-2">
+            <button type="button" class="comic-btn w-full py-3.5 bg-hoody text-lg text-ink">再来一局</button>
+            <button type="button" class="share-ghost w-full py-3 rounded-2xl font-comic text-base" disabled>
+              分享战绩（V1 敬请期待）
+            </button>
+          </footer>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="text-center font-body text-xs text-ink/50 py-10 max-w-md mx-auto px-4">
+    <p><code class="bg-paper/80 px-2 py-0.5 comic-border text-[11px]">prototypes/01_V1核心闭环.html</code></p>
+    <p class="mt-2 leading-relaxed">浏览器直接打开 · ≥1280px 三列 · 尊重 prefers-reduced-motion</p>
+  </footer>
+
+  <style>
+  .step-dot {
+    width: 22px; height: 22px; border-radius: 50%;
+    border: 2px solid var(--c-ink); flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10px; background: var(--c-paper);
+  }
+  .step-dot.done { background: var(--c-board); color: var(--c-chalk); }
+  .step-dot.active { background: var(--c-orange); color: #fff; box-shadow: 0 0 0 3px rgba(255,92,26,.25); }
+  .opt-letter {
+    width: 28px; height: 28px; border-radius: 50%;
+    border: 2px solid var(--c-ink);
+    display: inline-flex; align-items: center; justify-content: center;
+    font-family: var(--font-display); font-size: 13px; flex-shrink: 0;
+    background: var(--c-paper-deep);
+  }
+  @keyframes spin-dash { to { transform: rotate(360deg); } }
+  svg circle[style*="spin-dash"] { transform-origin: 50px 50px; }
+  </style>
+
+</body>
+</html>
