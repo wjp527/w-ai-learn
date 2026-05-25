@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI闯关学习 · TabBar · 题库与我的</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans SC"', 'system-ui', 'sans-serif'],
+            display: ['"ZCOOL KuaiLe"', '"Noto Sans SC"', 'sans-serif'],
+          },
+          colors: {
+            primary: '#EA580C',
+            board: '#166534',
+            success: '#16A34A',
+            error: '#DC2626',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+  :root {
+    --c-paper: #FFFBF5;
+    --c-ink: #1E293B;
+    --c-muted: #64748B;
+    --c-border: #CBD5E1;
+    --c-orange: #EA580C;
+    --stroke: 2px;
+  }
+  body {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--c-ink);
+    background: #E8EDF4;
+  }
+  .phone-shell {
+    width: 375px; max-width: 100%; height: 812px;
+    border-radius: 44px; border: 3px solid #334155;
+    box-shadow: 0 12px 40px rgba(0,0,0,.12);
+    overflow: hidden; background: var(--c-paper);
+    position: relative;
+  }
+  .phone-notch {
+    position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+    width: 120px; height: 28px; background: #334155;
+    border-radius: 0 0 18px 18px; z-index: 40;
+  }
+  .phone-screen {
+    height: 100%; padding-top: 36px;
+    display: flex; flex-direction: column;
+    background: var(--c-paper);
+  }
+  .screen-label {
+    font-size: 13px; font-weight: 600; color: var(--c-muted);
+    text-align: center; margin-bottom: 12px; padding: 8px 12px;
+    background: #fff; border: 1px solid var(--c-border);
+    border-radius: 10px; width: 100%; max-width: 375px;
+  }
+  .prototype-grid {
+    display: grid; gap: 36px 24px; justify-items: center;
+    grid-template-columns: 1fr;
+  }
+  @media (min-width: 900px) { .prototype-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1280px) { .prototype-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .card {
+    background: #fff; border: 1.5px solid var(--c-border);
+    border-radius: 14px; box-shadow: 0 2px 8px rgba(30,41,59,.06);
+  }
+  .top-bar {
+    background: var(--board); color: #F8FAFC;
+    border-radius: 12px; margin: 8px 16px 0;
+    padding: 10px 16px;
+  }
+  .screen-scroll { flex: 1; min-height: 0; overflow-y: auto; }
+  .tab-bar {
+    flex-shrink: 0; display: flex; height: 56px;
+    background: #fff; border-top: 1.5px solid var(--c-border);
+  }
+  .tab-item {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 2px;
+    font-size: 11px; color: var(--c-muted);
+    cursor: pointer; background: none; border: none;
+    padding: 6px 0;
+  }
+  .tab-item.active { color: var(--c-orange); font-weight: 600; }
+  .tab-item.active .tab-icon { stroke: var(--c-orange); }
+  .tab-icon { width: 22px; height: 22px; stroke: #64748B; stroke-width: 2; fill: none; }
+
+  .btn-primary {
+    display: flex; align-items: center; justify-content: center;
+    min-height: 48px; width: 100%; border-radius: 14px;
+    background: var(--c-orange); color: #fff; font-weight: 600;
+    font-family: 'ZCOOL KuaiLe', sans-serif; font-size: 17px;
+    border: 2px solid #C2410C; box-shadow: 0 4px 0 #C2410C;
+    cursor: pointer;
+  }
+  .history-item {
+    display: flex; gap: 12px; padding: 14px;
+    cursor: pointer; transition: background 0.15s;
+  }
+  .history-item:hover { background: #FFF7ED; }
+  .badge {
+    font-size: 11px; font-weight: 600; padding: 2px 8px;
+    border-radius: 6px; white-space: nowrap;
+  }
+  .badge-ok { background: #DCFCE7; color: #15803D; }
+  .badge-warn { background: #FEE2E2; color: #B91C1C; }
+  .stat-pill {
+    flex: 1; text-align: center; padding: 12px 8px;
+    background: #fff; border-radius: 12px;
+    border: 1.5px solid var(--c-border);
+  }
+  </style>
+</head>
+<body class="pb-16">
+
+  <header class="max-w-7xl mx-auto px-6 py-10 text-center border-b border-slate-200 bg-white mb-10">
+    <h1 class="font-display text-3xl text-slate-800 mb-2">TabBar · 题库 · 我的</h1>
+    <p class="text-sm text-slate-500 max-w-lg mx-auto">
+      答完题后通过底部 Tab 进入「我的」查看历史；「题库」管理 AI 生成的题目集。标注 <span class="text-orange-600 font-medium">P1</span> 为方案后续能力，原型先展示交互。
+    </p>
+    <div class="flex flex-wrap justify-center gap-2 mt-5 text-xs">
+      <span class="px-3 py-1 rounded-full border border-slate-200 bg-slate-50">⑨首页·闯关</span>
+      <span class="px-3 py-1 rounded-full border border-slate-200 bg-slate-50">⑩题库</span>
+      <span class="px-3 py-1 rounded-full border border-slate-200 bg-slate-50">⑪我的</span>
+      <span class="px-3 py-1 rounded-full border border-slate-200 bg-slate-50">⑫记录详情</span>
+      <span class="px-3 py-1 rounded-full border border-orange-200 bg-orange-50 text-orange-700">⑬报告→我的</span>
+    </div>
+  </header>
+
+  <!-- SVG 角色 -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="mascot-mini" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="22" fill="#FDE68A" stroke="#334155" stroke-width="2"/>
+      <path d="M6 16Q24 4 42 16" fill="#FB923C" stroke="#334155" stroke-width="1.5"/>
+      <circle cx="17" cy="22" r="2.5" fill="#334155"/><circle cx="31" cy="22" r="2.5" fill="#334155"/>
+      <path d="M18 30q6 4 12 0" stroke="#334155" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <main class="max-w-[1440px] mx-auto px-4 prototype-grid">
+
+    <!-- ⑨ 首页·闯关 Tab -->
+    <article class="w-full flex flex-col items-center">
+      <div class="screen-label">⑨ 首页 · 闯关 Tab（主入口）</div>
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="top-bar flex items-center justify-between">
+            <span class="font-display text-lg">知识闯关</span>
+            <span class="text-[10px] bg-white/15 px-2 py-0.5 rounded">怕踢分校</span>
+          </div>
+
+          <div class="screen-scroll px-4 py-4 space-y-4">
+            <div class="card p-4 flex gap-3 items-center">
+              <svg class="w-14 h-14 shrink-0"><use href="#mascot-mini"/></svg>
+              <div>
+                <p class="font-display text-lg text-slate-800">小衰神助手</p>
+                <p class="text-sm text-slate-500">贴笔记，AI 帮你出题闯关</p>
+              </div>
+            </div>
+
+            <button type="button" class="btn-primary">+ 新建闯关</button>
+
+            <div>
+              <div class="flex justify-between items-center mb-2">
+                <h3 class="font-semibold text-slate-800">继续上次</h3>
+                <span class="text-xs text-slate-400">更多 →</span>
+              </div>
+              <div class="card history-item rounded-xl">
+                <div class="w-10 h-10 rounded-lg bg-orange-100 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12" stroke-linecap="round"/></svg>
+                </div>
+                <div class="flex-1 min-w-0">
+                  <p class="font-medium text-sm truncate">三国历史 · 赤壁之战</p>
+                  <p class="text-xs text-slate-500 mt-0.5">昨天 18:32 · 完成 6/8 题</p>
+                </div>
+                <span class="badge badge-ok">75%</span>
+              </div>
+            </div>
+          </div>
+
+          <nav class="tab-bar" aria-label="主导航">
+            <button type="button" class="tab-item active" aria-current="page">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M12 3L4 9v12h6v-7h4v7h6V9l-8-6z" stroke-linejoin="round"/></svg>
+              <span>闯关</span>
+            </button>
+            <button type="button" class="tab-item">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg>
+              <span>题库</span>
+            </button>
+            <button type="button" class="tab-item">
+              <svg class="tab-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-4 3-6 6-6s6 2 6 6" stroke-linecap="round"/></svg>
+              <span>我的</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </article>
+
+    <!-- ⑩ 题库 Tab -->
+    <article class="w-full flex flex-col items-center">
+      <div class="screen-label">⑩ 题库 · 题目集列表</div>
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="px-4 pt-3 pb-2">
+            <h2 class="font-display text-2xl text-slate-800">我的题库</h2>
+            <p class="text-sm text-slate-500">AI 根据你的笔记生成的题目集</p>
+          </div>
+
+          <div class="px-4 pb-2">
+            <div class="flex gap-2 overflow-x-auto pb-1">
+              <button type="button" class="text-xs font-semibold px-3 py-1.5 rounded-full bg-orange-500 text-white shrink-0">全部</button>
+              <button type="button" class="text-xs px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 shrink-0">语文</button>
+              <button type="button" class="text-xs px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 shrink-0">历史</button>
+              <button type="button" class="text-xs px-3 py-1.5 rounded-full bg-white border border-slate-200 text-slate-600 shrink-0">英语</button>
+            </div>
+          </div>
+
+          <div class="screen-scroll px-4 space-y-3 pb-2">
+            <div class="card p-4 cursor-pointer hover:border-orange-300 transition-colors">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <p class="font-semibold text-slate-800">三国历史 · 赤壁之战</p>
+                  <p class="text-xs text-slate-500 mt-1">8 道题 · 单选/判断 · 5月22日生成</p>
+                </div>
+                <span class="badge badge-ok">已练过</span>
+              </div>
+              <div class="flex gap-2 mt-3">
+                <button type="button" class="flex-1 text-sm font-medium py-2 rounded-lg bg-green-50 text-green-700 border border-green-200">再练一次</button>
+                <button type="button" class="text-sm py-2 px-3 rounded-lg border border-slate-200 text-slate-600">查看题目</button>
+              </div>
+            </div>
+
+            <div class="card p-4 cursor-pointer">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <p class="font-semibold text-slate-800">英语 Unit3 单词</p>
+                  <p class="text-xs text-slate-500 mt-1">10 道题 · 5月20日生成</p>
+                </div>
+                <span class="text-xs px-2 py-0.5 rounded bg-slate-100 text-slate-500">未练习</span>
+              </div>
+              <button type="button" class="w-full mt-3 text-sm font-medium py-2 rounded-lg bg-orange-500 text-white">开始闯关</button>
+            </div>
+
+            <div class="card p-4 cursor-pointer opacity-80">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <p class="font-semibold text-slate-800">数学 · 一元二次方程</p>
+                  <p class="text-xs text-slate-500 mt-1">6 道题 · 5月18日生成</p>
+                </div>
+                <span class="badge badge-warn">62%</span>
+              </div>
+              <button type="button" class="w-full mt-3 text-sm font-medium py-2 rounded-lg border-2 border-orange-500 text-orange-600">错题强化 · P1</button>
+            </div>
+          </div>
+
+          <nav class="tab-bar">
+            <button type="button" class="tab-item">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M12 3L4 9v12h6v-7h4v7h6V9l-8-6z" stroke-linejoin="round"/></svg>
+              <span>闯关</span>
+            </button>
+            <button type="button" class="tab-item active" aria-current="page">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg>
+              <span>题库</span>
+            </button>
+            <button type="button" class="tab-item">
+              <svg class="tab-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-4 3-6 6-6s6 2 6 6" stroke-linecap="round"/></svg>
+              <span>我的</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </article>
+
+    <!-- ⑪ 我的 Tab -->
+    <article class="w-full flex flex-col items-center">
+      <div class="screen-label">⑪ 我的 · 学习记录入口</div>
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="bg-gradient-to-b from-green-800 to-green-900 px-4 pt-4 pb-8 text-white">
+            <div class="flex items-center gap-3">
+              <div class="w-14 h-14 rounded-full bg-amber-200 border-2 border-white flex items-center justify-center overflow-hidden">
+                <svg class="w-12 h-12"><use href="#mascot-mini"/></svg>
+              </div>
+              <div>
+                <p class="font-display text-xl">怕踢学渣 No.9527</p>
+                <p class="text-xs text-green-100 mt-0.5">累计闯关 12 次 · P1 登录后同步</p>
+              </div>
+            </div>
+            <div class="flex gap-2 mt-4">
+              <div class="stat-pill !bg-white/10 !border-white/20 !text-white">
+                <p class="text-lg font-bold">12</p>
+                <p class="text-[10px] opacity-80">闯关次数</p>
+              </div>
+              <div class="stat-pill !bg-white/10 !border-white/20 !text-white">
+                <p class="text-lg font-bold">78%</p>
+                <p class="text-[10px] opacity-80">平均正确率</p>
+              </div>
+              <div class="stat-pill !bg-white/10 !border-white/20 !text-white">
+                <p class="text-lg font-bold">2.4h</p>
+                <p class="text-[10px] opacity-80">学习时长</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="screen-scroll px-4 -mt-4 space-y-3 pb-2">
+            <div class="card rounded-xl overflow-hidden">
+              <div class="px-4 py-3 border-b border-slate-100 flex justify-between items-center bg-white">
+                <h3 class="font-semibold text-slate-800">学习记录</h3>
+                <span class="text-xs text-orange-600 font-medium">全部</span>
+              </div>
+
+              <div class="history-item border-b border-slate-50">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center shrink-0 text-green-700 text-sm font-bold">史</div>
+                <div class="flex-1 min-w-0">
+                  <p class="font-medium text-sm">三国历史 · 赤壁之战</p>
+                  <p class="text-xs text-slate-500">今天 14:20 · 用时 4分32秒</p>
+                </div>
+                <div class="text-right shrink-0">
+                  <p class="text-sm font-bold text-green-600">75%</p>
+                  <p class="text-[10px] text-slate-400">6/8题</p>
+                </div>
+              </div>
+
+              <div class="history-item border-b border-slate-50">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0 text-blue-700 text-sm font-bold">英</div>
+                <div class="flex-1 min-w-0">
+                  <p class="font-medium text-sm">英语 Unit3 单词</p>
+                  <p class="text-xs text-slate-500">昨天 19:05 · 用时 6分10秒</p>
+                </div>
+                <div class="text-right shrink-0">
+                  <p class="text-sm font-bold text-green-600">90%</p>
+                  <p class="text-[10px] text-slate-400">9/10题</p>
+                </div>
+              </div>
+
+              <div class="history-item">
+                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-red-700 text-sm font-bold">数</div>
+                <div class="flex-1 min-w-0">
+                  <p class="font-medium text-sm">数学 · 一元二次方程</p>
+                  <p class="text-xs text-slate-500">5月20日 · 用时 5分48秒</p>
+                </div>
+                <div class="text-right shrink-0">
+                  <p class="text-sm font-bold text-red-600">62%</p>
+                  <p class="text-[10px] text-slate-400">5/8题</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card divide-y divide-slate-100 text-sm">
+              <button type="button" class="w-full px-4 py-3 flex justify-between text-left text-slate-700 hover:bg-slate-50">
+                <span>错题本</span><span class="text-slate-400">P1 →</span>
+              </button>
+              <button type="button" class="w-full px-4 py-3 flex justify-between text-left text-slate-700 hover:bg-slate-50">
+                <span>学习设置</span><span class="text-slate-400">→</span>
+              </button>
+              <button type="button" class="w-full px-4 py-3 flex justify-between text-left text-slate-400">
+                <span>关于 / 反馈</span><span>→</span>
+              </button>
+            </div>
+          </div>
+
+          <nav class="tab-bar">
+            <button type="button" class="tab-item">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M12 3L4 9v12h6v-7h4v7h6V9l-8-6z" stroke-linejoin="round"/></svg>
+              <span>闯关</span>
+            </button>
+            <button type="button" class="tab-item">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg>
+              <span>题库</span>
+            </button>
+            <button type="button" class="tab-item active" aria-current="page">
+              <svg class="tab-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-4 3-6 6-6s6 2 6 6" stroke-linecap="round"/></svg>
+              <span>我的</span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </article>
+
+    <!-- ⑫ 学习记录详情 -->
+    <article class="w-full flex flex-col items-center">
+      <div class="screen-label">⑫ 学习记录详情（从「我的」进入）</div>
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="px-4 py-3 flex items-center gap-2 border-b border-slate-100 bg-white shrink-0">
+            <button type="button" class="w-9 h-9 rounded-lg border border-slate-200 flex items-center justify-center text-slate-600" aria-label="返回">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <span class="font-semibold text-slate-800">学习详情</span>
+          </div>
+
+          <div class="screen-scroll px-4 py-4 space-y-4">
+            <div class="card p-4 text-center">
+              <p class="text-sm text-slate-500">三国历史 · 赤壁之战</p>
+              <p class="font-display text-5xl text-green-600 mt-1">75%</p>
+              <p class="text-sm text-slate-600 mt-1">答对 6 / 8 题 · 用时 4分32秒</p>
+              <p class="text-xs text-slate-400 mt-2">2026年5月23日 14:20</p>
+            </div>
+
+            <div class="card p-4">
+              <p class="font-semibold text-sm text-red-600 mb-2">错题（2）</p>
+              <div class="space-y-2 text-sm">
+                <div class="p-3 bg-red-50 rounded-lg border border-red-100">
+                  <p class="font-medium">Q3 · 赤壁之战发生于哪一年？</p>
+                  <p class="text-xs text-slate-500 mt-1">你的答案：B · 正确答案：A（208年）</p>
+                </div>
+                <div class="p-3 bg-red-50 rounded-lg border border-red-100">
+                  <p class="font-medium">Q7 · 火攻的主导人物是？</p>
+                  <p class="text-xs text-slate-500 mt-1">你的答案：C · 正确答案：周瑜</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card p-4 text-sm text-slate-600 leading-relaxed">
+              <p class="font-semibold text-slate-800 mb-1">AI 总结</p>
+              三国部分掌握还行，时间线再捋一遍能少考几个 0 分。
+            </div>
+
+            <button type="button" class="btn-primary">再练一次</button>
+            <button type="button" class="w-full py-3 text-sm font-medium text-orange-600 border-2 border-orange-500 rounded-xl bg-white">
+              加入错题强化 · P1
+            </button>
+          </div>
+          <!-- 详情页无 TabBar（二级页） -->
+          <div class="h-6 bg-slate-100 border-t border-slate-200 flex items-center justify-center">
+            <span class="text-[10px] text-slate-400">二级页隐藏 TabBar</span>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ⑬ 报告页 + Tab + 引导去我的 -->
+    <article class="w-full flex flex-col items-center">
+      <div class="screen-label">⑬ 答完题 · 报告页（引导去「我的」）</div>
+      <div class="phone-shell">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="screen-scroll px-4 pt-4 pb-2">
+            <h2 class="font-display text-2xl text-center text-slate-800">本轮成绩单</h2>
+            <p class="text-xs text-center text-slate-400 mb-4">答完啦，记录已保存</p>
+
+            <div class="grid grid-cols-2 gap-3 mb-4">
+              <div class="card p-4 text-center">
+                <p class="text-xs text-slate-500">正确率</p>
+                <p class="font-display text-4xl text-green-600">75%</p>
+              </div>
+              <div class="card p-4 text-center">
+                <p class="text-xs text-slate-500">答对 / 总题</p>
+                <p class="font-display text-4xl text-orange-600">6<span class="text-lg text-slate-400">/8</span></p>
+              </div>
+            </div>
+
+            <div class="card p-3 flex gap-3 items-center bg-orange-50 border-orange-200 mb-4">
+              <svg class="w-10 h-10 shrink-0"><use href="#mascot-mini"/></svg>
+              <p class="text-sm text-slate-700">
+                完整错题和薄弱点已存入 <strong class="text-orange-600">「我的 → 学习记录」</strong>，随时可回看。
+              </p>
+            </div>
+          </div>
+
+          <footer class="px-4 pb-2 space-y-2 shrink-0">
+            <button type="button" class="btn-primary !bg-amber-400 !border-amber-600 !shadow-amber-600 text-slate-900">再来一局</button>
+            <button type="button" class="w-full py-3 rounded-xl font-semibold text-white bg-green-700 border-2 border-green-900 shadow-[0_4px_0_#14532D]">
+              去「我的」查看记录
+            </button>
+          </footer>
+
+          <nav class="tab-bar">
+            <button type="button" class="tab-item active">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M12 3L4 9v12h6v-7h4v7h6V9l-8-6z" stroke-linejoin="round"/></svg>
+              <span>闯关</span>
+            </button>
+            <button type="button" class="tab-item">
+              <svg class="tab-icon" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10" stroke-linecap="round"/></svg>
+              <span>题库</span>
+            </button>
+            <button type="button" class="tab-item relative">
+              <svg class="tab-icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M6 20c0-4 3-6 6-6s6 2 6 6" stroke-linecap="round"/></svg>
+              <span>我的</span>
+              <span class="absolute top-1 right-[22%] w-2 h-2 bg-red-500 rounded-full border border-white" title="有新记录"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tab 结构说明 -->
+    <article class="w-full flex flex-col items-center">
+      <div class="screen-label">TabBar 信息架构（开发参考）</div>
+      <div class="phone-shell !h-auto min-h-[400px]">
+        <div class="p-6 text-sm text-slate-700 space-y-4">
+          <p class="font-display text-xl text-slate-800">底部 Tab 三栏</p>
+          <table class="w-full text-left text-xs border-collapse">
+            <thead><tr class="border-b border-slate-200"><th class="py-2">Tab</th><th class="py-2">职责</th><th class="py-2">V1</th></tr></thead>
+            <tbody class="text-slate-600">
+              <tr class="border-b border-slate-100"><td class="py-2 font-medium">闯关</td><td>粘贴内容、出题、答题主流程</td><td>✓ 核心</td></tr>
+              <tr class="border-b border-slate-100"><td class="py-2 font-medium">题库</td><td>历史题目集、再练、查看题目</td><td>P1 本地缓存</td></tr>
+              <tr><td class="py-2 font-medium">我的</td><td>学习记录、统计、错题本入口</td><td>P1 需存储</td></tr>
+            </tbody>
+          </table>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            欢迎闪屏、生成中、答题过程为<strong>无 Tab</strong>的全屏流程；报告页可保留 Tab 并高亮引导「我的」。详情页为二级页，隐藏 TabBar。
+          </p>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <footer class="text-center text-sm text-slate-500 py-8">
+    <p><code class="bg-white px-2 py-1 rounded border">prototypes/02_TabBar_题库与我的.html</code></p>
+    <p class="mt-2">配合 <code class="bg-white px-1 rounded border">01_V1核心闭环.html</code> 使用</p>
+  </footer>
+</body>
+</html>
