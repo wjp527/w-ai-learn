@@ -1,0 +1,50 @@
+.mascot {
+  flex-shrink: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.mascot--full {
+  width: 160px;
+  height: 176px;
+  animation: float-idle 3s ease-in-out infinite;
+}
+
+.mascot--mini {
+  width: 44px;
+  height: 44px;
+}
+
+.mascot--sleep {
+  width: 72px;
+  height: 72px;
+}
+
+.mascot-svg--full {
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140 160' fill='none'%3E%3Cellipse cx='70' cy='150' rx='32' ry='7' fill='%23141414' opacity='.12'/%3E%3Cpath d='M42 108 L42 142 L98 142 L98 108' fill='%23FFCE00' stroke='%23141414' stroke-width='2.5'/%3E%3Crect x='36' y='62' width='68' height='50' rx='10' fill='%23FFCE00' stroke='%23141414' stroke-width='2.5'/%3E%3Ccircle cx='70' cy='42' r='32' fill='%23FFD4A8' stroke='%23141414' stroke-width='2.5'/%3E%3Cpath d='M36 32 Q70 6 104 32' fill='%23FF5C1A' stroke='%23141414' stroke-width='2'/%3E%3Cellipse cx='54' cy='40' rx='5' ry='6' fill='%23141414'/%3E%3Cellipse cx='86' cy='40' rx='5' ry='6' fill='%23141414'/%3E%3Cpath d='M58 52 Q70 62 82 52' stroke='%23141414' stroke-width='2.5' fill='none'/%3E%3Crect x='88' y='70' width='28' height='20' rx='4' fill='%235C3A1E' stroke='%23141414' stroke-width='2'/%3E%3Ctext x='102' y='84' text-anchor='middle' fill='%23FFCE00' font-size='8'%3E%E8%87%AD%3C/text%3E%3C/svg%3E");
+}
+
+.mascot-svg--mini {
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='19' fill='%23FFD4A8' stroke='%23141414' stroke-width='2'/%3E%3Cpath d='M6 15 Q22 3 38 15' fill='%23FF5C1A' stroke='%23141414' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='20' r='2' fill='%23141414'/%3E%3Ccircle cx='28' cy='20' r='2' fill='%23141414'/%3E%3C/svg%3E");
+}
+
+.mascot-svg--sleep {
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 76'%3E%3Ccircle cx='32' cy='24' r='20' fill='%23FFD4A8' stroke='%23141414' stroke-width='2'/%3E%3Cpath d='M14 20 Q32 2 50 20' fill='%23FF5C1A' stroke='%23141414' stroke-width='1.5'/%3E%3Crect x='20' y='42' width='24' height='26' rx='5' fill='%23FFCE00' stroke='%23141414' stroke-width='2'/%3E%3Ctext x='32' y='60' text-anchor='middle' font-size='11' fill='%23141414'%3EZzz%3C/text%3E%3C/svg%3E");
+}
+
+@keyframes float-idle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}

@@ -1,0 +1,22 @@
+@import '../../styles/tab02.scss';
+
+.record-list-page {
+  min-height: 100vh;
+  background: $tab-paper;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.record-list-scroll {
+  padding: 16px;
+}
+
+.record-list-item {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  align-items: center;
+}
+
+.record-list-item--border {
+  border-bottom: 1px solid #f8fafc;
+}

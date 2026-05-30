@@ -1,0 +1,97 @@
+$tab-paper: #fffbf5;
+$tab-ink: #1e293b;
+$tab-muted: #64748b;
+$tab-border: #cbd5e1;
+$tab-orange: #ea580c;
+$tab-board: #166534;
+$tab-success: #16a34a;
+$tab-error: #dc2626;
+
+.tab02-page {
+  height: 100%;
+  min-height: 100%;
+  background: $tab-paper;
+  color: $tab-ink;
+  font-family: 'PingFang SC', 'Noto Sans SC', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-bottom: 56px;
+}
+
+.tab02-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.tab02-card {
+  background: #fff;
+  border: 1.5px solid $tab-border;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.06);
+}
+
+.tab02-display {
+  font-family: 'ZCOOL KuaiLe', 'PingFang SC', sans-serif;
+}
+
+.tab02-badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.tab02-badge--ok {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.tab02-badge--warn {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.tab02-btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  width: 100%;
+  border-radius: 14px;
+  background: $tab-orange;
+  color: #fff;
+  font-weight: 600;
+  font-family: 'ZCOOL KuaiLe', 'PingFang SC', sans-serif;
+  font-size: 17px;
+  border: 2px solid #c2410c;
+  box-shadow: 0 4px 0 #c2410c;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  &::after {
+    border: none !important;
+  }
+}
+
+.tab02-filter {
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid $tab-border;
+  background: #fff;
+  color: $tab-muted;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+
+.tab02-filter--active {
+  background: $tab-orange;
+  color: #fff;
+  border-color: $tab-orange;
+  font-weight: 600;
+}

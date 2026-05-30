@@ -1,0 +1,148 @@
+@import '../../styles/tab02.scss';
+
+.record-detail-page {
+  min-height: 100vh;
+  background: $tab-paper;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.record-detail-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #fff;
+  border-bottom: 1px solid #f1f5f9;
+  padding-top: calc(env(safe-area-inset-top) + 12px);
+}
+
+.record-detail-back {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid $tab-border;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: $tab-muted;
+}
+
+.record-detail-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: $tab-ink;
+}
+
+.record-detail-scroll {
+  padding: 16px;
+}
+
+.record-detail-summary {
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.record-detail-subtitle {
+  display: block;
+  font-size: 14px;
+  color: $tab-muted;
+}
+
+.record-detail-percent {
+  display: block;
+  font-size: 48px;
+  color: $tab-success;
+  margin-top: 4px;
+}
+
+.record-detail-meta {
+  display: block;
+  font-size: 14px;
+  color: $tab-ink;
+  margin-top: 4px;
+}
+
+.record-detail-time {
+  display: block;
+  font-size: 12px;
+  color: $tab-muted;
+  margin-top: 8px;
+}
+
+.record-detail-section {
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.record-detail-section-title {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  color: $tab-error;
+  margin-bottom: 8px;
+}
+
+.record-detail-wrong {
+  padding: 12px;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.record-detail-wrong-stem {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.record-detail-wrong-answer {
+  display: block;
+  font-size: 12px;
+  color: $tab-muted;
+  margin-top: 4px;
+}
+
+.record-detail-empty {
+  font-size: 13px;
+  color: $tab-muted;
+}
+
+.record-detail-ai-title {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.record-detail-ai-text {
+  display: block;
+  font-size: 14px;
+  color: $tab-ink;
+  line-height: 1.6;
+}
+
+.record-detail-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.record-detail-btn-primary {
+  margin: 0 !important;
+}
+
+.record-detail-btn-p1 {
+  margin: 0 !important;
+  background: #fff !important;
+  color: $tab-orange !important;
+  border: 2px solid $tab-orange !important;
+  font-weight: 600;
+
+  &::after {
+    border: none !important;
+  }
+}

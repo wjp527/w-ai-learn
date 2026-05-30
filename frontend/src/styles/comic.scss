@@ -1,0 +1,326 @@
+/* 设计令牌 — 与 prototypes/01_V1核心闭环.html 一致 */
+/* 字体由 loadFontFace 加载，勿在 scss 里 @font-face url()，否则会被打成 base64 撑爆包体 */
+
+$page-paper: #fff6e0;
+$page-paper-deep: #f5e6c8;
+$ink: #141414;
+$orange: #ff5c1a;
+$hoody: #ffce00;
+$board: #1f4d3a;
+$board-light: #2a6b52;
+$chalk: #f4fff8;
+$wrong: #e8252f;
+$tofu: #5c3a1e;
+$pink: #ff7a9e;
+$desk: #9b6b42;
+$stroke: 2.5px;
+$radius-comic: 18px 22px 16px 20px;
+$orange-shadow: #9b3010;
+
+page {
+  height: 100%;
+  background-color: $page-paper;
+  color: $ink;
+  font-family: 'ZCOOL QingKe HuangYou', 'PingFang SC', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.font-comic {
+  font-family: 'ZCOOL KuaiLe', 'PingFang SC', sans-serif;
+  font-weight: 400;
+}
+
+.font-chalk {
+  font-family: 'Ma Shan Zheng', 'KaiTi', serif;
+}
+
+.font-body {
+  font-family: 'ZCOOL QingKe HuangYou', 'PingFang SC', sans-serif;
+}
+
+.paper-texture {
+  height: 100%;
+  min-height: 100%;
+  background-color: $page-paper;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.blackboard {
+  background: radial-gradient(ellipse at 30% 20%, rgba(255, 255, 255, 0.06) 0%, transparent 50%),
+    linear-gradient(165deg, $board-light 0%, $board 40%, #163528 100%);
+  color: $chalk;
+}
+
+.comic-border {
+  border: $stroke solid $ink;
+  border-radius: $radius-comic;
+}
+
+.comic-panel {
+  border: $stroke solid $ink;
+  border-radius: 20px 8px 18px 10px;
+  background: #fff;
+  box-shadow: 3px 3px 0 $ink;
+}
+
+.comic-btn {
+  border: $stroke solid $ink !important;
+  border-radius: 14px 18px 16px 12px !important;
+  box-shadow: 0 5px 0 $ink !important;
+  font-family: 'ZCOOL KuaiLe', 'PingFang SC', sans-serif !important;
+  font-weight: 400 !important;
+  line-height: 1.2 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+
+  &::after {
+    border: none !important;
+  }
+}
+
+.comic-btn--press:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 $ink !important;
+}
+
+.comic-btn[disabled] {
+  opacity: 0.55;
+}
+
+.bubble {
+  position: relative;
+  border: $stroke solid $ink;
+  border-radius: 20px 20px 20px 6px;
+  background: #fff;
+  box-shadow: 2px 2px 0 $ink;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 18px;
+    bottom: -11px;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-left: $stroke solid $ink;
+    border-bottom: $stroke solid $ink;
+    transform: rotate(-45deg);
+  }
+}
+
+.lined-paper {
+  background-image: linear-gradient(transparent 26px, rgba(20, 20, 20, 0.08) 27px);
+  background-size: 100% 27px;
+  line-height: 27px;
+}
+
+.margin-line {
+  border-left: 2px dashed rgba(232, 37, 47, 0.35);
+  padding-left: 12px;
+}
+
+.tape {
+  position: absolute;
+  width: 52px;
+  height: 18px;
+  background: rgba(255, 206, 0, 0.55);
+  border: 1px solid rgba(20, 20, 20, 0.15);
+  transform: rotate(-4deg);
+  top: -8px;
+  left: 50%;
+  margin-left: -26px;
+  z-index: 2;
+}
+
+.chalk-bar {
+  background: $board;
+  border: 2px solid $ink;
+  border-radius: 99px;
+  overflow: hidden;
+  height: 14px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.chalk-fill {
+  height: 100%;
+  border-radius: 99px;
+  background: linear-gradient(90deg, $hoody, $orange, $hoody);
+  background-size: 200% 100%;
+  animation: chalk-shimmer 2s ease infinite;
+}
+
+@keyframes chalk-shimmer {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.opt-letter {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  border: 2px solid $ink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+  font-size: 13px;
+  background: $page-paper-deep;
+}
+
+.opt-letter--hoody {
+  background: $hoody;
+}
+
+.opt-letter--board {
+  background: $board;
+  color: $chalk;
+}
+
+.opt-letter--wrong {
+  background: $wrong;
+  color: $chalk;
+}
+
+.option-selected {
+  background: rgba(255, 206, 0, 0.35) !important;
+  box-shadow: inset 0 0 0 2px $orange, 3px 3px 0 $ink !important;
+}
+
+.stamp {
+  transform: rotate(-14deg);
+  border: 3px double $wrong;
+  color: $wrong;
+  font-family: 'ZCOOL KuaiLe', sans-serif;
+  padding: 2px 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+}
+
+.manga-gutter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 6px;
+  background: $ink;
+  border-radius: 12px;
+}
+
+.manga-gutter__cell {
+  background: #fff;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+}
+
+.share-ghost {
+  border: 2px dashed rgba(20, 20, 20, 0.25) !important;
+  background: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 6px,
+    rgba(20, 20, 20, 0.03) 6px,
+    rgba(20, 20, 20, 0.03) 12px
+  ) !important;
+  color: rgba(20, 20, 20, 0.35) !important;
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+
+.step-dot {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  border: 2px solid $ink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  background: $page-paper;
+}
+
+.step-dot--done {
+  background: $board;
+  color: $chalk;
+}
+
+.step-dot--active {
+  background: $orange;
+  color: #fff;
+  box-shadow: 0 0 0 3px rgba(255, 92, 26, 0.25);
+}
+
+.page-flex-col {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+.page-scroll {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+.page-footer {
+  flex-shrink: 0;
+}
+
+@keyframes confetti-fall {
+  0% {
+    transform: translateY(-10px) rotate(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(60px) rotate(180deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pop-in {
+  animation: pop-in 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.wiggle {
+  animation: wiggle 0.35s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0) translateX(0);
+  }
+  20% {
+    transform: rotate(-3deg) translateX(-2px);
+  }
+  40% {
+    transform: rotate(3deg) translateX(2px);
+  }
+  60% {
+    transform: rotate(-2deg);
+  }
+}
